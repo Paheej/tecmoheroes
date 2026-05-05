@@ -1,0 +1,251 @@
+[
+  {
+    "id": "moon",       "slug": "moon",       "tecmoName": "Moon",       "realName": "Warren Moon",         "position": "QB", "team": "Hou",
+    "spriteSlug": "moon", "avatarSlug": "warren-moon",
+    "bio": "Run-and-shoot maestro. Drew's preferred weapon in the Houston aerial circus."
+  },
+  {
+    "id": "qb-bills",   "slug": "qb-bills",   "tecmoName": "QB Bills",   "realName": "Jim Kelly",           "position": "QB", "team": "Buf",
+    "spriteSlug": "qb-bills", "avatarSlug": "jim-kelly",
+    "bio": "Tecmo Super Bowl shipped him as 'QB Bills' due to NFLPA licensing. Don knows."
+  },
+  {
+    "id": "eagles",     "slug": "eagles",     "tecmoName": "Eagles",     "realName": "Randall Cunningham",  "position": "QB", "team": "Phi",
+    "spriteSlug": "eagles", "avatarSlug": "randall-cunningham",
+    "bio": "Listed as 'QB Eagles' in-game. Dual-threat originator."
+  },
+  {
+    "id": "montana",    "slug": "montana",    "tecmoName": "Montana",    "realName": "Joe Montana",         "position": "QB", "team": "SF",
+    "spriteSlug": "montana", "avatarSlug": "joe-montana",
+    "bio": "205.7 QB rating in a single game — Tecmo perfection."
+  },
+  {
+    "id": "elway",      "slug": "elway",      "tecmoName": "Elway",      "realName": "John Elway",          "position": "QB", "team": "Den",
+    "spriteSlug": "elway", "avatarSlug": "john-elway"
+  },
+  {
+    "id": "everett",    "slug": "everett",    "tecmoName": "Everett",    "realName": "Jim Everett",         "position": "QB", "team": "Rams",
+    "spriteSlug": "everett", "avatarSlug": "jim-everett"
+  },
+  {
+    "id": "stouffer",   "slug": "stouffer",   "tecmoName": "Stouffer",   "realName": "Kelly Stouffer",      "position": "QB", "team": "Sea",
+    "spriteSlug": "stouffer", "avatarSlug": "kelly-stouffer"
+  },
+  {
+    "id": "fourcade",   "slug": "fourcade",   "tecmoName": "Fourcade",   "realName": "John Fourcade",       "position": "QB", "team": "NO",
+    "spriteSlug": "fourcade", "avatarSlug": "john-fourcade"
+  },
+  {
+    "id": "miller",     "slug": "miller",     "tecmoName": "Miller",     "realName": "Chris Miller",        "position": "QB", "team": "Atl",
+    "spriteSlug": "miller", "avatarSlug": "chris-miller"
+  },
+
+  {
+    "id": "bo-jackson", "slug": "bo-jackson", "tecmoName": "Jackson",    "realName": "Bo Jackson",          "position": "RB", "team": "Rai",
+    "spriteSlug": "bo-jackson", "avatarSlug": "bo-jackson",
+    "bio": "The reason this game is the greatest. 5277-yard seasons happened."
+  },
+  {
+    "id": "okoye",      "slug": "okoye",      "tecmoName": "Okoye",      "realName": "Christian Okoye",     "position": "RB", "team": "KC",
+    "spriteSlug": "okoye", "avatarSlug": "christian-okoye",
+    "bio": "Nigerian Nightmare. 660 yards in a single game vs Washington."
+  },
+  {
+    "id": "barry-sanders","slug": "barry-sanders","tecmoName": "Sanders","realName": "Barry Sanders",       "position": "RB", "team": "Det",
+    "spriteSlug": "barry-sanders", "avatarSlug": "barry-sanders"
+  },
+  {
+    "id": "deion-sanders","slug": "deion-sanders","tecmoName": "Sanders","realName": "Deion Sanders",       "position": "DB", "team": "Atl",
+    "spriteSlug": "deion-sanders", "avatarSlug": "deion-sanders",
+    "bio": "Prime Time. Drew's pick-six and sack monster on Atlanta."
+  },
+  {
+    "id": "walker",     "slug": "walker",     "tecmoName": "Walker",     "realName": "Herschel Walker",     "position": "RB", "team": "Min",
+    "spriteSlug": "walker", "avatarSlug": "herschel-walker"
+  },
+  {
+    "id": "byars",      "slug": "byars",      "tecmoName": "Byars",      "realName": "Keith Byars",         "position": "RB", "team": "Phi",
+    "spriteSlug": "byars", "avatarSlug": "keith-byars"
+  },
+  {
+    "id": "warren",     "slug": "warren",     "tecmoName": "Warren",     "realName": "John L. Williams",    "position": "RB", "team": "Sea",
+    "spriteSlug": "warren", "avatarSlug": "john-l-williams"
+  },
+  {
+    "id": "walsh",      "slug": "walsh",      "tecmoName": "Walsh",      "realName": "Steve Walsh",         "position": "QB", "team": "NO",
+    "spriteSlug": "walsh", "avatarSlug": "steve-walsh"
+  },
+  {
+    "id": "heyward",    "slug": "heyward",    "tecmoName": "Heyward",    "realName": "Craig Heyward",       "position": "RB", "team": "NO",
+    "spriteSlug": "heyward", "avatarSlug": "craig-heyward"
+  },
+  {
+    "id": "fenerty",    "slug": "fenerty",    "tecmoName": "Fenerty",    "realName": "Gill Fenerty",        "position": "RB", "team": "NO",
+    "spriteSlug": "fenerty", "avatarSlug": "gill-fenerty",
+    "bio": "Special-teams demon. 1468 KR yards in one season."
+  },
+  {
+    "id": "mcneil",     "slug": "mcneil",     "tecmoName": "McNeil",     "realName": "Freeman McNeil",      "position": "RB", "team": "Jets",
+    "spriteSlug": "mcneil", "avatarSlug": "freeman-mcneil"
+  },
+  {
+    "id": "butts",      "slug": "butts",      "tecmoName": "Butts",      "realName": "Marion Butts",        "position": "RB", "team": "SD",
+    "spriteSlug": "butts", "avatarSlug": "marion-butts"
+  },
+  {
+    "id": "anderson-flipper", "slug": "anderson-rams", "tecmoName": "Anderson", "realName": "Flipper Anderson", "position": "WR", "team": "Rams",
+    "spriteSlug": "anderson-flipper", "avatarSlug": "flipper-anderson",
+    "bio": "499-yard single game on the Rams. Major's record."
+  },
+  {
+    "id": "anderson-min",     "slug": "anderson-min",  "tecmoName": "Anderson", "realName": "Anthony Carter",   "position": "WR", "team": "Min",
+    "spriteSlug": "anderson-min", "avatarSlug": "anthony-carter"
+  },
+  {
+    "id": "rison",      "slug": "rison",      "tecmoName": "Rison",      "realName": "Andre Rison",         "position": "WR", "team": "Atl",
+    "spriteSlug": "rison", "avatarSlug": "andre-rison",
+    "bio": "Bad Moon Rison. 3322-yard season."
+  },
+  {
+    "id": "reed",       "slug": "reed",       "tecmoName": "Reed",       "realName": "Andre Reed",          "position": "WR", "team": "Buf",
+    "spriteSlug": "reed", "avatarSlug": "andre-reed"
+  },
+  {
+    "id": "barnett",    "slug": "barnett",    "tecmoName": "Barnett",    "realName": "Fred Barnett",        "position": "WR", "team": "Phi",
+    "spriteSlug": "barnett", "avatarSlug": "fred-barnett"
+  },
+  {
+    "id": "hill",       "slug": "hill",       "tecmoName": "Hill",       "realName": "Drew Hill",           "position": "WR", "team": "Hou",
+    "spriteSlug": "hill", "avatarSlug": "drew-hill"
+  },
+  {
+    "id": "jeffries",   "slug": "jeffries",   "tecmoName": "Jeffries",   "realName": "Haywood Jeffires",    "position": "WR", "team": "Hou",
+    "spriteSlug": "jeffries", "avatarSlug": "haywood-jeffires",
+    "bio": "Tecmo spelled it 'Jeffries'. Real name Jeffires."
+  },
+  {
+    "id": "blades",     "slug": "blades",     "tecmoName": "Blades",     "realName": "Brian Blades",        "position": "WR", "team": "Sea",
+    "spriteSlug": "blades", "avatarSlug": "brian-blades"
+  },
+  {
+    "id": "heller",     "slug": "heller",     "tecmoName": "Heller",     "realName": "Ron Heller (TE/WR)",  "position": "WR", "team": "Sea",
+    "spriteSlug": "heller", "avatarSlug": "ron-heller"
+  },
+  {
+    "id": "bentley",    "slug": "bentley",    "tecmoName": "Bentley",    "realName": "Albert Bentley",      "position": "RB", "team": "Ind",
+    "spriteSlug": "bentley", "avatarSlug": "albert-bentley"
+  },
+  {
+    "id": "harmon",     "slug": "harmon",     "tecmoName": "Harmon",     "realName": "Ronnie Harmon",       "position": "RB", "team": "SD",
+    "spriteSlug": "harmon", "avatarSlug": "ronnie-harmon"
+  },
+  {
+    "id": "jordan",     "slug": "jordan",     "tecmoName": "Jordan",     "realName": "Steve Jordan",        "position": "TE", "team": "Min",
+    "spriteSlug": "jordan", "avatarSlug": "steve-jordan"
+  },
+  {
+    "id": "jackson-don","slug": "jackson-phi","tecmoName": "Jackson",    "realName": "Keith Jackson",       "position": "TE", "team": "Phi",
+    "spriteSlug": "jackson-don", "avatarSlug": "keith-jackson"
+  },
+  {
+    "id": "hester",     "slug": "hester",     "tecmoName": "Hester",     "realName": "Jessie Hester",       "position": "WR", "team": "Ind",
+    "spriteSlug": "hester", "avatarSlug": "jessie-hester"
+  },
+  {
+    "id": "calloway",   "slug": "calloway",   "tecmoName": "Calloway",   "realName": "Chris Calloway",      "position": "WR", "team": "Pit",
+    "spriteSlug": "calloway", "avatarSlug": "chris-calloway"
+  },
+  {
+    "id": "bell",       "slug": "bell",       "tecmoName": "Bell",       "realName": "Greg Lloyd / Bell (KR)","position": "KR", "team": "Pit",
+    "spriteSlug": "bell", "avatarSlug": "bell-pit"
+  },
+  {
+    "id": "stone",      "slug": "stone",      "tecmoName": "Stone",      "realName": "Dwight Stone",        "position": "KR", "team": "Pit",
+    "spriteSlug": "stone", "avatarSlug": "dwight-stone"
+  },
+
+  {
+    "id": "leahy",      "slug": "leahy",      "tecmoName": "Leahy",      "realName": "Pat Leahy",           "position": "K",  "team": "Jets",
+    "spriteSlug": "leahy", "avatarSlug": "pat-leahy"
+  },
+  {
+    "id": "lowery",     "slug": "lowery",     "tecmoName": "Lowery",     "realName": "Nick Lowery",         "position": "K",  "team": "KC",
+    "spriteSlug": "lowery", "avatarSlug": "nick-lowery"
+  },
+  {
+    "id": "treadwell",  "slug": "treadwell",  "tecmoName": "Treadwell",  "realName": "David Treadwell",     "position": "K",  "team": "Den",
+    "spriteSlug": "treadwell", "avatarSlug": "david-treadwell",
+    "bio": "72-yard FG from his own 45. Don wasn't rushing. Still."
+  },
+  {
+    "id": "jaeger",     "slug": "jaeger",     "tecmoName": "Jaeger",     "realName": "Jeff Jaeger",         "position": "K",  "team": "Rai",
+    "spriteSlug": "jaeger", "avatarSlug": "jeff-jaeger"
+  },
+  {
+    "id": "gossett",    "slug": "gossett",    "tecmoName": "Gossett",    "realName": "Jeff Gossett",        "position": "P",  "team": "Rai",
+    "spriteSlug": "gossett", "avatarSlug": "jeff-gossett"
+  },
+  {
+    "id": "prokop",     "slug": "prokop",     "tecmoName": "Prokop",     "realName": "Joe Prokop",          "position": "P",  "team": "Jets",
+    "spriteSlug": "prokop", "avatarSlug": "joe-prokop"
+  },
+  {
+    "id": "camarillo",  "slug": "camarillo",  "tecmoName": "Camarillo",  "realName": "Rich Camarillo",      "position": "P",  "team": "Phx",
+    "spriteSlug": "camarillo", "avatarSlug": "rich-camarillo"
+  },
+
+  {
+    "id": "ball",       "slug": "ball",       "tecmoName": "Ball",       "realName": "Jerry Ball",          "position": "DT", "team": "Det",
+    "spriteSlug": "ball", "avatarSlug": "jerry-ball",
+    "bio": "84 sacks in a season. Major destroyed quarterbacks."
+  },
+  {
+    "id": "singletary", "slug": "singletary", "tecmoName": "Singletary", "realName": "Mike Singletary",     "position": "LB", "team": "Chi",
+    "spriteSlug": "singletary", "avatarSlug": "mike-singletary"
+  },
+  {
+    "id": "woodson",    "slug": "woodson",    "tecmoName": "Woodson",    "realName": "Rod Woodson",         "position": "DB", "team": "Pit",
+    "spriteSlug": "woodson", "avatarSlug": "rod-woodson"
+  },
+  {
+    "id": "harden",     "slug": "harden",     "tecmoName": "Harden",     "realName": "Bobby Harden",        "position": "DB", "team": "Hou",
+    "spriteSlug": "harden", "avatarSlug": "bobby-harden"
+  },
+  {
+    "id": "thomas-kc",  "slug": "thomas-kc",  "tecmoName": "Thomas",     "realName": "Derrick Thomas",      "position": "LB", "team": "KC",
+    "spriteSlug": "thomas-kc", "avatarSlug": "derrick-thomas"
+  },
+  {
+    "id": "byrd",       "slug": "byrd",       "tecmoName": "Byrd",       "realName": "Gill Byrd",           "position": "DB", "team": "SD",
+    "spriteSlug": "byrd", "avatarSlug": "gill-byrd"
+  },
+  {
+    "id": "white-det",  "slug": "white-det",  "tecmoName": "White",      "realName": "William White",       "position": "DB", "team": "Det",
+    "spriteSlug": "white-det", "avatarSlug": "william-white"
+  },
+  {
+    "id": "wilks",      "slug": "wilks",      "tecmoName": "Wilks",      "realName": "Jim Wilks",           "position": "DE", "team": "NO",
+    "spriteSlug": "wilks", "avatarSlug": "jim-wilks"
+  },
+  {
+    "id": "miller-sd",  "slug": "miller-sd",  "tecmoName": "Miller",     "realName": "Les Miller",          "position": "DT", "team": "SD",
+    "spriteSlug": "miller-sd", "avatarSlug": "les-miller"
+  },
+  {
+    "id": "porter",     "slug": "porter",     "tecmoName": "Porter",     "realName": "Rufus Porter",        "position": "LB", "team": "Sea",
+    "spriteSlug": "porter", "avatarSlug": "rufus-porter"
+  },
+  {
+    "id": "cofer-det",  "slug": "cofer-det",  "tecmoName": "Cofer",      "realName": "Michael Cofer",       "position": "LB", "team": "Det",
+    "spriteSlug": "cofer-det", "avatarSlug": "michael-cofer",
+    "bio": "Block-kick monster. 13 in a season including 10 XPs."
+  },
+  {
+    "id": "childress",  "slug": "childress",  "tecmoName": "Childress",  "realName": "Ray Childress",       "position": "DT", "team": "Hou",
+    "spriteSlug": "childress", "avatarSlug": "ray-childress"
+  },
+  {
+    "id": "thomas-don", "slug": "thomas-kc-block","tecmoName": "Thomas", "realName": "Derrick Thomas",      "position": "LB", "team": "KC",
+    "spriteSlug": "thomas-don", "avatarSlug": "derrick-thomas"
+  }
+]

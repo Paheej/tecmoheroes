@@ -1,0 +1,236 @@
+[
+  {
+    "id": "pass-yds-season-moon-7484",
+    "category": "passing", "scope": "season",
+    "statName": "Most Passing Yards", "value": 7484, "unit": "yds",
+    "tecmoPlayerIds": ["moon"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
+    "dateAchieved": "2012-01-02",
+    "notes": "Exceeds 6200 stat max — derived by summing receiver yards minus backup-QB yards."
+  },
+  {
+    "id": "pass-yds-game-moon-725",
+    "category": "passing", "scope": "single-game",
+    "statName": "Most Passing Yards", "value": 725, "unit": "yds",
+    "tecmoPlayerIds": ["moon"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
+    "dateAchieved": "2011-12-21", "notes": "Hou v Cle, Week 11."
+  },
+  {
+    "id": "pass-yds-play-moon-97",
+    "category": "passing", "scope": "single-play",
+    "statName": "Longest Passing Play", "value": 97, "unit": "yds",
+    "tecmoPlayerIds": ["moon"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
+    "dateAchieved": "2011-11-03"
+  },
+  {
+    "id": "pass-tds-season-qbbills-88",
+    "category": "passing", "scope": "season",
+    "statName": "Most Passing TDs", "value": 88, "unit": "TDs",
+    "tecmoPlayerIds": ["qb-bills"], "userIds": ["don"], "teamAbbrs": ["Bug"],
+    "dateAchieved": "2016-05-24"
+  },
+  {
+    "id": "qb-rating-game-montana-205",
+    "category": "passing", "scope": "single-game",
+    "statName": "Best QB Rating", "value": 205.7,
+    "tecmoPlayerIds": ["montana"], "userIds": ["don"], "teamAbbrs": ["SF"],
+    "dateAchieved": "2016-05-19"
+  },
+  {
+    "id": "completions-season-eagles-223",
+    "category": "passing", "scope": "season",
+    "statName": "Most Completions", "value": 223,
+    "tecmoPlayerIds": ["eagles"], "userIds": ["don"], "teamAbbrs": ["Phi"],
+    "dateAchieved": "2011-01-02"
+  },
+  {
+    "id": "comp-pct-season-fourcade",
+    "category": "passing", "scope": "season",
+    "statName": "Best Completion %", "value": 68.6, "unit": "%",
+    "tecmoPlayerIds": ["fourcade"], "userIds": ["drew"], "teamAbbrs": ["NO"],
+    "asterisk": true
+  },
+  {
+    "id": "lowest-int-pct-stouffer",
+    "category": "passing", "scope": "season",
+    "statName": "Lowest Int %", "value": 0.7, "unit": "%",
+    "tecmoPlayerIds": ["stouffer"], "userIds": ["drew"], "teamAbbrs": ["Sea"],
+    "dateAchieved": "2010"
+  },
+
+  {
+    "id": "rush-yds-season-jackson-5277",
+    "category": "rushing", "scope": "season",
+    "statName": "Most Rushing Yards", "value": 5277, "unit": "yds",
+    "tecmoPlayerIds": ["bo-jackson"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
+    "dateAchieved": "2012-10-19",
+    "notes": "Exceeds 4095 stat max — game-by-game running total."
+  },
+  {
+    "id": "rush-yds-game-okoye-660",
+    "category": "rushing", "scope": "single-game",
+    "statName": "Most Rushing Yards", "value": 660, "unit": "yds",
+    "tecmoPlayerIds": ["okoye"], "userIds": ["drew"], "teamAbbrs": ["KC"],
+    "notes": "KC v Wash."
+  },
+  {
+    "id": "rush-tds-season-jackson-89",
+    "category": "rushing", "scope": "season",
+    "statName": "Most Rushing TDs", "value": 89, "unit": "TDs",
+    "tecmoPlayerIds": ["bo-jackson"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
+    "dateAchieved": "2012-10-19", "notes": "~89 (exceeds 63 max — derived)."
+  },
+  {
+    "id": "rush-attempts-game-jackson-36",
+    "category": "rushing", "scope": "single-game",
+    "statName": "Most Rush Attempts", "value": 36,
+    "tecmoPlayerIds": ["bo-jackson"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
+    "dateAchieved": "2012-08-14"
+  },
+  {
+    "id": "rush-yds-play-elway-96",
+    "category": "rushing", "scope": "single-play",
+    "statName": "Most Rush Yds / QB (Single Game)", "value": 96, "unit": "yds",
+    "tecmoPlayerIds": ["elway"], "userIds": ["drew"], "teamAbbrs": ["Den"],
+    "asterisk": true, "dateAchieved": "2010-10-24"
+  },
+
+  {
+    "id": "rec-yds-season-rison-3322",
+    "category": "receiving", "scope": "season",
+    "statName": "Most Receiving Yards", "value": 3322, "unit": "yds",
+    "tecmoPlayerIds": ["rison"], "userIds": ["drew"], "teamAbbrs": ["Atl"]
+  },
+  {
+    "id": "rec-yds-game-anderson-499",
+    "category": "receiving", "scope": "single-game",
+    "statName": "Most Receiving Yards", "value": 499, "unit": "yds",
+    "tecmoPlayerIds": ["anderson-flipper"], "userIds": ["major"], "teamAbbrs": ["Rams"]
+  },
+  {
+    "id": "rec-tds-season-reed-41",
+    "category": "receiving", "scope": "season",
+    "statName": "Most Receiving TDs", "value": 41, "unit": "TDs",
+    "tecmoPlayerIds": ["reed"], "userIds": ["don"], "teamAbbrs": ["Buf"],
+    "dateAchieved": "2016-05-24"
+  },
+  {
+    "id": "receptions-season-barnett-60",
+    "category": "receiving", "scope": "season",
+    "statName": "Most Receptions", "value": 60,
+    "tecmoPlayerIds": ["barnett"], "userIds": ["don"], "teamAbbrs": ["Phi"],
+    "asterisk": true, "dateAchieved": "2011-01-02"
+  },
+  {
+    "id": "rec-game-jeffries-97",
+    "category": "receiving", "scope": "single-play",
+    "statName": "Longest Receiving Play", "value": 97, "unit": "yds",
+    "tecmoPlayerIds": ["jeffries"], "userIds": ["drew"], "teamAbbrs": ["Hou"]
+  },
+  {
+    "id": "rec-yds-game-hill-382",
+    "category": "receiving", "scope": "single-game",
+    "statName": "Most Yds / Reception (>5 rec)", "value": "63.67 (6/382)",
+    "tecmoPlayerIds": ["hill"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
+    "dateAchieved": "2011-12-21", "notes": "Hou v Cle special mention."
+  },
+
+  {
+    "id": "sacks-season-ball-84",
+    "category": "defense", "scope": "season",
+    "statName": "Most Sacks", "value": 84,
+    "tecmoPlayerIds": ["ball"], "userIds": ["major"], "teamAbbrs": ["Det"]
+  },
+  {
+    "id": "sacks-game-sanders-13",
+    "category": "defense", "scope": "single-game",
+    "statName": "Most Sacks", "value": 13,
+    "tecmoPlayerIds": ["deion-sanders"], "userIds": ["drew"], "teamAbbrs": ["Atl"],
+    "notes": "Atl v GB. Tied with Wilks (NO) and Singletary (Chi vs NYJ)."
+  },
+  {
+    "id": "ints-game-byrd-3",
+    "category": "defense", "scope": "single-game",
+    "statName": "Most Interceptions", "value": 3,
+    "tecmoPlayerIds": ["byrd", "white-det"], "userIds": ["drew"], "teamAbbrs": ["SD", "Det"],
+    "notes": "Byrd: SD v Pit. White: Det, 10/29/2012."
+  },
+  {
+    "id": "ints-season-multi-5",
+    "category": "defense", "scope": "season",
+    "statName": "Most Interceptions", "value": 5,
+    "tecmoPlayerIds": ["harden", "woodson", "thomas-kc", "deion-sanders"],
+    "userIds": ["cam", "drew"], "teamAbbrs": ["Hou", "Pit", "KC", "Atl"],
+    "asterisk": true
+  },
+  {
+    "id": "safeties-season-cofer-10",
+    "category": "defense", "scope": "season",
+    "statName": "Most Safeties", "value": 10,
+    "tecmoPlayerIds": ["cofer-det"], "userIds": ["drew"], "teamAbbrs": ["Det"]
+  },
+  {
+    "id": "kick-blocks-season-cofer-13",
+    "category": "defense", "scope": "season",
+    "statName": "Most Kick Blocks", "value": 13,
+    "tecmoPlayerIds": ["cofer-det"], "userIds": ["drew"], "teamAbbrs": ["Det"],
+    "dateAchieved": "2012-10-29", "notes": "10 XP, 3 FG."
+  },
+  {
+    "id": "injuries-game-childress-3",
+    "category": "defense", "scope": "single-game",
+    "statName": "Most Injuries Caused", "value": 3,
+    "tecmoPlayerIds": ["childress"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
+    "notes": "Hou v NE."
+  },
+
+  {
+    "id": "longest-fg-treadwell-72",
+    "category": "special-teams", "scope": "single-play",
+    "statName": "Longest FG", "value": 72, "unit": "yds",
+    "tecmoPlayerIds": ["treadwell"], "userIds": ["drew"], "teamAbbrs": ["Den"],
+    "dateAchieved": "2010-10-24",
+    "notes": "From own 45-yard line. Don wasn't rushing."
+  },
+  {
+    "id": "kr-yds-season-fenerty-1468",
+    "category": "special-teams", "scope": "season",
+    "statName": "Most Kick Return Yards", "value": 1468, "unit": "yds",
+    "tecmoPlayerIds": ["fenerty"], "userIds": ["drew"], "teamAbbrs": ["NO"],
+    "dateAchieved": "2011-12-03"
+  },
+  {
+    "id": "kr-avg-bell-37",
+    "category": "special-teams", "scope": "season",
+    "statName": "Best Kick Return Avg", "value": 37.6, "unit": "yds",
+    "tecmoPlayerIds": ["bell"], "userIds": ["drew"], "teamAbbrs": ["Pit"]
+  },
+  {
+    "id": "fg-season-leahy-12",
+    "category": "special-teams", "scope": "season",
+    "statName": "Most FGs", "value": 12,
+    "tecmoPlayerIds": ["leahy"], "userIds": ["don"], "teamAbbrs": ["Jets"]
+  },
+  {
+    "id": "xp-season-jaeger-97",
+    "category": "special-teams", "scope": "season",
+    "statName": "Most Extra Points", "value": 97,
+    "tecmoPlayerIds": ["jaeger"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
+    "dateAchieved": "2012-10-19"
+  },
+  {
+    "id": "punt-avg-season-prokop-74",
+    "category": "special-teams", "scope": "season",
+    "statName": "Best Punt Average", "value": 74.5, "unit": "yds (4/298)",
+    "tecmoPlayerIds": ["prokop"], "userIds": ["don"], "teamAbbrs": ["Jets"],
+    "dateAchieved": "2010-11-21"
+  },
+
+  {
+    "id": "team-det-back-to-back",
+    "category": "team", "scope": "career",
+    "statName": "Back-to-Back Super Bowls", "value": "DET ★★",
+    "tecmoPlayerIds": [], "userIds": ["major"], "teamAbbrs": ["Det"],
+    "seasonId": 20,
+    "notes": "Detroit won Super Bowls in Seasons 19 and 20 (Major)."
+  }
+]

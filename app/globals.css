@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tecmo-bg: #0a0e2a;
+  --color-tecmo-bg-2: #131a4a;
+  --color-tecmo-ink: #f7f7f7;
+  --color-tecmo-gold: #fbbf24;
+  --color-tecmo-red: #ef4444;
+  --color-tecmo-blue: #3b82f6;
+  --color-tecmo-green: #34d399;
+  --color-tecmo-grid: rgba(255, 255, 255, 0.08);
+
+  --font-pixel: ui-monospace, "Menlo", "Consolas", "Courier New", monospace;
+}
+
+html, body {
+  background: var(--color-tecmo-bg);
+  color: var(--color-tecmo-ink);
+  font-family: var(--font-pixel);
+  letter-spacing: 0.03em;
+}
+
+body {
+  background-image:
+    linear-gradient(to bottom, var(--color-tecmo-bg) 0%, var(--color-tecmo-bg-2) 100%),
+    repeating-linear-gradient(0deg, var(--color-tecmo-grid), var(--color-tecmo-grid) 1px, transparent 1px, transparent 4px);
+  background-attachment: fixed;
+  background-blend-mode: normal;
+  min-height: 100vh;
+}
+
+/* Stepped pixel border via layered box-shadows */
+.pixel-border {
+  box-shadow:
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000,
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    0 -8px 0 0 var(--color-tecmo-gold),
+    0 8px 0 0 var(--color-tecmo-gold),
+    -8px 0 0 0 var(--color-tecmo-gold),
+    8px 0 0 0 var(--color-tecmo-gold);
+}
+
+.pixel-border-thin {
+  box-shadow:
+    0 -2px 0 0 #000,
+    0 2px 0 0 #000,
+    -2px 0 0 0 #000,
+    2px 0 0 0 #000;
+}
+
+.tecmo-headline {
+  font-family: var(--font-pixel);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 var(--color-tecmo-red);
+}
+
+.tecmo-stripe {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-tecmo-red) 0,
+    var(--color-tecmo-red) 6px,
+    #b91c1c 6px,
+    #b91c1c 12px
+  );
+}
+
+.tecmo-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+.tecmo-asterisk::after {
+  content: "*";
+  color: var(--color-tecmo-gold);
+  margin-left: 0.15em;
+}
