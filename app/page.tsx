@@ -1,18 +1,12 @@
 import Link from "next/link";
-import { categories, records } from "@/lib/data";
-import RecordCard from "@/components/RecordCard";
+import { categories, seasons, statRecords } from "@/lib/data";
+import FeaturedRandomRecords from "@/components/FeaturedRandomRecords";
+import SuperBowlPanel from "@/components/SuperBowlPanel";
 
 export default function HomePage() {
-  // Featured: most absurd seasons by raw value or asterisk
-  const featured = [
-    "rush-yds-season-jackson-5277",
-    "pass-yds-season-moon-7484",
-    "longest-fg-treadwell-72",
-    "sacks-season-ball-84",
-    "team-det-back-to-back",
-  ]
-    .map((id) => records.find((r) => r.id === id))
-    .filter((r): r is NonNullable<typeof r> => Boolean(r));
+  const latestSb = [...seasons]
+    .filter((s) => s.superBowl)
+    .sort((a, b) => b.id - a.id)[0];
 
   return (
     <div className="space-y-10">
@@ -23,8 +17,39 @@ export default function HomePage() {
         <p className="opacity-80 max-w-2xl">
           Incredible Tecmo Super Bowl records and feats. Each entry shows the
           in-game player on an 8-bit profile card alongside the real NFL face
-          who lent the legend.
+          who lent the legend, plus the league hero who set it.
         </p>
+      </section>
+
+      <section>
+        <h2 className="tecmo-headline text-2xl mb-3">The League</h2>
+        <p className="text-sm opacity-90 max-w-2xl">
+          Started in 1992 in Biloxi, MS. Reignited in a college dorm in 2009.
+          Twenty seasons of multi-MAN Tecmo Super Bowl, recorded one box score
+          at a time. See <Link href="/about" className="underline text-[var(--color-tecmo-gold)]">the story</Link>{" "}
+          for the long version, or jump straight to the <Link href="/heroes" className="underline text-[var(--color-tecmo-gold)]">heroes</Link>.
+        </p>
+      </section>
+
+      {latestSb?.superBowl && (
+        <section>
+          <h2 className="tecmo-headline text-2xl mb-3">
+            Most Recent Super Bowl
+          </h2>
+          <SuperBowlPanel
+            game={latestSb.superBowl}
+            seasonId={latestSb.id}
+            linkToSeason
+          />
+        </section>
+      )}
+
+      <section>
+        <h2 className="tecmo-headline text-2xl mb-4">Featured Records</h2>
+        <p className="text-xs opacity-60 mb-3">
+          Six records, freshly shuffled every visit.
+        </p>
+        <FeaturedRandomRecords pool={statRecords} count={6} />
       </section>
 
       <section>
@@ -44,26 +69,6 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section>
-        <h2 className="tecmo-headline text-2xl mb-4">Featured Records</h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          {featured.map((r) => (
-            <RecordCard key={r.id} record={r} />
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <h2 className="tecmo-headline text-2xl mb-4">How records get added</h2>
-        <p className="text-sm opacity-80 max-w-2xl">
-          This site is a static export. Stats live as JSON in{" "}
-          <code className="text-[var(--color-tecmo-gold)]">data/</code>. Use{" "}
-          <code className="text-[var(--color-tecmo-gold)]">npm run ingest</code>{" "}
-          to add a record interactively — every page (player, category, team,
-          season) updates on the next build.
-        </p>
       </section>
     </div>
   );

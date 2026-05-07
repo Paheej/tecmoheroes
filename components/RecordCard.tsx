@@ -1,12 +1,12 @@
 import Link from "next/link";
 import type { Record } from "@/lib/types";
-import { playerById, userById, teamByAbbr } from "@/lib/data";
+import { playerById, userById, seasonById } from "@/lib/data";
 import { scopeLabel, formatValue } from "@/lib/format";
-import TecmoProfileCard from "./TecmoProfileCard";
-import PlayerAvatar from "./PlayerAvatar";
+import { Headshot, Helmet } from "./Sprites";
 
 interface Props {
   record: Record;
+  /** Hide the player avatar/name (used when shown on the player's own page). */
   showFullProfile?: boolean;
 }
 
@@ -17,7 +17,8 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
   const users = record.userIds
     .map((id) => userById.get(id))
     .filter((u): u is NonNullable<typeof u> => Boolean(u));
-  const teams = record.teamAbbrs.map((a) => teamByAbbr.get(a)).filter(Boolean);
+
+  const seasonPairs = seasonYearPairs(record);
 
   return (
     <article className="border-2 border-[var(--color-tecmo-gold)] bg-black/70 p-4">
@@ -26,7 +27,11 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
           <div className="text-[10px] uppercase tracking-widest opacity-70">
             {scopeLabel[record.scope]}
           </div>
-          <h3 className={`text-lg font-bold uppercase ${record.asterisk ? "tecmo-asterisk" : ""}`}>
+          <h3
+            className={`text-lg font-bold uppercase ${
+              record.asterisk ? "tecmo-asterisk" : ""
+            }`}
+          >
             {record.statName}
           </h3>
         </div>
@@ -36,23 +41,26 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
       </header>
 
       {showFullProfile && players.length > 0 && (
-        <div className="flex flex-wrap gap-4 mb-3">
+        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-3">
           {players.map((p) => (
-            <div key={p.id} className="flex items-start gap-3">
-              <Link href={`/players/${p.slug}`}>
-                <TecmoProfileCard player={p} compact />
-              </Link>
-              <div className="flex flex-col items-center gap-1 mt-2">
-                <PlayerAvatar
-                  name={p.realName ?? p.tecmoName}
-                  avatarSlug={p.avatarSlug}
-                  size={56}
-                />
-                <span className="text-[10px] opacity-70 max-w-[80px] text-center">
-                  {p.realName ?? "—"}
-                </span>
+            <Link
+              key={p.id}
+              href={`/players/${p.slug}`}
+              className="flex items-center gap-2 hover:text-[var(--color-tecmo-gold)]"
+            >
+              <Headshot
+                teamSlug={p.teamSlug}
+                spriteIndex={p.spriteIndex}
+                size={40}
+                className="border border-black/40"
+              />
+              <div className="leading-tight">
+                <div className="font-bold uppercase text-sm">{p.tecmoName}</div>
+                {p.realName && p.realName !== p.tecmoName && (
+                  <div className="text-[10px] opacity-70">{p.realName}</div>
+                )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}
@@ -60,29 +68,44 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
       <footer className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
         {users.length > 0 && (
           <span>
-            <span className="opacity-60 uppercase">User:</span>{" "}
+            <span className="opacity-60 uppercase">Hero:</span>{" "}
             {users.map((u, i) => (
               <span key={u.id}>
                 <Link
-                  href={`/users/${u.slug}`}
+                  href={`/heroes/${u.slug}`}
                   className="font-bold hover:text-[var(--color-tecmo-gold)] underline-offset-4"
+                  title={u.displayName}
                 >
-                  {u.displayName}
+                  {u.shortName ?? u.displayName}
                 </Link>
                 {i < users.length - 1 ? ", " : ""}
               </span>
             ))}
           </span>
         )}
-        {teams.length > 0 && (
-          <span>
-            <span className="opacity-60 uppercase">Team:</span>{" "}
-            {teams.map((t) => t!.displayName).join(", ")}
+        {record.teamAbbrs.length > 0 && (
+          <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span className="opacity-60 uppercase">Team:</span>
+            {record.teamAbbrs.map((abbr) => (
+              <Helmet key={abbr} abbr={abbr} size={20} withLabel />
+            ))}
           </span>
         )}
-        {record.dateAchieved && (
-          <span>
-            <span className="opacity-60 uppercase">Set:</span> {record.dateAchieved}
+        {seasonPairs.length > 0 && (
+          <span className="flex flex-wrap items-center gap-x-1 gap-y-1">
+            <span className="opacity-60 uppercase">Season:</span>
+            {seasonPairs.map(({ seasonId, year }, i) => (
+              <span key={`${seasonId}-${i}`}>
+                <Link
+                  href={`/seasons/${seasonId}`}
+                  className="hover:text-[var(--color-tecmo-gold)] font-bold"
+                >
+                  #{seasonId}
+                </Link>
+                {year != null && <span className="opacity-70"> ({year})</span>}
+                {i < seasonPairs.length - 1 ? "," : ""}
+              </span>
+            ))}
           </span>
         )}
       </footer>
@@ -92,4 +115,17 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
       )}
     </article>
   );
+}
+
+function seasonYearPairs(record: Record): { seasonId: number; year: number | null }[] {
+  // Prefer the explicit list when populated; fall back to the single seasonId.
+  const ids = record.seasonIds && record.seasonIds.length > 0
+    ? record.seasonIds
+    : record.seasonId != null
+      ? [record.seasonId]
+      : [];
+  return ids.map((id) => ({
+    seasonId: id,
+    year: seasonById.get(id)?.year ?? null,
+  }));
 }

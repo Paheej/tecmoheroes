@@ -1,236 +1,1682 @@
 [
   {
-    "id": "pass-yds-season-moon-7484",
-    "category": "passing", "scope": "season",
-    "statName": "Most Passing Yards", "value": 7484, "unit": "yds",
-    "tecmoPlayerIds": ["moon"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
-    "dateAchieved": "2012-01-02",
-    "notes": "Exceeds 6200 stat max — derived by summing receiver yards minus backup-QB yards."
+    "id": "passing-most-pass-attempts-moon-hou-316",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Most Pass Attempts",
+    "value": 316,
+    "tecmoPlayerIds": [
+      "moon-hou"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "HOU"
+    ],
+    "seasonId": 6,
+    "seasonIds": [
+      6
+    ],
+    "years": [
+      2011
+    ],
+    "dateAchieved": "2011"
   },
   {
-    "id": "pass-yds-game-moon-725",
-    "category": "passing", "scope": "single-game",
-    "statName": "Most Passing Yards", "value": 725, "unit": "yds",
-    "tecmoPlayerIds": ["moon"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
-    "dateAchieved": "2011-12-21", "notes": "Hou v Cle, Week 11."
+    "id": "passing-most-completions-marino-mia-229",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Most Completions",
+    "value": 229,
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
   },
   {
-    "id": "pass-yds-play-moon-97",
-    "category": "passing", "scope": "single-play",
-    "statName": "Longest Passing Play", "value": 97, "unit": "yds",
-    "tecmoPlayerIds": ["moon"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
-    "dateAchieved": "2011-11-03"
+    "id": "passing-highest-completion-marino-mia-87-1",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Highest Completion %",
+    "value": 87.1,
+    "unit": "%",
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 17,
+    "seasonIds": [
+      17
+    ],
+    "years": [
+      2025
+    ],
+    "dateAchieved": "2025"
   },
   {
-    "id": "pass-tds-season-qbbills-88",
-    "category": "passing", "scope": "season",
-    "statName": "Most Passing TDs", "value": 88, "unit": "TDs",
-    "tecmoPlayerIds": ["qb-bills"], "userIds": ["don"], "teamAbbrs": ["Bug"],
-    "dateAchieved": "2016-05-24"
+    "id": "passing-most-passing-yards-marino-mia-6743",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Most Passing Yards",
+    "value": 6743,
+    "unit": "yds",
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
   },
   {
-    "id": "qb-rating-game-montana-205",
-    "category": "passing", "scope": "single-game",
-    "statName": "Best QB Rating", "value": 205.7,
-    "tecmoPlayerIds": ["montana"], "userIds": ["don"], "teamAbbrs": ["SF"],
-    "dateAchieved": "2016-05-19"
+    "id": "passing-highest-yards-per-attempt-marino-mia-25-7",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Highest Yards Per Attempt",
+    "value": 25.7,
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 7,
+    "seasonIds": [
+      7
+    ],
+    "years": [
+      2017
+    ],
+    "dateAchieved": "2017"
   },
   {
-    "id": "completions-season-eagles-223",
-    "category": "passing", "scope": "season",
-    "statName": "Most Completions", "value": 223,
-    "tecmoPlayerIds": ["eagles"], "userIds": ["don"], "teamAbbrs": ["Phi"],
-    "dateAchieved": "2011-01-02"
+    "id": "passing-most-passing-tds-marino-mia-110",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Most Passing TDs",
+    "value": 110,
+    "unit": "TDs",
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
   },
   {
-    "id": "comp-pct-season-fourcade",
-    "category": "passing", "scope": "season",
-    "statName": "Best Completion %", "value": 68.6, "unit": "%",
-    "tecmoPlayerIds": ["fourcade"], "userIds": ["drew"], "teamAbbrs": ["NO"],
-    "asterisk": true
+    "id": "passing-fewest-interceptions-marino-mia-0",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Fewest Interceptions",
+    "value": 0,
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
   },
   {
-    "id": "lowest-int-pct-stouffer",
-    "category": "passing", "scope": "season",
-    "statName": "Lowest Int %", "value": 0.7, "unit": "%",
-    "tecmoPlayerIds": ["stouffer"], "userIds": ["drew"], "teamAbbrs": ["Sea"],
+    "id": "passing-highest-qb-rating-simms-gia-270-6",
+    "category": "passing",
+    "scope": "season",
+    "statName": "Highest QB Rating",
+    "value": 270.6,
+    "tecmoPlayerIds": [
+      "simms-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 7,
+    "seasonIds": [
+      7
+    ],
+    "years": [
+      2017
+    ],
+    "dateAchieved": "2017"
+  },
+  {
+    "id": "receiving-most-receptions-hill-hou-86",
+    "category": "receiving",
+    "scope": "season",
+    "statName": "Most Receptions",
+    "value": 86,
+    "tecmoPlayerIds": [
+      "hill-hou"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "HOU"
+    ],
+    "seasonId": 6,
+    "seasonIds": [
+      6
+    ],
+    "years": [
+      2011
+    ],
+    "dateAchieved": "2011"
+  },
+  {
+    "id": "receiving-most-receiving-yards-hill-hou-3881",
+    "category": "receiving",
+    "scope": "season",
+    "statName": "Most Receiving Yards",
+    "value": 3881,
+    "unit": "yds",
+    "tecmoPlayerIds": [
+      "hill-hou"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "HOU"
+    ],
+    "seasonId": 6,
+    "seasonIds": [
+      6
+    ],
+    "years": [
+      2011
+    ],
+    "dateAchieved": "2011"
+  },
+  {
+    "id": "receiving-highest-yards-per-catch-moore-jet-55-3",
+    "category": "receiving",
+    "scope": "season",
+    "statName": "Highest Yards Per Catch",
+    "value": 55.3,
+    "tecmoPlayerIds": [
+      "moore-jet"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "JET"
+    ],
+    "seasonId": 9,
+    "seasonIds": [
+      9
+    ],
+    "years": [
+      2017
+    ],
+    "dateAchieved": "2017"
+  },
+  {
+    "id": "receiving-most-receiving-tds-hill-hou-56",
+    "category": "receiving",
+    "scope": "season",
+    "statName": "Most Receiving TDs",
+    "value": 56,
+    "unit": "TDs",
+    "tecmoPlayerIds": [
+      "hill-hou",
+      "duper-mia"
+    ],
+    "userIds": [
+      "WB",
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "HOU",
+      "MIA"
+    ],
+    "seasonId": null,
+    "seasonIds": [
+      6,
+      13
+    ],
+    "years": [
+      2011,
+      2021
+    ],
+    "dateAchieved": "2011"
+  },
+  {
+    "id": "rushing-most-rushing-yards-sanders-det-4482",
+    "category": "rushing",
+    "scope": "season",
+    "statName": "Most Rushing Yards",
+    "value": 4482,
+    "unit": "yds",
+    "tecmoPlayerIds": [
+      "sanders-det"
+    ],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 19,
+    "seasonIds": [
+      19
+    ],
+    "years": [
+      2025
+    ],
+    "dateAchieved": "2025"
+  },
+  {
+    "id": "rushing-highest-yards-per-rush-sanders-det-18-9",
+    "category": "rushing",
+    "scope": "season",
+    "statName": "Highest Yards Per Rush",
+    "value": 18.9,
+    "tecmoPlayerIds": [
+      "sanders-det"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 7,
+    "seasonIds": [
+      7
+    ],
+    "years": [
+      2017
+    ],
+    "dateAchieved": "2017"
+  },
+  {
+    "id": "rushing-most-rushing-tds-jackson-rai-70",
+    "category": "rushing",
+    "scope": "season",
+    "statName": "Most Rushing TDs",
+    "value": 70,
+    "unit": "TDs",
+    "tecmoPlayerIds": [
+      "jackson-rai"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "RAI"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
+  },
+  {
+    "id": "rushing-most-points-scored-jackson-rai-420",
+    "category": "rushing",
+    "scope": "season",
+    "statName": "Most Points Scored",
+    "value": 420,
+    "unit": "pts",
+    "tecmoPlayerIds": [
+      "jackson-rai"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "RAI"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
+  },
+  {
+    "id": "special-teams-most-punt-returns-meggett-gia-30",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Punt Returns",
+    "value": 30,
+    "tecmoPlayerIds": [
+      "meggett-gia",
+      "williams-phi"
+    ],
+    "userIds": [
+      "PJ",
+      "WB"
+    ],
+    "teamAbbrs": [
+      "GIA",
+      "PHI"
+    ],
+    "seasonId": null,
+    "seasonIds": [
+      5,
+      7,
+      13
+    ],
+    "years": [
+      2010,
+      2017,
+      2021
+    ],
     "dateAchieved": "2010"
   },
-
   {
-    "id": "rush-yds-season-jackson-5277",
-    "category": "rushing", "scope": "season",
-    "statName": "Most Rushing Yards", "value": 5277, "unit": "yds",
-    "tecmoPlayerIds": ["bo-jackson"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
-    "dateAchieved": "2012-10-19",
-    "notes": "Exceeds 4095 stat max — game-by-game running total."
+    "id": "special-teams-most-punt-return-yards-meggett-gia-469",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Punt Return Yards",
+    "value": 469,
+    "unit": "yds",
+    "tecmoPlayerIds": [
+      "meggett-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
   },
   {
-    "id": "rush-yds-game-okoye-660",
-    "category": "rushing", "scope": "single-game",
-    "statName": "Most Rushing Yards", "value": 660, "unit": "yds",
-    "tecmoPlayerIds": ["okoye"], "userIds": ["drew"], "teamAbbrs": ["KC"],
-    "notes": "KC v Wash."
+    "id": "special-teams-highest-punt-return-avg-meggett-gia-15-6",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Highest Punt Return Avg",
+    "value": 15.6,
+    "tecmoPlayerIds": [
+      "meggett-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
   },
   {
-    "id": "rush-tds-season-jackson-89",
-    "category": "rushing", "scope": "season",
-    "statName": "Most Rushing TDs", "value": 89, "unit": "TDs",
-    "tecmoPlayerIds": ["bo-jackson"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
-    "dateAchieved": "2012-10-19", "notes": "~89 (exceeds 63 max — derived)."
+    "id": "special-teams-most-punt-return-tds-meggett-gia-1",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Punt Return TDs",
+    "value": 1,
+    "unit": "TDs",
+    "tecmoPlayerIds": [
+      "meggett-gia",
+      "martin-dal",
+      "gray-det"
+    ],
+    "userIds": [
+      "PJ",
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "GIA",
+      "DAL",
+      "DET"
+    ],
+    "seasonId": null,
+    "seasonIds": [
+      5,
+      12,
+      20
+    ],
+    "years": [
+      2010,
+      2020,
+      2025
+    ],
+    "dateAchieved": "2010"
   },
   {
-    "id": "rush-attempts-game-jackson-36",
-    "category": "rushing", "scope": "single-game",
-    "statName": "Most Rush Attempts", "value": 36,
-    "tecmoPlayerIds": ["bo-jackson"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
-    "dateAchieved": "2012-08-14"
+    "id": "special-teams-most-kick-returns-smith-buf-62",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Kick Returns",
+    "value": 62,
+    "tecmoPlayerIds": [
+      "smith-buf"
+    ],
+    "userIds": [
+      "MAE"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 19,
+    "seasonIds": [
+      19
+    ],
+    "years": [
+      2025
+    ],
+    "dateAchieved": "2025"
   },
   {
-    "id": "rush-yds-play-elway-96",
-    "category": "rushing", "scope": "single-play",
-    "statName": "Most Rush Yds / QB (Single Game)", "value": 96, "unit": "yds",
-    "tecmoPlayerIds": ["elway"], "userIds": ["drew"], "teamAbbrs": ["Den"],
-    "asterisk": true, "dateAchieved": "2010-10-24"
-  },
-
-  {
-    "id": "rec-yds-season-rison-3322",
-    "category": "receiving", "scope": "season",
-    "statName": "Most Receiving Yards", "value": 3322, "unit": "yds",
-    "tecmoPlayerIds": ["rison"], "userIds": ["drew"], "teamAbbrs": ["Atl"]
-  },
-  {
-    "id": "rec-yds-game-anderson-499",
-    "category": "receiving", "scope": "single-game",
-    "statName": "Most Receiving Yards", "value": 499, "unit": "yds",
-    "tecmoPlayerIds": ["anderson-flipper"], "userIds": ["major"], "teamAbbrs": ["Rams"]
-  },
-  {
-    "id": "rec-tds-season-reed-41",
-    "category": "receiving", "scope": "season",
-    "statName": "Most Receiving TDs", "value": 41, "unit": "TDs",
-    "tecmoPlayerIds": ["reed"], "userIds": ["don"], "teamAbbrs": ["Buf"],
-    "dateAchieved": "2016-05-24"
+    "id": "special-teams-most-kick-return-yards-meggett-gia-1226",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Kick Return Yards",
+    "value": 1226,
+    "unit": "yds",
+    "tecmoPlayerIds": [
+      "meggett-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
   },
   {
-    "id": "receptions-season-barnett-60",
-    "category": "receiving", "scope": "season",
-    "statName": "Most Receptions", "value": 60,
-    "tecmoPlayerIds": ["barnett"], "userIds": ["don"], "teamAbbrs": ["Phi"],
-    "asterisk": true, "dateAchieved": "2011-01-02"
+    "id": "special-teams-highest-kick-return-avg-meggett-gia-29-1",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Highest Kick Return Avg",
+    "value": 29.1,
+    "tecmoPlayerIds": [
+      "meggett-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
   },
   {
-    "id": "rec-game-jeffries-97",
-    "category": "receiving", "scope": "single-play",
-    "statName": "Longest Receiving Play", "value": 97, "unit": "yds",
-    "tecmoPlayerIds": ["jeffries"], "userIds": ["drew"], "teamAbbrs": ["Hou"]
+    "id": "special-teams-most-kick-return-tds-meggett-gia-6",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Kick Return TDs",
+    "value": 6,
+    "unit": "TDs",
+    "tecmoPlayerIds": [
+      "meggett-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 7,
+    "seasonIds": [
+      7
+    ],
+    "years": [
+      2017
+    ],
+    "dateAchieved": "2017"
   },
   {
-    "id": "rec-yds-game-hill-382",
-    "category": "receiving", "scope": "single-game",
-    "statName": "Most Yds / Reception (>5 rec)", "value": "63.67 (6/382)",
-    "tecmoPlayerIds": ["hill"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
-    "dateAchieved": "2011-12-21", "notes": "Hou v Cle special mention."
-  },
-
-  {
-    "id": "sacks-season-ball-84",
-    "category": "defense", "scope": "season",
-    "statName": "Most Sacks", "value": 84,
-    "tecmoPlayerIds": ["ball"], "userIds": ["major"], "teamAbbrs": ["Det"]
-  },
-  {
-    "id": "sacks-game-sanders-13",
-    "category": "defense", "scope": "single-game",
-    "statName": "Most Sacks", "value": 13,
-    "tecmoPlayerIds": ["deion-sanders"], "userIds": ["drew"], "teamAbbrs": ["Atl"],
-    "notes": "Atl v GB. Tied with Wilks (NO) and Singletary (Chi vs NYJ)."
-  },
-  {
-    "id": "ints-game-byrd-3",
-    "category": "defense", "scope": "single-game",
-    "statName": "Most Interceptions", "value": 3,
-    "tecmoPlayerIds": ["byrd", "white-det"], "userIds": ["drew"], "teamAbbrs": ["SD", "Det"],
-    "notes": "Byrd: SD v Pit. White: Det, 10/29/2012."
+    "id": "special-teams-most-punts-stryzinski-pit-22",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Punts",
+    "value": 22,
+    "tecmoPlayerIds": [
+      "stryzinski-pit"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "PIT"
+    ],
+    "seasonId": 12,
+    "seasonIds": [
+      12
+    ],
+    "years": [
+      2020
+    ],
+    "dateAchieved": "2020"
   },
   {
-    "id": "ints-season-multi-5",
-    "category": "defense", "scope": "season",
-    "statName": "Most Interceptions", "value": 5,
-    "tecmoPlayerIds": ["harden", "woodson", "thomas-kc", "deion-sanders"],
-    "userIds": ["cam", "drew"], "teamAbbrs": ["Hou", "Pit", "KC", "Atl"],
-    "asterisk": true
+    "id": "special-teams-most-punt-yards-stryzinski-pit-1186",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Most Punt Yards",
+    "value": 1186,
+    "unit": "yds",
+    "tecmoPlayerIds": [
+      "stryzinski-pit"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "PIT"
+    ],
+    "seasonId": 12,
+    "seasonIds": [
+      12
+    ],
+    "years": [
+      2020
+    ],
+    "dateAchieved": "2020"
   },
   {
-    "id": "safeties-season-cofer-10",
-    "category": "defense", "scope": "season",
-    "statName": "Most Safeties", "value": 10,
-    "tecmoPlayerIds": ["cofer-det"], "userIds": ["drew"], "teamAbbrs": ["Det"]
+    "id": "special-teams-highest-punt-avg-landetta-gia-77-6",
+    "category": "special-teams",
+    "scope": "season",
+    "statName": "Highest Punt Avg",
+    "value": 77.6,
+    "tecmoPlayerIds": [
+      "landetta-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 7,
+    "seasonIds": [
+      7
+    ],
+    "years": [
+      2017
+    ],
+    "dateAchieved": "2017"
   },
   {
-    "id": "kick-blocks-season-cofer-13",
-    "category": "defense", "scope": "season",
-    "statName": "Most Kick Blocks", "value": 13,
-    "tecmoPlayerIds": ["cofer-det"], "userIds": ["drew"], "teamAbbrs": ["Det"],
-    "dateAchieved": "2012-10-29", "notes": "10 XP, 3 FG."
+    "id": "defense-most-sacks-singletary-chi-87",
+    "category": "defense",
+    "scope": "season",
+    "statName": "Most Sacks",
+    "value": 87,
+    "tecmoPlayerIds": [
+      "singletary-chi"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "CHI"
+    ],
+    "seasonId": 6,
+    "seasonIds": [
+      6
+    ],
+    "years": [
+      2011
+    ],
+    "dateAchieved": "2011"
   },
   {
-    "id": "injuries-game-childress-3",
-    "category": "defense", "scope": "single-game",
-    "statName": "Most Injuries Caused", "value": 3,
-    "tecmoPlayerIds": ["childress"], "userIds": ["drew"], "teamAbbrs": ["Hou"],
-    "notes": "Hou v NE."
-  },
-
-  {
-    "id": "longest-fg-treadwell-72",
-    "category": "special-teams", "scope": "single-play",
-    "statName": "Longest FG", "value": 72, "unit": "yds",
-    "tecmoPlayerIds": ["treadwell"], "userIds": ["drew"], "teamAbbrs": ["Den"],
-    "dateAchieved": "2010-10-24",
-    "notes": "From own 45-yard line. Don wasn't rushing."
-  },
-  {
-    "id": "kr-yds-season-fenerty-1468",
-    "category": "special-teams", "scope": "season",
-    "statName": "Most Kick Return Yards", "value": 1468, "unit": "yds",
-    "tecmoPlayerIds": ["fenerty"], "userIds": ["drew"], "teamAbbrs": ["NO"],
-    "dateAchieved": "2011-12-03"
-  },
-  {
-    "id": "kr-avg-bell-37",
-    "category": "special-teams", "scope": "season",
-    "statName": "Best Kick Return Avg", "value": 37.6, "unit": "yds",
-    "tecmoPlayerIds": ["bell"], "userIds": ["drew"], "teamAbbrs": ["Pit"]
-  },
-  {
-    "id": "fg-season-leahy-12",
-    "category": "special-teams", "scope": "season",
-    "statName": "Most FGs", "value": 12,
-    "tecmoPlayerIds": ["leahy"], "userIds": ["don"], "teamAbbrs": ["Jets"]
+    "id": "defense-most-interceptions-mayhew-was-10",
+    "category": "defense",
+    "scope": "season",
+    "statName": "Most Interceptions",
+    "value": 10,
+    "tecmoPlayerIds": [
+      "mayhew-was",
+      "fulcher-cin"
+    ],
+    "userIds": [
+      "WB",
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "WAS",
+      "CIN"
+    ],
+    "seasonId": null,
+    "seasonIds": [
+      8,
+      11
+    ],
+    "years": [
+      2017,
+      2019
+    ],
+    "dateAchieved": "2017"
   },
   {
-    "id": "xp-season-jaeger-97",
-    "category": "special-teams", "scope": "season",
-    "statName": "Most Extra Points", "value": 97,
-    "tecmoPlayerIds": ["jaeger"], "userIds": ["drew"], "teamAbbrs": ["Rai"],
-    "dateAchieved": "2012-10-19"
+    "id": "team-highest-total-offense-mia-6846",
+    "category": "team",
+    "scope": "season",
+    "statName": "Highest Total Offense",
+    "value": 6846,
+    "unit": "yds",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
   },
   {
-    "id": "punt-avg-season-prokop-74",
-    "category": "special-teams", "scope": "season",
-    "statName": "Best Punt Average", "value": 74.5, "unit": "yds (4/298)",
-    "tecmoPlayerIds": ["prokop"], "userIds": ["don"], "teamAbbrs": ["Jets"],
-    "dateAchieved": "2010-11-21"
+    "id": "team-highest-passing-offense-mia-6743",
+    "category": "team",
+    "scope": "season",
+    "statName": "Highest Passing Offense",
+    "value": 6743,
+    "unit": "yds",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "seasonIds": [
+      13
+    ],
+    "years": [
+      2021
+    ],
+    "dateAchieved": "2021"
   },
-
   {
-    "id": "team-det-back-to-back",
-    "category": "team", "scope": "career",
-    "statName": "Back-to-Back Super Bowls", "value": "DET ★★",
-    "tecmoPlayerIds": [], "userIds": ["major"], "teamAbbrs": ["Det"],
+    "id": "team-highest-rushing-offense-det-5063",
+    "category": "team",
+    "scope": "season",
+    "statName": "Highest Rushing Offense",
+    "value": 5063,
+    "unit": "yds",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 19,
+    "seasonIds": [
+      19
+    ],
+    "years": [
+      2025
+    ],
+    "dateAchieved": "2025"
+  },
+  {
+    "id": "team-best-total-defense-yds-allowed-buf-2298",
+    "category": "team",
+    "scope": "season",
+    "statName": "Best Total Defense (yds allowed)",
+    "value": 2298,
+    "unit": "yds",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 16,
+    "seasonIds": [
+      16
+    ],
+    "years": [
+      2024
+    ],
+    "dateAchieved": "2024"
+  },
+  {
+    "id": "team-best-passing-defense-yds-allowed-gia-980",
+    "category": "team",
+    "scope": "season",
+    "statName": "Best Passing Defense (yds allowed)",
+    "value": 980,
+    "unit": "yds",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
+  },
+  {
+    "id": "team-best-rushing-defense-yds-allowed-buf-876",
+    "category": "team",
+    "scope": "season",
+    "statName": "Best Rushing Defense (yds allowed)",
+    "value": 876,
+    "unit": "yds",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 16,
+    "seasonIds": [
+      16
+    ],
+    "years": [
+      2024
+    ],
+    "dateAchieved": "2024"
+  },
+  {
+    "id": "team-most-points-for-gia-821",
+    "category": "team",
+    "scope": "season",
+    "statName": "Most Points For",
+    "value": 821,
+    "unit": "pts",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
+  },
+  {
+    "id": "team-lowest-points-against-gia-88",
+    "category": "team",
+    "scope": "season",
+    "statName": "Lowest Points Against",
+    "value": 88,
+    "unit": "pts",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
+  },
+  {
+    "id": "team-best-point-differential-gia-733",
+    "category": "team",
+    "scope": "season",
+    "statName": "Best Point Differential",
+    "value": 733,
+    "unit": "pts",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "seasonIds": [
+      5
+    ],
+    "years": [
+      2010
+    ],
+    "dateAchieved": "2010"
+  },
+  {
+    "id": "sb-1-mia",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 1 Champion",
+    "value": "MIA",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 1,
+    "dateAchieved": "2009"
+  },
+  {
+    "id": "sb-2-hou",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 2 Champion",
+    "value": "HOU",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "HOU"
+    ],
+    "seasonId": 2,
+    "dateAchieved": "2009"
+  },
+  {
+    "id": "sb-3-ram",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 3 Champion",
+    "value": "RAM",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "RAM"
+    ],
+    "seasonId": 3,
+    "dateAchieved": "2009"
+  },
+  {
+    "id": "sb-4-tb",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 4 Champion",
+    "value": "TB",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "TB"
+    ],
+    "seasonId": 4,
+    "dateAchieved": "2009"
+  },
+  {
+    "id": "sb-5-gia",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 5 Champion",
+    "value": "GIA",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "dateAchieved": "2010"
+  },
+  {
+    "id": "sb-6-sf",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 6 Champion",
+    "value": "SF",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "COMP"
+    ],
+    "teamAbbrs": [
+      "SF"
+    ],
+    "seasonId": 6,
+    "dateAchieved": "2011"
+  },
+  {
+    "id": "sb-7-gia",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 7 Champion",
+    "value": "GIA",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 7,
+    "dateAchieved": "2017"
+  },
+  {
+    "id": "sb-8-cle",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 8 Champion",
+    "value": "CLE",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "CLE"
+    ],
+    "seasonId": 8,
+    "dateAchieved": "2017"
+  },
+  {
+    "id": "sb-9-jet",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 9 Champion",
+    "value": "JET",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "JET"
+    ],
+    "seasonId": 9,
+    "dateAchieved": "2017"
+  },
+  {
+    "id": "sb-10-buf",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 10 Champion",
+    "value": "BUF",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "CR"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 10,
+    "dateAchieved": "2018"
+  },
+  {
+    "id": "sb-11-cin",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 11 Champion",
+    "value": "CIN",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "CIN"
+    ],
+    "seasonId": 11,
+    "dateAchieved": "2019"
+  },
+  {
+    "id": "sb-12-kc",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 12 Champion",
+    "value": "KC",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "COMP"
+    ],
+    "teamAbbrs": [
+      "KC"
+    ],
+    "seasonId": 12,
+    "dateAchieved": "2020"
+  },
+  {
+    "id": "sb-13-rai",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 13 Champion",
+    "value": "RAI",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "RAI"
+    ],
+    "seasonId": 13,
+    "dateAchieved": "2021"
+  },
+  {
+    "id": "sb-14-no",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 14 Champion",
+    "value": "NO",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "NO"
+    ],
+    "seasonId": 14,
+    "dateAchieved": "2022"
+  },
+  {
+    "id": "sb-15-det",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 15 Champion",
+    "value": "DET",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 15,
+    "dateAchieved": "2023"
+  },
+  {
+    "id": "sb-16-buf",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 16 Champion",
+    "value": "BUF",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 16,
+    "dateAchieved": "2024"
+  },
+  {
+    "id": "sb-17-mia",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 17 Champion",
+    "value": "MIA",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 17,
+    "dateAchieved": "2025"
+  },
+  {
+    "id": "sb-18-sf",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 18 Champion",
+    "value": "SF",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "COMP"
+    ],
+    "teamAbbrs": [
+      "SF"
+    ],
+    "seasonId": 18,
+    "dateAchieved": "2025"
+  },
+  {
+    "id": "sb-19-det",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 19 Champion",
+    "value": "DET",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 19,
+    "dateAchieved": "2025"
+  },
+  {
+    "id": "sb-20-det",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 20 Champion",
+    "value": "DET",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
     "seasonId": 20,
-    "notes": "Detroit won Super Bowls in Seasons 19 and 20 (Major)."
+    "dateAchieved": "2025"
+  },
+  {
+    "id": "award-mvp-1-smith-dal",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 1 MVP",
+    "value": "Emmitt Smith",
+    "tecmoPlayerIds": [
+      "smith-dal"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "DAL"
+    ],
+    "seasonId": 1,
+    "dateAchieved": "2009",
+    "notes": "Rushed for 2490 yards on 255 carries for 40 touchdowns, accounting for over 60% of the Cowboys points for the season."
+  },
+  {
+    "id": "award-mvp-2-cofer-det",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 2 MVP",
+    "value": "Michael Cofer",
+    "tecmoPlayerIds": [
+      "cofer-det"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 2,
+    "dateAchieved": "2009",
+    "notes": "Lead the Lions defense to a record 203 points allowed while recording 63 sacks and numerous safeties."
+  },
+  {
+    "id": "award-mvp-3-jackson-rai",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 3 MVP",
+    "value": "Bo Jackson",
+    "tecmoPlayerIds": [
+      "jackson-rai"
+    ],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "RAI"
+    ],
+    "seasonId": 3,
+    "dateAchieved": "2009",
+    "notes": "Obliterated records for rushing and touchdowns with 2936 yards and 56 touchdowns."
+  },
+  {
+    "id": "award-mvp-4-givins-hou",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 4 MVP",
+    "value": "Ernest Givins",
+    "tecmoPlayerIds": [
+      "givins-hou"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "HOU"
+    ],
+    "seasonId": 4,
+    "dateAchieved": "2009",
+    "notes": "Crushed records for receiving yards and touchdowns with 2355 yards and 37 touchdowns with over 47 yards per reception."
+  },
+  {
+    "id": "award-mvp-5-taylor-gia",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 5 MVP",
+    "value": "Lawrence Taylor",
+    "tecmoPlayerIds": [
+      "taylor-gia"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "GIA"
+    ],
+    "seasonId": 5,
+    "dateAchieved": "2010",
+    "notes": "Broke sacking record by 10 while leading the Giants defense to only 88 total points allowed over the entire season."
+  },
+  {
+    "id": "award-mvp-6-hill-hou",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 6 MVP",
+    "value": "Drew Hill",
+    "tecmoPlayerIds": [
+      "hill-hou"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "HOU"
+    ],
+    "seasonId": 6,
+    "dateAchieved": "2011",
+    "notes": "Caught a record 89 passes for a record 3881 yards and a record of 56 receiving touchdowns."
+  },
+  {
+    "id": "award-mvp-7-blades-sea",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 7 MVP",
+    "value": "Brian Blades",
+    "tecmoPlayerIds": [
+      "blades-sea"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "SEA"
+    ],
+    "seasonId": 7,
+    "dateAchieved": "2017",
+    "notes": "Caught over 20 TD passes, single handedly carrying the Seahawks to the Super Bowl."
+  },
+  {
+    "id": "award-mvp-8-sanders-was",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 8 MVP",
+    "value": "Rickey Sanders",
+    "tecmoPlayerIds": [
+      "sanders-was"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "WAS"
+    ],
+    "seasonId": 8,
+    "dateAchieved": "2017",
+    "notes": "Caught 44 receptions for over 2,000 yards and 30 TDs from the absymal Mark Rypien, leading the Skins to the NFC Championship game."
+  },
+  {
+    "id": "award-mvp-9-o-brien-jet",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 9 MVP",
+    "value": "Ken O'Brien",
+    "tecmoPlayerIds": [
+      "o-brien-jet"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "JET"
+    ],
+    "seasonId": 9,
+    "dateAchieved": "2017",
+    "notes": "Tied fewest int passing record, threw for over 4000 yds, over 70% completion percentage, over 250 QB rating, and led team to 13 wins."
+  },
+  {
+    "id": "award-mvp-10-qb-eagles-phi",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 10 MVP",
+    "value": "Randall Cunningham",
+    "tecmoPlayerIds": [
+      "qb-eagles-phi"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "PHI"
+    ],
+    "seasonId": 10,
+    "dateAchieved": "2018",
+    "notes": "Over 3,000 yards passing; 252.2 QB Rating; threw for 39 TDs and rushed for over 1100 yards with 23 TDs rushing."
+  },
+  {
+    "id": "award-mvp-11-fulcher-cin",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 11 MVP",
+    "value": "David Fulcher",
+    "tecmoPlayerIds": [
+      "fulcher-cin"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "CIN"
+    ],
+    "seasonId": 11,
+    "dateAchieved": "2019",
+    "notes": "Tied interception record, lead the top ranked defense."
+  },
+  {
+    "id": "award-mvp-12-byrd-jet",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 12 MVP",
+    "value": "Dennis Byrd",
+    "tecmoPlayerIds": [
+      "byrd-jet"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "JET"
+    ],
+    "seasonId": 12,
+    "dateAchieved": "2020",
+    "notes": "Second all time in single season sack record with 82; lead defense to only allowing 143 points and team to best regular season record with 15 wins."
+  },
+  {
+    "id": "award-mvp-13-marino-mia",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 13 MVP",
+    "value": "Dan Marino",
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "CJ"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 13,
+    "dateAchieved": "2021",
+    "notes": "Crushed TD record by 30, beat overall completion percentage record by more than a percentage point, did not throw an interception, and set the single season record by yardage by over 400 yards."
+  },
+  {
+    "id": "award-mvp-14-hilliard-no",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 14 MVP",
+    "value": "Dalton Hilliard",
+    "tecmoPlayerIds": [
+      "hilliard-no"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "NO"
+    ],
+    "seasonId": 14,
+    "dateAchieved": "2022",
+    "notes": "Over 1,700 combined yards (1100+ receiving, 650+ rushing) and 33 total touchdowns."
+  },
+  {
+    "id": "award-mvp-15-peete-det",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 15 MVP",
+    "value": "Rodney Peete",
+    "tecmoPlayerIds": [
+      "peete-det"
+    ],
+    "userIds": [
+      "WB"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 15,
+    "dateAchieved": "2023",
+    "notes": "Carried a mediocre Detriot Lions team missing Barry Sanders for nine game to the Super Bowl Championship."
+  },
+  {
+    "id": "award-mvp-16-thomas-buf",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 16 MVP",
+    "value": "Thurman Thomas",
+    "tecmoPlayerIds": [
+      "thomas-buf"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 16,
+    "dateAchieved": "2024",
+    "notes": "53 Total touchdowns with 1984 yards rushing at over 10 yards a carry helping keep opposing offenses off the field"
+  },
+  {
+    "id": "award-mvp-17-marino-mia",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 17 MVP",
+    "value": "Dan Marino",
+    "tecmoPlayerIds": [
+      "marino-mia"
+    ],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "MIA"
+    ],
+    "seasonId": 17,
+    "dateAchieved": "2025",
+    "notes": "Stunning  87.1% completion rate with only 2 INT through an injury-free season, spreading 65 passing TD across 5 receivers and picking up clutch rush TDs in late season/playoffs"
+  },
+  {
+    "id": "award-mvp-18-qb-bills-buf",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 18 MVP",
+    "value": "Jim Kelly",
+    "tecmoPlayerIds": [
+      "qb-bills-buf"
+    ],
+    "userIds": [
+      "MAE"
+    ],
+    "teamAbbrs": [
+      "BUF"
+    ],
+    "seasonId": 18,
+    "dateAchieved": "2025",
+    "notes": "Responsible for 68 TD in the campaign with only 2 INT surrendered"
+  },
+  {
+    "id": "award-mvp-19-sanders-det",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 19 MVP",
+    "value": "Barry Sanders",
+    "tecmoPlayerIds": [
+      "sanders-det"
+    ],
+    "userIds": [
+      "MA"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 19,
+    "dateAchieved": "2025",
+    "notes": "4482 yards and 68 TD in 12 regular season games. Injured 3 times, twice during regular season and again in NFCC vs GIA (missed SB)"
+  },
+  {
+    "id": "award-mvp-20-sanders-det",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 20 MVP",
+    "value": "Barry Sanders",
+    "tecmoPlayerIds": [
+      "sanders-det"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 20,
+    "dateAchieved": "2025",
+    "notes": "1418 yards with 38 TD leading the Lions to a 15-1 regular season record"
+  },
+  {
+    "id": "award-opoy-20-hilliard-no",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 20 OPOY",
+    "value": "Dalton Hilliard",
+    "tecmoPlayerIds": [
+      "hilliard-no"
+    ],
+    "userIds": [
+      "AD"
+    ],
+    "teamAbbrs": [
+      "NO"
+    ],
+    "seasonId": 20,
+    "dateAchieved": "2025",
+    "notes": "1333 total yards from scrimmage with 18 TDs as a dual threat receiver and running back."
+  },
+  {
+    "id": "award-dpoy-20-cofer-det",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 20 DPOY",
+    "value": "Michael Cofer",
+    "tecmoPlayerIds": [
+      "cofer-det"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "DET"
+    ],
+    "seasonId": 20,
+    "dateAchieved": "2025",
+    "notes": "64 sacks leading the number 1 defense (total 3406 yards allowed) and only 211 points."
   }
 ]

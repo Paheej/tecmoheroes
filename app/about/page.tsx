@@ -4,44 +4,219 @@ export const metadata = { title: "About — Tecmo Heroes" };
 
 export default function AboutPage() {
   return (
-    <div className="prose prose-invert max-w-3xl">
-      <h1 className="tecmo-headline text-4xl text-[var(--color-tecmo-gold)] mb-4">
-        About
-      </h1>
-      <p>
-        Tecmo Heroes is an archive of incredible records and feats from{" "}
-        <em>Tecmo Super Bowl</em> league play. It is built in the spirit of{" "}
-        <a className="underline" href="https://tecmogeek.com">tecmogeek.com</a>{" "}
-        and seeded from the records archived at{" "}
-        <a className="underline" href="https://tecmoheroes.com">tecmoheroes.com</a>.
-      </p>
+    <div className="space-y-12 max-w-3xl">
+      <header>
+        <h1 className="tecmo-headline text-4xl text-[var(--color-tecmo-gold)] mb-4">
+          About
+        </h1>
+        <p className="opacity-90">
+          Tecmo Heroes is a website dedicated to archiving our records on the
+          hands down greatest sports game of all time —{" "}
+          <em>Tecmo Super Bowl</em>. Built in the spirit of{" "}
+          <a className="underline" href="https://tecmogeek.com">
+            tecmogeek.com
+          </a>
+          , seeded from the records originally archived at{" "}
+          <a className="underline" href="https://tecmoheroes.com">
+            tecmoheroes.com
+          </a>
+          .
+        </p>
+        <p className="opacity-80 mt-3 text-sm italic">
+          All records here are multi-MAN seasons. No solo-season records are
+          recorded.
+        </p>
+      </header>
 
-      <h2 className="tecmo-headline text-xl mt-8 mb-2">Record Format</h2>
-      <p className="text-sm">
-        <code>Tecmo Player, ### and Statistic, Team, User, Season (Year)</code>.
-        Each record links to the in-game player profile and the real NFL face.
-      </p>
+      <section>
+        <h2 className="tecmo-headline text-2xl text-[var(--color-tecmo-gold)] mb-3">
+          The Story
+        </h2>
+        <div className="space-y-3 text-sm leading-relaxed opacity-90">
+          <p>
+            It all started when a local neighborhood teenager introduced PJ to
+            the game <em>Tecmo Super Bowl</em> in 1992 in Biloxi, Mississippi.
+            After a few painful early defeats, he found his footing with the
+            San Francisco 49ers and never looked back.
+          </p>
+          <p>
+            A copy arrived in 1995 and the next five years were spent grinding
+            seasons. College put the cartridge to bed for a while, until 2009 —
+            when PJ brought the original Nintendo Entertainment System to his
+            dorm and reintroduced the game to a new audience.
+          </p>
+          <p>
+            That dorm crew became the league. We&apos;ve been recording season
+            stats every season since, keeping track of records, Super Bowls,
+            and MVPs. Hardware stayed Nintendo-based until the planned
+            migration to AVS in 2023.
+          </p>
+          <p className="italic opacity-75">
+            Really — are we copywriting stuff for a game made in 1991? Feel
+            free to use what you want from this site, man. Spread the book of
+            Big Red and the Tecmo gospel.
+          </p>
+        </div>
+      </section>
 
-      <h2 className="tecmo-headline text-xl mt-8 mb-2">Stat Maximums</h2>
-      <p className="text-sm">
-        Some single-season stats exceed Tecmo Super Bowl's hard caps. Where that
-        happens, the value is derived (game-by-game running totals or by summing
-        receiver stats and subtracting the backup QB's contribution). Caps:
-      </p>
-      <ul className="text-sm">
-        <li>Passing yards: <strong>{STAT_MAX.passingYardsSeason.toLocaleString()}</strong></li>
-        <li>Rushing / Receiving / Return yards: <strong>{STAT_MAX.rushingYardsSeason.toLocaleString()}</strong></li>
-        <li>Passing / Rushing / Receiving TDs: <strong>{STAT_MAX.passingTDsSeason}</strong></li>
-        <li>Rush Attempts (single season): <strong>{STAT_MAX.rushingAttemptsSeason}</strong></li>
-      </ul>
+      <section>
+        <h2 className="tecmo-headline text-2xl text-[var(--color-tecmo-gold)] mb-3">
+          The Rules
+        </h2>
+        <p className="text-sm opacity-80 mb-3">
+          Guidelines for a successful weekend of Tecmo. Resources to put you
+          into the right frame of mind.
+        </p>
+        <ul className="space-y-2 text-sm">
+          {RULES.map((r, i) => (
+            <li
+              key={i}
+              className="border-l-2 border-[var(--color-tecmo-gold)] pl-3"
+            >
+              <span className="font-bold text-[var(--color-tecmo-gold)] uppercase text-xs">
+                {r.title}
+              </span>
+              <span className="opacity-90"> — {r.body}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-      <h2 className="tecmo-headline text-xl mt-8 mb-2">Adding Records</h2>
-      <p className="text-sm">
-        From the repo root: <code>npm run ingest</code> walks you through a new
-        record interactively, validates the value against the stat caps, and
-        writes it to <code>data/records.json</code>. Use{" "}
-        <code>npm run ingest:rebuild</code> to chain a static export afterward.
-      </p>
+      <section>
+        <h2 className="tecmo-headline text-2xl text-[var(--color-tecmo-gold)] mb-3">
+          The Stats
+        </h2>
+        <div className="space-y-3 text-sm opacity-90">
+          <p>
+            After every season — or between the regular season and the Super
+            Bowl — we record the stats of most of the leaders on each team. The
+            raw numbers live in a Google Sheet; this site is generated from a
+            snapshot of that workbook.
+          </p>
+          <p>
+            In cases where a value exceeds the in-game maximum (single-season
+            rushing or passing TDs, for instance), the figure is either
+            captured after every game or determined mathematically. Example: add
+            up all receiver touchdowns on a team, subtract the backup QB&apos;s
+            thrown touchdowns, and you have a derived total for the starter.
+          </p>
+        </div>
+
+        <h3 className="tecmo-headline text-base mt-5 mb-2">Stat Maximums</h3>
+        <ul className="text-sm space-y-1">
+          <li>
+            Passing yards:{" "}
+            <strong>{STAT_MAX.passingYardsSeason.toLocaleString()}</strong>
+          </li>
+          <li>
+            Rushing / Receiving / Return yards:{" "}
+            <strong>{STAT_MAX.rushingYardsSeason.toLocaleString()}</strong>
+          </li>
+          <li>
+            Passing / Rushing / Receiving TDs:{" "}
+            <strong>{STAT_MAX.passingTDsSeason}</strong>
+          </li>
+          <li>
+            Rush Attempts (single season):{" "}
+            <strong>{STAT_MAX.rushingAttemptsSeason}</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="tecmo-headline text-2xl text-[var(--color-tecmo-gold)] mb-3">
+          Record Format
+        </h2>
+        <p className="text-sm opacity-90">
+          In general each record is presented as:{" "}
+          <code className="text-[var(--color-tecmo-gold)]">
+            Tecmo Player, ### Statistic, Team, Player, Season (Year)
+          </code>
+          . The Tecmo profile card shows the in-game name; the round avatar
+          shows the real NFL face that lent the legend.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="tecmo-headline text-2xl text-[var(--color-tecmo-gold)] mb-3">
+          Adding Records
+        </h2>
+        <p className="text-sm opacity-90">
+          The data lives as JSON in <code>data/</code>, regenerated from{" "}
+          <code>Tecmo Statistics Current.xlsx</code> via{" "}
+          <code>python3 scripts/convert-xlsx.py</code>. For one-off entries,{" "}
+          <code>npm run ingest</code> walks you through a new record
+          interactively, and <code>npm run ingest:rebuild</code> chains a
+          static export afterward.
+        </p>
+      </section>
     </div>
   );
 }
+
+const RULES: { title: string; body: string }[] = [
+  {
+    title: "Book of Big Red",
+    body: "Organizer reads an excerpt before gameplay begins.",
+  },
+  {
+    title: "Scouting",
+    body: "Players review the Paul Schulzetenberg GAMEFAQ (2000) before team selection.",
+  },
+  {
+    title: "All Pick",
+    body: "Least experienced players select first from all teams (typically favoring 49ers, Bills, Raiders).",
+  },
+  {
+    title: "Equal Pick",
+    body: "Organizer selects a tier; all players randomly draw from that tier only.",
+  },
+  {
+    title: "Handicap Pick",
+    body: "Players placed in tiers by organizer based on skill; tier differences equal point advantages.",
+  },
+  {
+    title: "Random Pick",
+    body: "Blind draw of randomly assigned teams — uses physical tokens.",
+  },
+  {
+    title: "Division Pick",
+    body: "All players select from the same division for maximum matchup variety.",
+  },
+  {
+    title: "Playbook Time Limit",
+    body: "10 minutes for initial selection; 5 minutes for changes between weeks 8 and 9.",
+  },
+  {
+    title: "First-Time Players",
+    body: "Time limits waived; may change playbooks after weeks 4, 8, 12, 16.",
+  },
+  {
+    title: "Photo Documentation",
+    body: 'Players photograph the "game summary" screen after each game.',
+  },
+  {
+    title: "No Lurching",
+    body: "Players prohibited from selecting NT/DT and immediately diving on snap in man-vs-man matches.",
+  },
+  {
+    title: "WR Substitution",
+    body: "Cannot place wide receivers in the running back position unless all RBs are injured.",
+  },
+  {
+    title: "Other Substitutions",
+    body: "Backup QB and backup RB substitutions are permitted.",
+  },
+  {
+    title: "Continuous Gameplay",
+    body: "SLEEP IS FOR THE WEAK — minimal breaks between games.",
+  },
+  {
+    title: "Game Duration",
+    body: "Approximately 20 minutes per game. Plan accordingly: with more than four players you will be hard-pressed to finish in one weekend.",
+  },
+  {
+    title: "Meals",
+    body: "Designate who is cooking which meal (or what will be ordered) ahead of time.",
+  },
+];

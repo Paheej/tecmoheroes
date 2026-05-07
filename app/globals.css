@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-tecmo-bg: #0a0e2a;
-  --color-tecmo-bg-2: #131a4a;
+  /* Tecmogeek-style blue palette: #165ec9 panel / #0f4faa deeper */
+  --color-tecmo-bg: #0f4faa;
+  --color-tecmo-bg-2: #0a3a85;
   --color-tecmo-ink: #f7f7f7;
   --color-tecmo-gold: #fbbf24;
   --color-tecmo-red: #ef4444;
-  --color-tecmo-blue: #3b82f6;
+  --color-tecmo-blue: #165ec9;
   --color-tecmo-green: #34d399;
-  --color-tecmo-grid: rgba(255, 255, 255, 0.08);
+  --color-tecmo-grid: rgba(255, 255, 255, 0.06);
 
   --font-pixel: ui-monospace, "Menlo", "Consolas", "Courier New", monospace;
 }
@@ -53,8 +54,8 @@ body {
 .tecmo-headline {
   font-family: var(--font-pixel);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  text-shadow: 2px 2px 0 #000, 4px 4px 0 var(--color-tecmo-red);
+  letter-spacing: 0.10em;
+  text-shadow: 1px 1px 0 #000, 2px 2px 0 var(--color-tecmo-red);
 }
 
 .tecmo-stripe {

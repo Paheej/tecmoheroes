@@ -1,27 +1,198 @@
 [
-  { "abbr": "Hou", "displayName": "Houston",        "fullName": "Houston Oilers",         "conference": "AFC", "division": "Central" },
-  { "abbr": "Phi", "displayName": "Philadelphia",    "fullName": "Philadelphia Eagles",    "conference": "NFC", "division": "East" },
-  { "abbr": "Det", "displayName": "Detroit",         "fullName": "Detroit Lions",          "conference": "NFC", "division": "Central" },
-  { "abbr": "Rai", "displayName": "L.A. Raiders",    "fullName": "Los Angeles Raiders",    "conference": "AFC", "division": "West" },
-  { "abbr": "KC",  "displayName": "Kansas City",     "fullName": "Kansas City Chiefs",     "conference": "AFC", "division": "West" },
-  { "abbr": "Atl", "displayName": "Atlanta",         "fullName": "Atlanta Falcons",        "conference": "NFC", "division": "West" },
-  { "abbr": "SF",  "displayName": "San Francisco",   "fullName": "San Francisco 49ers",    "conference": "NFC", "division": "West" },
-  { "abbr": "Buf", "displayName": "Buffalo",         "fullName": "Buffalo Bills",          "conference": "AFC", "division": "East" },
-  { "abbr": "Bug", "displayName": "Buffalo (Bug)",   "fullName": "Buffalo Bills (Bug season)", "conference": "AFC", "division": "East" },
-  { "abbr": "Min", "displayName": "Minnesota",       "fullName": "Minnesota Vikings",      "conference": "NFC", "division": "Central" },
-  { "abbr": "NO",  "displayName": "New Orleans",     "fullName": "New Orleans Saints",     "conference": "NFC", "division": "West" },
-  { "abbr": "Pit", "displayName": "Pittsburgh",      "fullName": "Pittsburgh Steelers",    "conference": "AFC", "division": "Central" },
-  { "abbr": "Den", "displayName": "Denver",          "fullName": "Denver Broncos",         "conference": "AFC", "division": "West" },
-  { "abbr": "Sea", "displayName": "Seattle",         "fullName": "Seattle Seahawks",       "conference": "AFC", "division": "West" },
-  { "abbr": "Jets","displayName": "N.Y. Jets",       "fullName": "New York Jets",          "conference": "AFC", "division": "East" },
-  { "abbr": "Ind", "displayName": "Indianapolis",    "fullName": "Indianapolis Colts",     "conference": "AFC", "division": "East" },
-  { "abbr": "Chi", "displayName": "Chicago",         "fullName": "Chicago Bears",          "conference": "NFC", "division": "Central" },
-  { "abbr": "Rams","displayName": "L.A. Rams",       "fullName": "Los Angeles Rams",       "conference": "NFC", "division": "West" },
-  { "abbr": "TB",  "displayName": "Tampa Bay",       "fullName": "Tampa Bay Buccaneers",   "conference": "NFC", "division": "Central" },
-  { "abbr": "SD",  "displayName": "San Diego",       "fullName": "San Diego Chargers",     "conference": "AFC", "division": "West" },
-  { "abbr": "Cle", "displayName": "Cleveland",       "fullName": "Cleveland Browns",       "conference": "AFC", "division": "Central" },
-  { "abbr": "NE",  "displayName": "New England",     "fullName": "New England Patriots",   "conference": "AFC", "division": "East" },
-  { "abbr": "Was", "displayName": "Washington",      "fullName": "Washington Redskins",    "conference": "NFC", "division": "East" },
-  { "abbr": "GB",  "displayName": "Green Bay",       "fullName": "Green Bay Packers",      "conference": "NFC", "division": "Central" },
-  { "abbr": "Phx", "displayName": "Phoenix",         "fullName": "Phoenix Cardinals",      "conference": "NFC", "division": "East" }
+  {
+    "abbr": "ATL",
+    "displayName": "Atlanta",
+    "fullName": "Atlanta Falcons",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "abbr": "BUF",
+    "displayName": "Buffalo",
+    "fullName": "Buffalo Bills",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "abbr": "CHI",
+    "displayName": "Chicago",
+    "fullName": "Chicago Bears",
+    "conference": "NFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "CIN",
+    "displayName": "Cincinnati",
+    "fullName": "Cincinnati Bengals",
+    "conference": "AFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "CLE",
+    "displayName": "Cleveland",
+    "fullName": "Cleveland Browns",
+    "conference": "AFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "DAL",
+    "displayName": "Dallas",
+    "fullName": "Dallas Cowboys",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "abbr": "DEN",
+    "displayName": "Denver",
+    "fullName": "Denver Broncos",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "abbr": "DET",
+    "displayName": "Detroit",
+    "fullName": "Detroit Lions",
+    "conference": "NFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "GB",
+    "displayName": "Green Bay",
+    "fullName": "Green Bay Packers",
+    "conference": "NFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "GIA",
+    "displayName": "N.Y. Giants",
+    "fullName": "New York Giants",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "abbr": "HOU",
+    "displayName": "Houston",
+    "fullName": "Houston Oilers",
+    "conference": "AFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "IND",
+    "displayName": "Indianapolis",
+    "fullName": "Indianapolis Colts",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "abbr": "JET",
+    "displayName": "N.Y. Jets",
+    "fullName": "New York Jets",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "abbr": "KC",
+    "displayName": "Kansas City",
+    "fullName": "Kansas City Chiefs",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "abbr": "MIA",
+    "displayName": "Miami",
+    "fullName": "Miami Dolphins",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "abbr": "MIN",
+    "displayName": "Minnesota",
+    "fullName": "Minnesota Vikings",
+    "conference": "NFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "NE",
+    "displayName": "New England",
+    "fullName": "New England Patriots",
+    "conference": "AFC",
+    "division": "East"
+  },
+  {
+    "abbr": "NO",
+    "displayName": "New Orleans",
+    "fullName": "New Orleans Saints",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "abbr": "PHI",
+    "displayName": "Philadelphia",
+    "fullName": "Philadelphia Eagles",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "abbr": "PHX",
+    "displayName": "Phoenix",
+    "fullName": "Phoenix Cardinals",
+    "conference": "NFC",
+    "division": "East"
+  },
+  {
+    "abbr": "PIT",
+    "displayName": "Pittsburgh",
+    "fullName": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "RAI",
+    "displayName": "L.A. Raiders",
+    "fullName": "Los Angeles Raiders",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "abbr": "RAM",
+    "displayName": "L.A. Rams",
+    "fullName": "Los Angeles Rams",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "abbr": "SD",
+    "displayName": "San Diego",
+    "fullName": "San Diego Chargers",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "abbr": "SEA",
+    "displayName": "Seattle",
+    "fullName": "Seattle Seahawks",
+    "conference": "AFC",
+    "division": "West"
+  },
+  {
+    "abbr": "SF",
+    "displayName": "San Francisco",
+    "fullName": "San Francisco 49ers",
+    "conference": "NFC",
+    "division": "West"
+  },
+  {
+    "abbr": "TB",
+    "displayName": "Tampa Bay",
+    "fullName": "Tampa Bay Buccaneers",
+    "conference": "NFC",
+    "division": "Central"
+  },
+  {
+    "abbr": "WAS",
+    "displayName": "Washington",
+    "fullName": "Washington Redskins",
+    "conference": "NFC",
+    "division": "East"
+  }
 ]

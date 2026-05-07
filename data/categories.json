@@ -1,8 +1,29 @@
 [
-  { "id": "passing",       "label": "Passing",        "blurb": "Aerial assault — yards, TDs, ratings." },
-  { "id": "rushing",       "label": "Rushing",        "blurb": "Ground game — Bo Jackson territory." },
-  { "id": "receiving",     "label": "Receiving",      "blurb": "Catches, yards, TDs from the receiver corps." },
-  { "id": "defense",       "label": "Defense",        "blurb": "Sacks, INTs, safeties, blocked kicks." },
-  { "id": "special-teams", "label": "Special Teams",  "blurb": "Returns, FGs, XPs, longest kicks." },
-  { "id": "team",          "label": "Team Records",   "blurb": "Dynasties, streaks, and Super Bowl glory." }
+  {
+    "id": "offense",
+    "label": "Offense",
+    "blurb": "Passing, rushing, and receiving records.",
+    "subcategories": [
+      "passing",
+      "rushing",
+      "receiving"
+    ]
+  },
+  {
+    "id": "defense-special-teams",
+    "label": "Defense & Special Teams",
+    "blurb": "Sacks, interceptions, returns, punts, kicks.",
+    "subcategories": [
+      "defense",
+      "special-teams"
+    ]
+  },
+  {
+    "id": "team",
+    "label": "Team",
+    "blurb": "Team season totals, MVPs, and Super Bowls.",
+    "subcategories": [
+      "team"
+    ]
+  }
 ]

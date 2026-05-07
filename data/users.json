@@ -1,60 +1,134 @@
 [
   {
-    "id": "drew", "slug": "drew", "displayName": "Drew",
-    "bio": "Architect of the Raiders dynasty. Holder of more records than anyone in the league."
+    "id": "AD",
+    "slug": "ad",
+    "displayName": "Andrew Denson",
+    "shortName": "AD",
+    "age": 40,
+    "ethnicity": "Whitey",
+    "team": "San Francisco 49ers",
+    "from": "Guam",
+    "seasonsPlayed": 1
   },
   {
-    "id": "don", "slug": "don", "displayName": "Don",
-    "bio": "Eagles loyalist. Specializes in QB Bills and Joe Montana wizardry."
+    "id": "BF",
+    "slug": "bf",
+    "displayName": "Brian Foster",
+    "shortName": "BF",
+    "age": 39,
+    "ethnicity": "Circus Stock",
+    "team": "NY Giants",
+    "from": "Winston-Salem, NC",
+    "currentResidence": "Greensboro, NC",
+    "seasonsPlayed": 1
   },
   {
-    "id": "cam", "slug": "cam", "displayName": "Cam",
-    "bio": "Rotates teams aggressively. Known for absurd Raiders dual-threat seasons."
+    "id": "CJ",
+    "slug": "cj",
+    "displayName": "Colby Joyner",
+    "shortName": "CJ",
+    "age": 38,
+    "ethnicity": "Goes Outside",
+    "team": "DA BEARS",
+    "from": "Clemmons, NC",
+    "currentResidence": "Bennettsville, SC",
+    "seasonsPlayed": 10,
+    "sbChampionships": 1,
+    "recordsCount": 10
   },
   {
-    "id": "major", "slug": "major", "displayName": "Major",
-    "bio": "Lions defender-in-chief. Back-to-back champion, Seasons 19-20."
+    "id": "COMP",
+    "slug": "comp",
+    "displayName": "Computer",
+    "shortName": "COMP",
+    "age": 33,
+    "ethnicity": "I'm a Computer",
+    "team": "Various",
+    "seasonsPlayed": "Every Single One Ever",
+    "sbChampionships": 4,
+    "bio": "The 12-tier handicap pick teammate. Wins more Super Bowls than anyone wants to admit."
   },
   {
-    "id": "chris-rice", "slug": "chris-rice", "displayName": "Chris Rice",
-    "age": 38, "height": "Are All Whites Tall?", "ethnicity": "All-American American",
-    "team": "Buffalo Bills", "from": "Pennsylvania", "currentResidence": "Greensboro, NC",
-    "seasonsPlayed": 8, "sbAppearances": 3, "sbChampionships": 1, "recordsCount": "0 (Top three in four categories)"
+    "id": "CR",
+    "slug": "cr",
+    "displayName": "Chris Rice",
+    "shortName": "CR",
+    "age": 38,
+    "ethnicity": "All-American American",
+    "team": "Buffalo Bills",
+    "from": "Pennsylvania",
+    "currentResidence": "Greensboro, NC",
+    "seasonsPlayed": 8,
+    "sbChampionships": 1
   },
   {
-    "id": "colby-joyner", "slug": "colby-joyner", "displayName": "Colby Joyner",
-    "age": 38, "height": "In the Middle", "ethnicity": "Goes Outside",
-    "team": "DA BEARS", "from": "Clemmons, NC", "currentResidence": "Bennettsville, SC",
-    "seasonsPlayed": 10, "sbAppearances": 2, "sbChampionships": 1, "recordsCount": 10
+    "id": "MA",
+    "slug": "ma",
+    "displayName": "Matt Andersen",
+    "shortName": "MA",
+    "age": 38,
+    "height": "Taller",
+    "ethnicity": "Yankee Pale",
+    "team": "L.A. Raiders",
+    "from": "New York",
+    "currentResidence": "Winston-Salem, NC",
+    "seasonsPlayed": 13,
+    "sbChampionships": 3,
+    "bio": "Raiders man early, Lions destroyer late. Bo Jackson seasons, then Barry Sanders carrying DET to Super Bowl 19."
   },
   {
-    "id": "tyler-davis", "slug": "tyler-davis", "displayName": "Tyler Davis",
-    "age": 38, "height": "A Legend Amongst the Mountain Folk", "ethnicity": "Actually Mountain White",
-    "team": "Does anyone know his favorite team?", "from": "North Carolina", "currentResidence": "North Wilkesboro, NC",
-    "seasonsPlayed": 1, "sbAppearances": 0, "sbChampionships": 0, "recordsCount": "0 (Top three in one category)"
+    "id": "MAE",
+    "slug": "mae",
+    "displayName": "Mae Andersen",
+    "shortName": "MAE",
+    "age": 9,
+    "ethnicity": "Chica Blanca",
+    "team": "Buffalo Bills",
+    "currentResidence": "Winston-Salem, NC",
+    "seasonsPlayed": 3,
+    "sbAppearances": 1
   },
   {
-    "id": "brian-foster", "slug": "brian-foster", "displayName": "Brian Foster",
-    "age": 39, "height": "Dwarfs are dangerous over short distances", "ethnicity": "Circus Stock",
-    "team": "NY GIANTS", "from": "Winston-Salem, NC", "currentResidence": "Greensboro, NC",
-    "seasonsPlayed": 1, "sbAppearances": 0, "sbChampionships": 0, "recordsCount": 0
+    "id": "PJ",
+    "slug": "pj",
+    "displayName": "PJ Street",
+    "shortName": "PJ",
+    "age": 38,
+    "height": "5'7\"",
+    "ethnicity": "All of Them",
+    "team": "San Francisco 49ers",
+    "from": "Biloxi, MS",
+    "currentResidence": "Charlotte, NC",
+    "seasonsPlayed": 17,
+    "sbChampionships": 10,
+    "recordsCount": 19,
+    "bio": "Started Tecmo in 1992 in Biloxi, MS. Brought the original NES to the dorm in 2009 and turned it into a multi-decade league. Holder of the most Super Bowls and the most records."
   },
   {
-    "id": "mae-andersen", "slug": "mae-andersen", "displayName": "Mae Andersen",
-    "age": 9, "height": "Not much", "ethnicity": "Chica Blanca",
-    "team": "Buffalo Bills", "from": "Lesser Carolina via Yankee Wastelands", "currentResidence": "Winston-Salem, NC",
-    "seasonsPlayed": 3, "sbAppearances": 1, "sbChampionships": 0, "recordsCount": 0
+    "id": "TD",
+    "slug": "td",
+    "displayName": "Tyler Davis",
+    "shortName": "TD",
+    "age": 38,
+    "ethnicity": "Actually Mountain White",
+    "from": "North Carolina",
+    "currentResidence": "North Wilkesboro, NC",
+    "seasonsPlayed": 1
   },
   {
-    "id": "andrew", "slug": "andrew", "displayName": "Andrew",
-    "age": 40, "height": "Tall as Jesus", "ethnicity": "Whitey",
-    "team": "San Francisco 49ers", "from": "Guam", "currentResidence": "NC",
-    "seasonsPlayed": 1, "sbAppearances": 0, "sbChampionships": 0, "recordsCount": 0
-  },
-  {
-    "id": "computer", "slug": "computer", "displayName": "Computer",
-    "age": 33, "height": "Not Very Tall at All", "ethnicity": "I'm a Computer",
-    "team": "San Francisco 49ers", "from": "Biloxi, MS", "currentResidence": "Charlotte, NC",
-    "seasonsPlayed": 9999, "sbAppearances": 11, "sbChampionships": 3
+    "id": "WB",
+    "slug": "wb",
+    "displayName": "William Baucom",
+    "shortName": "WB",
+    "age": 38,
+    "height": "Tall-ish",
+    "ethnicity": "Mountain White",
+    "team": "Houston Oilers",
+    "from": "North Carolina",
+    "currentResidence": "Clemmons, NC",
+    "seasonsPlayed": 15,
+    "sbChampionships": 2,
+    "recordsCount": 7,
+    "bio": "Run-and-shoot loyalist. Tied to Houston, Warren Moon, and Drew Hill — most of the league's gaudy passing numbers ride with him."
   }
 ]

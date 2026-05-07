@@ -5,6 +5,7 @@ const links = [
   { href: "/", label: "Home" },
   ...categories.map((c) => ({ href: `/records/${c.id}`, label: c.label })),
   { href: "/players", label: "Players" },
+  { href: "/heroes", label: "Heroes" },
   { href: "/seasons", label: "Seasons" },
   { href: "/about", label: "About" },
 ];

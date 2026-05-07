@@ -1,251 +1,2619 @@
 [
   {
-    "id": "moon",       "slug": "moon",       "tecmoName": "Moon",       "realName": "Warren Moon",         "position": "QB", "team": "Hou",
-    "spriteSlug": "moon", "avatarSlug": "warren-moon",
-    "bio": "Run-and-shoot maestro. Drew's preferred weapon in the Houston aerial circus."
+    "id": "sanders-atl",
+    "slug": "sanders-atl",
+    "tecmoName": "Sanders",
+    "realName": "Deion Sanders",
+    "position": "CB",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 24
   },
   {
-    "id": "qb-bills",   "slug": "qb-bills",   "tecmoName": "QB Bills",   "realName": "Jim Kelly",           "position": "QB", "team": "Buf",
-    "spriteSlug": "qb-bills", "avatarSlug": "jim-kelly",
-    "bio": "Tecmo Super Bowl shipped him as 'QB Bills' due to NFLPA licensing. Don knows."
+    "id": "tuggle-atl",
+    "slug": "tuggle-atl",
+    "tecmoName": "Tuggle",
+    "realName": "Jessie Tuggle",
+    "position": "LB",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 22
   },
   {
-    "id": "eagles",     "slug": "eagles",     "tecmoName": "Eagles",     "realName": "Randall Cunningham",  "position": "QB", "team": "Phi",
-    "spriteSlug": "eagles", "avatarSlug": "randall-cunningham",
-    "bio": "Listed as 'QB Eagles' in-game. Dual-threat originator."
+    "id": "fulhage-atl",
+    "slug": "fulhage-atl",
+    "tecmoName": "Fulhage",
+    "realName": "Scott Fulhage",
+    "position": "P",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 29
   },
   {
-    "id": "montana",    "slug": "montana",    "tecmoName": "Montana",    "realName": "Joe Montana",         "position": "QB", "team": "SF",
-    "spriteSlug": "montana", "avatarSlug": "joe-montana",
-    "bio": "205.7 QB rating in a single game — Tecmo perfection."
+    "id": "miller-atl",
+    "slug": "miller-atl",
+    "tecmoName": "Miller",
+    "realName": "Chris Miller",
+    "position": "QB",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 0
   },
   {
-    "id": "elway",      "slug": "elway",      "tecmoName": "Elway",      "realName": "John Elway",          "position": "QB", "team": "Den",
-    "spriteSlug": "elway", "avatarSlug": "john-elway"
+    "id": "broussard-atl",
+    "slug": "broussard-atl",
+    "tecmoName": "Broussard",
+    "realName": "Steve Broussard",
+    "position": "RB",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 3
   },
   {
-    "id": "everett",    "slug": "everett",    "tecmoName": "Everett",    "realName": "Jim Everett",         "position": "QB", "team": "Rams",
-    "spriteSlug": "everett", "avatarSlug": "jim-everett"
+    "id": "jones-atl",
+    "slug": "jones-atl",
+    "tecmoName": "Jones",
+    "realName": "Keith Jones",
+    "position": "RB",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 4
   },
   {
-    "id": "stouffer",   "slug": "stouffer",   "tecmoName": "Stouffer",   "realName": "Kelly Stouffer",      "position": "QB", "team": "Sea",
-    "spriteSlug": "stouffer", "avatarSlug": "kelly-stouffer"
+    "id": "dixon-atl",
+    "slug": "dixon-atl",
+    "tecmoName": "Dixon",
+    "realName": "Floyd Dixon",
+    "position": "WR",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 7
   },
   {
-    "id": "fourcade",   "slug": "fourcade",   "tecmoName": "Fourcade",   "realName": "John Fourcade",       "position": "QB", "team": "NO",
-    "spriteSlug": "fourcade", "avatarSlug": "john-fourcade"
+    "id": "rison-atl",
+    "slug": "rison-atl",
+    "tecmoName": "Rison",
+    "realName": "Andre Rison",
+    "position": "WR",
+    "team": "ATL",
+    "teamSlug": "falcons",
+    "spriteIndex": 8
   },
   {
-    "id": "miller",     "slug": "miller",     "tecmoName": "Miller",     "realName": "Chris Miller",        "position": "QB", "team": "Atl",
-    "spriteSlug": "miller", "avatarSlug": "chris-miller"
-  },
-
-  {
-    "id": "bo-jackson", "slug": "bo-jackson", "tecmoName": "Jackson",    "realName": "Bo Jackson",          "position": "RB", "team": "Rai",
-    "spriteSlug": "bo-jackson", "avatarSlug": "bo-jackson",
-    "bio": "The reason this game is the greatest. 5277-yard seasons happened."
-  },
-  {
-    "id": "okoye",      "slug": "okoye",      "tecmoName": "Okoye",      "realName": "Christian Okoye",     "position": "RB", "team": "KC",
-    "spriteSlug": "okoye", "avatarSlug": "christian-okoye",
-    "bio": "Nigerian Nightmare. 660 yards in a single game vs Washington."
+    "id": "jackson-buf",
+    "slug": "jackson-buf",
+    "tecmoName": "Jackson",
+    "realName": "Kirby Jackson",
+    "position": "CB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 25
   },
   {
-    "id": "barry-sanders","slug": "barry-sanders","tecmoName": "Sanders","realName": "Barry Sanders",       "position": "RB", "team": "Det",
-    "spriteSlug": "barry-sanders", "avatarSlug": "barry-sanders"
+    "id": "odomes-buf",
+    "slug": "odomes-buf",
+    "tecmoName": "Odomes",
+    "realName": "Nate Odomes",
+    "position": "CB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 24
   },
   {
-    "id": "deion-sanders","slug": "deion-sanders","tecmoName": "Sanders","realName": "Deion Sanders",       "position": "DB", "team": "Atl",
-    "spriteSlug": "deion-sanders", "avatarSlug": "deion-sanders",
-    "bio": "Prime Time. Drew's pick-six and sack monster on Atlanta."
+    "id": "norwood-buf",
+    "slug": "norwood-buf",
+    "tecmoName": "Norwood",
+    "realName": "Scott Norwood",
+    "position": "K",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 28
   },
   {
-    "id": "walker",     "slug": "walker",     "tecmoName": "Walker",     "realName": "Herschel Walker",     "position": "RB", "team": "Min",
-    "spriteSlug": "walker", "avatarSlug": "herschel-walker"
+    "id": "bennett-buf",
+    "slug": "bennett-buf",
+    "tecmoName": "Bennett",
+    "realName": "Cornelius Bennett",
+    "position": "LB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 23
   },
   {
-    "id": "byars",      "slug": "byars",      "tecmoName": "Byars",      "realName": "Keith Byars",         "position": "RB", "team": "Phi",
-    "spriteSlug": "byars", "avatarSlug": "keith-byars"
+    "id": "conlan-buf",
+    "slug": "conlan-buf",
+    "tecmoName": "Conlan",
+    "realName": "Shane Conlan",
+    "position": "LB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 22
   },
   {
-    "id": "warren",     "slug": "warren",     "tecmoName": "Warren",     "realName": "John L. Williams",    "position": "RB", "team": "Sea",
-    "spriteSlug": "warren", "avatarSlug": "john-l-williams"
+    "id": "tuten-buf",
+    "slug": "tuten-buf",
+    "tecmoName": "Tuten",
+    "realName": "Rick Tuten",
+    "position": "P",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 29
   },
   {
-    "id": "walsh",      "slug": "walsh",      "tecmoName": "Walsh",      "realName": "Steve Walsh",         "position": "QB", "team": "NO",
-    "spriteSlug": "walsh", "avatarSlug": "steve-walsh"
+    "id": "qb-bills-buf",
+    "slug": "qb-bills-buf",
+    "tecmoName": "QB",
+    "realName": "Jim Kelly",
+    "position": "QB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 0
   },
   {
-    "id": "heyward",    "slug": "heyward",    "tecmoName": "Heyward",    "realName": "Craig Heyward",       "position": "RB", "team": "NO",
-    "spriteSlug": "heyward", "avatarSlug": "craig-heyward"
+    "id": "smith-buf",
+    "slug": "smith-buf",
+    "tecmoName": "Smith",
+    "realName": "Don Smith",
+    "position": "RB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 5
   },
   {
-    "id": "fenerty",    "slug": "fenerty",    "tecmoName": "Fenerty",    "realName": "Gill Fenerty",        "position": "RB", "team": "NO",
-    "spriteSlug": "fenerty", "avatarSlug": "gill-fenerty",
-    "bio": "Special-teams demon. 1468 KR yards in one season."
+    "id": "thomas-buf",
+    "slug": "thomas-buf",
+    "tecmoName": "Thomas",
+    "realName": "Thurman Thomas",
+    "position": "RB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 2
   },
   {
-    "id": "mcneil",     "slug": "mcneil",     "tecmoName": "McNeil",     "realName": "Freeman McNeil",      "position": "RB", "team": "Jets",
-    "spriteSlug": "mcneil", "avatarSlug": "freeman-mcneil"
+    "id": "thurman-buf",
+    "slug": "thurman-buf",
+    "tecmoName": "Thurman",
+    "realName": "Thomas Thurman",
+    "position": "RB",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 2
   },
   {
-    "id": "butts",      "slug": "butts",      "tecmoName": "Butts",      "realName": "Marion Butts",        "position": "RB", "team": "SD",
-    "spriteSlug": "butts", "avatarSlug": "marion-butts"
+    "id": "mckellar-buf",
+    "slug": "mckellar-buf",
+    "tecmoName": "McKellar",
+    "realName": "Keith McKellar",
+    "position": "TE",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 10
   },
   {
-    "id": "anderson-flipper", "slug": "anderson-rams", "tecmoName": "Anderson", "realName": "Flipper Anderson", "position": "WR", "team": "Rams",
-    "spriteSlug": "anderson-flipper", "avatarSlug": "flipper-anderson",
-    "bio": "499-yard single game on the Rams. Major's record."
+    "id": "mckeller-buf",
+    "slug": "mckeller-buf",
+    "tecmoName": "McKeller",
+    "realName": "Keith Mckeller",
+    "position": "TE",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 10
   },
   {
-    "id": "anderson-min",     "slug": "anderson-min",  "tecmoName": "Anderson", "realName": "Anthony Carter",   "position": "WR", "team": "Min",
-    "spriteSlug": "anderson-min", "avatarSlug": "anthony-carter"
+    "id": "beebe-buf",
+    "slug": "beebe-buf",
+    "tecmoName": "Beebe",
+    "realName": "Don Beebe",
+    "position": "WR",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 8,
+    "bio": "Nicknames: El Patron Don Beebe"
   },
   {
-    "id": "rison",      "slug": "rison",      "tecmoName": "Rison",      "realName": "Andre Rison",         "position": "WR", "team": "Atl",
-    "spriteSlug": "rison", "avatarSlug": "andre-rison",
-    "bio": "Bad Moon Rison. 3322-yard season."
+    "id": "edwards-buf",
+    "slug": "edwards-buf",
+    "tecmoName": "Edwards",
+    "realName": "Al Edwards",
+    "position": "WR",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 9
   },
   {
-    "id": "reed",       "slug": "reed",       "tecmoName": "Reed",       "realName": "Andre Reed",          "position": "WR", "team": "Buf",
-    "spriteSlug": "reed", "avatarSlug": "andre-reed"
+    "id": "lofton-buf",
+    "slug": "lofton-buf",
+    "tecmoName": "Lofton",
+    "realName": "James Lofton",
+    "position": "WR",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 6
   },
   {
-    "id": "barnett",    "slug": "barnett",    "tecmoName": "Barnett",    "realName": "Fred Barnett",        "position": "WR", "team": "Phi",
-    "spriteSlug": "barnett", "avatarSlug": "fred-barnett"
+    "id": "mueller-buf",
+    "slug": "mueller-buf",
+    "tecmoName": "Mueller",
+    "realName": "Jamie Mueller",
+    "position": "WR",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 3
   },
   {
-    "id": "hill",       "slug": "hill",       "tecmoName": "Hill",       "realName": "Drew Hill",           "position": "WR", "team": "Hou",
-    "spriteSlug": "hill", "avatarSlug": "drew-hill"
+    "id": "reed-buf",
+    "slug": "reed-buf",
+    "tecmoName": "Reed",
+    "realName": "Andre Reed",
+    "position": "WR",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 7
   },
   {
-    "id": "jeffries",   "slug": "jeffries",   "tecmoName": "Jeffries",   "realName": "Haywood Jeffires",    "position": "WR", "team": "Hou",
-    "spriteSlug": "jeffries", "avatarSlug": "haywood-jeffires",
-    "bio": "Tecmo spelled it 'Jeffries'. Real name Jeffires."
+    "id": "singletary-chi",
+    "slug": "singletary-chi",
+    "tecmoName": "Singletary",
+    "realName": "Mike Singletary",
+    "position": "LB",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 22,
+    "bio": "Nicknames: Samurai Mike"
   },
   {
-    "id": "blades",     "slug": "blades",     "tecmoName": "Blades",     "realName": "Brian Blades",        "position": "WR", "team": "Sea",
-    "spriteSlug": "blades", "avatarSlug": "brian-blades"
+    "id": "buford-chi",
+    "slug": "buford-chi",
+    "tecmoName": "Buford",
+    "realName": "Maury Buford",
+    "position": "P",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 29
   },
   {
-    "id": "heller",     "slug": "heller",     "tecmoName": "Heller",     "realName": "Ron Heller (TE/WR)",  "position": "WR", "team": "Sea",
-    "spriteSlug": "heller", "avatarSlug": "ron-heller"
+    "id": "harbaugh-chi",
+    "slug": "harbaugh-chi",
+    "tecmoName": "Harbaugh",
+    "realName": "Jim Harbaugh",
+    "position": "QB",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 0,
+    "bio": "Nicknames: Jim Harbuff"
   },
   {
-    "id": "bentley",    "slug": "bentley",    "tecmoName": "Bentley",    "realName": "Albert Bentley",      "position": "RB", "team": "Ind",
-    "spriteSlug": "bentley", "avatarSlug": "albert-bentley"
+    "id": "anderson-chi",
+    "slug": "anderson-chi",
+    "tecmoName": "Anderson",
+    "realName": "Neal Anderson",
+    "position": "RB",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 3
   },
   {
-    "id": "harmon",     "slug": "harmon",     "tecmoName": "Harmon",     "realName": "Ronnie Harmon",       "position": "RB", "team": "SD",
-    "spriteSlug": "harmon", "avatarSlug": "ronnie-harmon"
+    "id": "bailey-chi",
+    "slug": "bailey-chi",
+    "tecmoName": "Bailey",
+    "realName": "Johnny Bailey",
+    "position": "RB",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 5,
+    "bio": "Nicknames: JOHNNY BAILEY"
   },
   {
-    "id": "jordan",     "slug": "jordan",     "tecmoName": "Jordan",     "realName": "Steve Jordan",        "position": "TE", "team": "Min",
-    "spriteSlug": "jordan", "avatarSlug": "steve-jordan"
+    "id": "thornton-chi",
+    "slug": "thornton-chi",
+    "tecmoName": "Thornton",
+    "realName": "James Thornton",
+    "position": "TE",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 10
   },
   {
-    "id": "jackson-don","slug": "jackson-phi","tecmoName": "Jackson",    "realName": "Keith Jackson",       "position": "TE", "team": "Phi",
-    "spriteSlug": "jackson-don", "avatarSlug": "keith-jackson"
+    "id": "davis-chi",
+    "slug": "davis-chi",
+    "tecmoName": "Davis",
+    "realName": "Wendell Davis",
+    "position": "WR",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 7
   },
   {
-    "id": "hester",     "slug": "hester",     "tecmoName": "Hester",     "realName": "Jessie Hester",       "position": "WR", "team": "Ind",
-    "spriteSlug": "hester", "avatarSlug": "jessie-hester"
+    "id": "morris-chi",
+    "slug": "morris-chi",
+    "tecmoName": "Morris",
+    "realName": "Ron Morris",
+    "position": "WR",
+    "team": "CHI",
+    "teamSlug": "bears",
+    "spriteIndex": 6
   },
   {
-    "id": "calloway",   "slug": "calloway",   "tecmoName": "Calloway",   "realName": "Chris Calloway",      "position": "WR", "team": "Pit",
-    "spriteSlug": "calloway", "avatarSlug": "chris-calloway"
+    "id": "zander-cin",
+    "slug": "zander-cin",
+    "tecmoName": "Zander",
+    "realName": "Carl Zander",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 22
   },
   {
-    "id": "bell",       "slug": "bell",       "tecmoName": "Bell",       "realName": "Greg Lloyd / Bell (KR)","position": "KR", "team": "Pit",
-    "spriteSlug": "bell", "avatarSlug": "bell-pit"
+    "id": "johnson-cin",
+    "slug": "johnson-cin",
+    "tecmoName": "Johnson",
+    "realName": "Lee Johnson",
+    "position": "P",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 29
   },
   {
-    "id": "stone",      "slug": "stone",      "tecmoName": "Stone",      "realName": "Dwight Stone",        "position": "KR", "team": "Pit",
-    "spriteSlug": "stone", "avatarSlug": "dwight-stone"
-  },
-
-  {
-    "id": "leahy",      "slug": "leahy",      "tecmoName": "Leahy",      "realName": "Pat Leahy",           "position": "K",  "team": "Jets",
-    "spriteSlug": "leahy", "avatarSlug": "pat-leahy"
-  },
-  {
-    "id": "lowery",     "slug": "lowery",     "tecmoName": "Lowery",     "realName": "Nick Lowery",         "position": "K",  "team": "KC",
-    "spriteSlug": "lowery", "avatarSlug": "nick-lowery"
+    "id": "esiason-cin",
+    "slug": "esiason-cin",
+    "tecmoName": "Esiason",
+    "realName": "Boomer Esiason",
+    "position": "QB",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 0
   },
   {
-    "id": "treadwell",  "slug": "treadwell",  "tecmoName": "Treadwell",  "realName": "David Treadwell",     "position": "K",  "team": "Den",
-    "spriteSlug": "treadwell", "avatarSlug": "david-treadwell",
-    "bio": "72-yard FG from his own 45. Don wasn't rushing. Still."
+    "id": "brooks-cin",
+    "slug": "brooks-cin",
+    "tecmoName": "Brooks",
+    "realName": "James Brooks",
+    "position": "RB",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 2
   },
   {
-    "id": "jaeger",     "slug": "jaeger",     "tecmoName": "Jaeger",     "realName": "Jeff Jaeger",         "position": "K",  "team": "Rai",
-    "spriteSlug": "jaeger", "avatarSlug": "jeff-jaeger"
+    "id": "woods-cin",
+    "slug": "woods-cin",
+    "tecmoName": "Woods",
+    "realName": "Ickey Woods",
+    "position": "RB",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 3
   },
   {
-    "id": "gossett",    "slug": "gossett",    "tecmoName": "Gossett",    "realName": "Jeff Gossett",        "position": "P",  "team": "Rai",
-    "spriteSlug": "gossett", "avatarSlug": "jeff-gossett"
+    "id": "fulcher-cin",
+    "slug": "fulcher-cin",
+    "tecmoName": "Fulcher",
+    "realName": "David Fulcher",
+    "position": "S",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 27
   },
   {
-    "id": "prokop",     "slug": "prokop",     "tecmoName": "Prokop",     "realName": "Joe Prokop",          "position": "P",  "team": "Jets",
-    "spriteSlug": "prokop", "avatarSlug": "joe-prokop"
+    "id": "holman-cin",
+    "slug": "holman-cin",
+    "tecmoName": "Holman",
+    "realName": "Rodney Holman",
+    "position": "TE",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 10
   },
   {
-    "id": "camarillo",  "slug": "camarillo",  "tecmoName": "Camarillo",  "realName": "Rich Camarillo",      "position": "P",  "team": "Phx",
-    "spriteSlug": "camarillo", "avatarSlug": "rich-camarillo"
-  },
-
-  {
-    "id": "ball",       "slug": "ball",       "tecmoName": "Ball",       "realName": "Jerry Ball",          "position": "DT", "team": "Det",
-    "spriteSlug": "ball", "avatarSlug": "jerry-ball",
-    "bio": "84 sacks in a season. Major destroyed quarterbacks."
-  },
-  {
-    "id": "singletary", "slug": "singletary", "tecmoName": "Singletary", "realName": "Mike Singletary",     "position": "LB", "team": "Chi",
-    "spriteSlug": "singletary", "avatarSlug": "mike-singletary"
+    "id": "brown-cin",
+    "slug": "brown-cin",
+    "tecmoName": "Brown",
+    "realName": "Eddie Brown",
+    "position": "WR",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 7
   },
   {
-    "id": "woodson",    "slug": "woodson",    "tecmoName": "Woodson",    "realName": "Rod Woodson",         "position": "DB", "team": "Pit",
-    "spriteSlug": "woodson", "avatarSlug": "rod-woodson"
+    "id": "jennings-cin",
+    "slug": "jennings-cin",
+    "tecmoName": "Jennings",
+    "realName": "S. Jennings",
+    "position": "WR",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 5
   },
   {
-    "id": "harden",     "slug": "harden",     "tecmoName": "Harden",     "realName": "Bobby Harden",        "position": "DB", "team": "Hou",
-    "spriteSlug": "harden", "avatarSlug": "bobby-harden"
+    "id": "mcgee-cin",
+    "slug": "mcgee-cin",
+    "tecmoName": "Mcgee",
+    "realName": "Tim Mcgee",
+    "position": "WR",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 6
   },
   {
-    "id": "thomas-kc",  "slug": "thomas-kc",  "tecmoName": "Thomas",     "realName": "Derrick Thomas",      "position": "LB", "team": "KC",
-    "spriteSlug": "thomas-kc", "avatarSlug": "derrick-thomas"
+    "id": "smith-cin",
+    "slug": "smith-cin",
+    "tecmoName": "Smith",
+    "realName": "Kendal Smith",
+    "position": "WR",
+    "team": "CIN",
+    "teamSlug": "bengals",
+    "spriteIndex": 8
   },
   {
-    "id": "byrd",       "slug": "byrd",       "tecmoName": "Byrd",       "realName": "Gill Byrd",           "position": "DB", "team": "SD",
-    "spriteSlug": "byrd", "avatarSlug": "gill-byrd"
+    "id": "wagner-cle",
+    "slug": "wagner-cle",
+    "tecmoName": "Wagner",
+    "realName": "Bryan Wagner",
+    "position": "P",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 29
   },
   {
-    "id": "white-det",  "slug": "white-det",  "tecmoName": "White",      "realName": "William White",       "position": "DB", "team": "Det",
-    "spriteSlug": "white-det", "avatarSlug": "william-white"
+    "id": "qb-browns-cle",
+    "slug": "qb-browns-cle",
+    "tecmoName": "QB",
+    "realName": "Bernie Kosar",
+    "position": "QB",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 0
   },
   {
-    "id": "wilks",      "slug": "wilks",      "tecmoName": "Wilks",      "realName": "Jim Wilks",           "position": "DE", "team": "NO",
-    "spriteSlug": "wilks", "avatarSlug": "jim-wilks"
+    "id": "mack-cle",
+    "slug": "mack-cle",
+    "tecmoName": "Mack",
+    "realName": "Mac Mack",
+    "position": "RB",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 2
   },
   {
-    "id": "miller-sd",  "slug": "miller-sd",  "tecmoName": "Miller",     "realName": "Les Miller",          "position": "DT", "team": "SD",
-    "spriteSlug": "miller-sd", "avatarSlug": "les-miller"
+    "id": "metcalf-cle",
+    "slug": "metcalf-cle",
+    "tecmoName": "Metcalf",
+    "realName": "Metcalf Metcalf",
+    "position": "RB",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 3
   },
   {
-    "id": "porter",     "slug": "porter",     "tecmoName": "Porter",     "realName": "Rufus Porter",        "position": "LB", "team": "Sea",
-    "spriteSlug": "porter", "avatarSlug": "rufus-porter"
+    "id": "langhorne-cle",
+    "slug": "langhorne-cle",
+    "tecmoName": "Langhorne",
+    "realName": "Reggie Langhorne",
+    "position": "WR",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 7
   },
   {
-    "id": "cofer-det",  "slug": "cofer-det",  "tecmoName": "Cofer",      "realName": "Michael Cofer",       "position": "LB", "team": "Det",
-    "spriteSlug": "cofer-det", "avatarSlug": "michael-cofer",
-    "bio": "Block-kick monster. 13 in a season including 10 XPs."
+    "id": "newsome-cle",
+    "slug": "newsome-cle",
+    "tecmoName": "Newsome",
+    "realName": "Ozzie Newsome",
+    "position": "WR",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 10
   },
   {
-    "id": "childress",  "slug": "childress",  "tecmoName": "Childress",  "realName": "Ray Childress",       "position": "DT", "team": "Hou",
-    "spriteSlug": "childress", "avatarSlug": "ray-childress"
+    "id": "slaughter-cle",
+    "slug": "slaughter-cle",
+    "tecmoName": "Slaughter",
+    "realName": "W Slaughter",
+    "position": "WR",
+    "team": "CLE",
+    "teamSlug": "browns",
+    "spriteIndex": 6
   },
   {
-    "id": "thomas-don", "slug": "thomas-kc-block","tecmoName": "Thomas", "realName": "Derrick Thomas",      "position": "LB", "team": "KC",
-    "spriteSlug": "thomas-don", "avatarSlug": "derrick-thomas"
+    "id": "jones-dal",
+    "slug": "jones-dal",
+    "tecmoName": "Jones",
+    "realName": "Jimmie Jones",
+    "position": "LB",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 22
+  },
+  {
+    "id": "saxon-dal",
+    "slug": "saxon-dal",
+    "tecmoName": "Saxon",
+    "realName": "Mike Saxon",
+    "position": "P",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 29
+  },
+  {
+    "id": "aikman-dal",
+    "slug": "aikman-dal",
+    "tecmoName": "Aikman",
+    "realName": "Troy Aikman",
+    "position": "QB",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 0
+  },
+  {
+    "id": "highsmith-dal",
+    "slug": "highsmith-dal",
+    "tecmoName": "Highsmith",
+    "realName": "Alonzo Highsmith",
+    "position": "RB",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 4
+  },
+  {
+    "id": "smith-dal",
+    "slug": "smith-dal",
+    "tecmoName": "Smith",
+    "realName": "Emmitt Smith",
+    "position": "RB",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 2
+  },
+  {
+    "id": "irvin-dal",
+    "slug": "irvin-dal",
+    "tecmoName": "Irvin",
+    "realName": "Michael Irvin",
+    "position": "WR",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 7
+  },
+  {
+    "id": "martin-dal",
+    "slug": "martin-dal",
+    "tecmoName": "Martin",
+    "realName": "Kelvin Martin",
+    "position": "WR",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 6
+  },
+  {
+    "id": "novacek-dal",
+    "slug": "novacek-dal",
+    "tecmoName": "Novacek",
+    "realName": "Jay Novacek",
+    "position": "WR",
+    "team": "DAL",
+    "teamSlug": "cowboys",
+    "spriteIndex": 10
+  },
+  {
+    "id": "munford-den",
+    "slug": "munford-den",
+    "tecmoName": "Munford",
+    "realName": "Marc Munford",
+    "position": "LB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 22
+  },
+  {
+    "id": "horan-den",
+    "slug": "horan-den",
+    "tecmoName": "Horan",
+    "realName": "Mike Horan",
+    "position": "P",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 29
+  },
+  {
+    "id": "elway-den",
+    "slug": "elway-den",
+    "tecmoName": "Elway",
+    "realName": "John Elway",
+    "position": "QB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 0
+  },
+  {
+    "id": "humphrey-den",
+    "slug": "humphrey-den",
+    "tecmoName": "Humphrey",
+    "realName": "Bobby Humphrey",
+    "position": "RB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 2,
+    "bio": "Nicknames: Bebbe Hemphre"
+  },
+  {
+    "id": "smith-den",
+    "slug": "smith-den",
+    "tecmoName": "Smith",
+    "realName": "Dennis Smith",
+    "position": "S",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 27
+  },
+  {
+    "id": "kay-den",
+    "slug": "kay-den",
+    "tecmoName": "Kay",
+    "realName": "Clarence Kay",
+    "position": "TE",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 10
+  },
+  {
+    "id": "jackson-den",
+    "slug": "jackson-den",
+    "tecmoName": "Jackson",
+    "realName": "Mark Jackson",
+    "position": "WR",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 7
+  },
+  {
+    "id": "johnson-den",
+    "slug": "johnson-den",
+    "tecmoName": "Johnson",
+    "realName": "Vance Johnson",
+    "position": "WR",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 6
+  },
+  {
+    "id": "crockett-det",
+    "slug": "crockett-det",
+    "tecmoName": "Crockett",
+    "realName": "Davy Crockett",
+    "position": "CB",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 25
+  },
+  {
+    "id": "murray-det",
+    "slug": "murray-det",
+    "tecmoName": "Murray",
+    "realName": "Eddie Murray",
+    "position": "K",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 28
+  },
+  {
+    "id": "cofer-det",
+    "slug": "cofer-det",
+    "tecmoName": "Cofer",
+    "realName": "Michael Cofer",
+    "position": "LB",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 20
+  },
+  {
+    "id": "spielman-det",
+    "slug": "spielman-det",
+    "tecmoName": "Spielman",
+    "realName": "Chris Spielman",
+    "position": "LB",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 22
+  },
+  {
+    "id": "arnold-det",
+    "slug": "arnold-det",
+    "tecmoName": "Arnold",
+    "realName": "Jim Arnold",
+    "position": "P",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 29
+  },
+  {
+    "id": "peete-det",
+    "slug": "peete-det",
+    "tecmoName": "Peete",
+    "realName": "Rodney Peete",
+    "position": "QB",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 0
+  },
+  {
+    "id": "gray-det",
+    "slug": "gray-det",
+    "tecmoName": "Gray",
+    "realName": "Mel Gray",
+    "position": "RB",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 4
+  },
+  {
+    "id": "sanders-det",
+    "slug": "sanders-det",
+    "tecmoName": "Sanders",
+    "realName": "Barry Sanders",
+    "position": "RB",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 2
+  },
+  {
+    "id": "clark-det",
+    "slug": "clark-det",
+    "tecmoName": "Clark",
+    "realName": "Robert Clark",
+    "position": "WR",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 8
+  },
+  {
+    "id": "greer-det",
+    "slug": "greer-det",
+    "tecmoName": "Greer",
+    "realName": "Terry Greer",
+    "position": "WR",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 9
+  },
+  {
+    "id": "johnson-det",
+    "slug": "johnson-det",
+    "tecmoName": "Johnson",
+    "realName": "Richard Johnson",
+    "position": "WR",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 7,
+    "bio": "Nicknames: Dick Johnson"
+  },
+  {
+    "id": "matthews-det",
+    "slug": "matthews-det",
+    "tecmoName": "Matthews",
+    "realName": "Aubrey Matthews",
+    "position": "WR",
+    "team": "DET",
+    "teamSlug": "lions",
+    "spriteIndex": 6
+  },
+  {
+    "id": "bahr-gia",
+    "slug": "bahr-gia",
+    "tecmoName": "Bahr",
+    "realName": "Matt Bahr",
+    "position": "K",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 28
+  },
+  {
+    "id": "johnson-gia",
+    "slug": "johnson-gia",
+    "tecmoName": "Johnson",
+    "realName": "Pepper Johnson",
+    "position": "LB",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 21
+  },
+  {
+    "id": "reasons-gia",
+    "slug": "reasons-gia",
+    "tecmoName": "Reasons",
+    "realName": "Gary Reasons",
+    "position": "LB",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 22
+  },
+  {
+    "id": "taylor-gia",
+    "slug": "taylor-gia",
+    "tecmoName": "Taylor",
+    "realName": "Lawrence Taylor",
+    "position": "LB",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 20
+  },
+  {
+    "id": "landeta-gia",
+    "slug": "landeta-gia",
+    "tecmoName": "Landeta",
+    "realName": "Sean Landeta",
+    "position": "P",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 29
+  },
+  {
+    "id": "landetta-gia",
+    "slug": "landetta-gia",
+    "tecmoName": "Landetta",
+    "realName": "Shawn Landetta",
+    "position": "P",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 29
+  },
+  {
+    "id": "simms-gia",
+    "slug": "simms-gia",
+    "tecmoName": "Simms",
+    "realName": "Phil Simms",
+    "position": "QB",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 0
+  },
+  {
+    "id": "anderson-gia",
+    "slug": "anderson-gia",
+    "tecmoName": "Anderson",
+    "realName": "Ottis Anderson",
+    "position": "RB",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 2
+  },
+  {
+    "id": "meggett-gia",
+    "slug": "meggett-gia",
+    "tecmoName": "Meggett",
+    "realName": "Dave Meggett",
+    "position": "RB",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 3,
+    "bio": "Nicknames: Therapist"
+  },
+  {
+    "id": "bavaro-gia",
+    "slug": "bavaro-gia",
+    "tecmoName": "Bavaro",
+    "realName": "Mark Bavaro",
+    "position": "TE",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 10
+  },
+  {
+    "id": "baker-gia",
+    "slug": "baker-gia",
+    "tecmoName": "Baker",
+    "realName": "Stephen Baker",
+    "position": "WR",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 7
+  },
+  {
+    "id": "ingram-gia",
+    "slug": "ingram-gia",
+    "tecmoName": "Ingram",
+    "realName": "Mark Ingram",
+    "position": "WR",
+    "team": "GIA",
+    "teamSlug": "giants",
+    "spriteIndex": 6
+  },
+  {
+    "id": "johnson-hou",
+    "slug": "johnson-hou",
+    "tecmoName": "Johnson",
+    "realName": "Richared Johnson",
+    "position": "CB",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 24
+  },
+  {
+    "id": "fuller-hou",
+    "slug": "fuller-hou",
+    "tecmoName": "Fuller",
+    "realName": "William Fuller",
+    "position": "DE",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 19
+  },
+  {
+    "id": "montgomery-hou",
+    "slug": "montgomery-hou",
+    "tecmoName": "Montgomery",
+    "realName": "Greg Montgomery",
+    "position": "P",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 29
+  },
+  {
+    "id": "moon-hou",
+    "slug": "moon-hou",
+    "tecmoName": "Moon",
+    "realName": "Warren Moon",
+    "position": "QB",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 0
+  },
+  {
+    "id": "givins-hou",
+    "slug": "givins-hou",
+    "tecmoName": "Givins",
+    "realName": "Ernest Givins",
+    "position": "WR",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 6
+  },
+  {
+    "id": "hill-hou",
+    "slug": "hill-hou",
+    "tecmoName": "Hill",
+    "realName": "Drew Hill",
+    "position": "WR",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 8
+  },
+  {
+    "id": "jefferies-hou",
+    "slug": "jefferies-hou",
+    "tecmoName": "Jefferies",
+    "realName": "Haywood Jefferies",
+    "position": "WR",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 6
+  },
+  {
+    "id": "jeffries-hou",
+    "slug": "jeffries-hou",
+    "tecmoName": "Jeffries",
+    "realName": "Haywood Jeffries",
+    "position": "WR",
+    "team": "HOU",
+    "teamSlug": "oilers",
+    "spriteIndex": 7
+  },
+  {
+    "id": "herrod-ind",
+    "slug": "herrod-ind",
+    "tecmoName": "Herrod",
+    "realName": "Jeff Herrod",
+    "position": "LB",
+    "team": "IND",
+    "teamSlug": "colts",
+    "spriteIndex": 22
+  },
+  {
+    "id": "stark-ind",
+    "slug": "stark-ind",
+    "tecmoName": "Stark",
+    "realName": "Rohn Stark",
+    "position": "P",
+    "team": "IND",
+    "teamSlug": "colts",
+    "spriteIndex": 29
+  },
+  {
+    "id": "jeff-ind",
+    "slug": "jeff-ind",
+    "tecmoName": "Jeff",
+    "realName": "George Jeff",
+    "position": "QB",
+    "team": "IND",
+    "teamSlug": "colts",
+    "spriteIndex": 0
+  },
+  {
+    "id": "bentley-ind",
+    "slug": "bentley-ind",
+    "tecmoName": "Bentley",
+    "realName": "Albert Bentley",
+    "position": "RB",
+    "team": "IND",
+    "teamSlug": "colts",
+    "spriteIndex": 3,
+    "bio": "Nicknames: Bimmer, Benz, or Bentley"
+  },
+  {
+    "id": "verdin-ind",
+    "slug": "verdin-ind",
+    "tecmoName": "Verdin",
+    "realName": "Clarence Verdin",
+    "position": "WR",
+    "team": "IND",
+    "teamSlug": "colts",
+    "spriteIndex": 8
+  },
+  {
+    "id": "mcmillan-jet",
+    "slug": "mcmillan-jet",
+    "tecmoName": "McMillan",
+    "realName": "Erik McMillan",
+    "position": "CB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 26
+  },
+  {
+    "id": "leahy-jet",
+    "slug": "leahy-jet",
+    "tecmoName": "Leahy",
+    "realName": "Pat Leahy",
+    "position": "K",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 28
+  },
+  {
+    "id": "byrd-jet",
+    "slug": "byrd-jet",
+    "tecmoName": "Byrd",
+    "realName": "Dennis Byrd",
+    "position": "LB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 21
+  },
+  {
+    "id": "clifton-jet",
+    "slug": "clifton-jet",
+    "tecmoName": "Clifton",
+    "realName": "Kyle Clifton",
+    "position": "LB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 22
+  },
+  {
+    "id": "prokop-jet",
+    "slug": "prokop-jet",
+    "tecmoName": "Prokop",
+    "realName": "Joe Prokop",
+    "position": "P",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 29
+  },
+  {
+    "id": "protop-jet",
+    "slug": "protop-jet",
+    "tecmoName": "Protop",
+    "realName": "Joe Protop",
+    "position": "P",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 29
+  },
+  {
+    "id": "ken-jet",
+    "slug": "ken-jet",
+    "tecmoName": "Ken",
+    "realName": "OBrien Ken",
+    "position": "QB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 0
+  },
+  {
+    "id": "o-brien-jet",
+    "slug": "o-brien-jet",
+    "tecmoName": "O.Brien",
+    "realName": "Ken O.Brien",
+    "position": "QB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 0
+  },
+  {
+    "id": "hoge-jet",
+    "slug": "hoge-jet",
+    "tecmoName": "Hoge",
+    "realName": "Merril Hoge",
+    "position": "RB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 2
+  },
+  {
+    "id": "mcneil-jet",
+    "slug": "mcneil-jet",
+    "tecmoName": "McNeil",
+    "realName": "Freeman McNeil",
+    "position": "RB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 3
+  },
+  {
+    "id": "thomas-jet",
+    "slug": "thomas-jet",
+    "tecmoName": "Thomas",
+    "realName": "Blair Thomas",
+    "position": "RB",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 2
+  },
+  {
+    "id": "boyer-jet",
+    "slug": "boyer-jet",
+    "tecmoName": "Boyer",
+    "realName": "Mark Boyer",
+    "position": "TE",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 10
+  },
+  {
+    "id": "mathis-jet",
+    "slug": "mathis-jet",
+    "tecmoName": "Mathis",
+    "realName": "Terance Mathis",
+    "position": "WR",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 8
+  },
+  {
+    "id": "moore-jet",
+    "slug": "moore-jet",
+    "tecmoName": "Moore",
+    "realName": "Rob Moore",
+    "position": "WR",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 7
+  },
+  {
+    "id": "toon-jet",
+    "slug": "toon-jet",
+    "tecmoName": "Toon",
+    "realName": "Al Toon",
+    "position": "WR",
+    "team": "JET",
+    "teamSlug": "jets",
+    "spriteIndex": 6
+  },
+  {
+    "id": "ross-kc",
+    "slug": "ross-kc",
+    "tecmoName": "Ross",
+    "realName": "Kevin Ross",
+    "position": "CB",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 24
+  },
+  {
+    "id": "snow-kc",
+    "slug": "snow-kc",
+    "tecmoName": "Snow",
+    "realName": "Percy Snow",
+    "position": "DE",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 22
+  },
+  {
+    "id": "lowery-kc",
+    "slug": "lowery-kc",
+    "tecmoName": "Lowery",
+    "realName": "Nick Lowery",
+    "position": "K",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 28
+  },
+  {
+    "id": "barker-kc",
+    "slug": "barker-kc",
+    "tecmoName": "Barker",
+    "realName": "Bryan Barker",
+    "position": "P",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 29
+  },
+  {
+    "id": "de-berg-kc",
+    "slug": "de-berg-kc",
+    "tecmoName": "De Berg",
+    "realName": "Steve De Berg",
+    "position": "QB",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 0
+  },
+  {
+    "id": "okoye-kc",
+    "slug": "okoye-kc",
+    "tecmoName": "Okoye",
+    "realName": "Christian Okoye",
+    "position": "RB",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 2
+  },
+  {
+    "id": "word-kc",
+    "slug": "word-kc",
+    "tecmoName": "Word",
+    "realName": "Barry Word",
+    "position": "RB",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 3,
+    "bio": "Nicknames: Bird is the Word"
+  },
+  {
+    "id": "thomas-kc",
+    "slug": "thomas-kc",
+    "tecmoName": "Thomas",
+    "realName": "Robb Thomas",
+    "position": "TE",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 6
+  },
+  {
+    "id": "paige-kc",
+    "slug": "paige-kc",
+    "tecmoName": "Paige",
+    "realName": "Stephone Paige",
+    "position": "WR",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 7
+  },
+  {
+    "id": "stephone-kc",
+    "slug": "stephone-kc",
+    "tecmoName": "Stephone",
+    "realName": "Paige Stephone",
+    "position": "WR",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 6
+  },
+  {
+    "id": "stoyanovich-mia",
+    "slug": "stoyanovich-mia",
+    "tecmoName": "Stoyanovich",
+    "realName": "Pete Stoyanovich",
+    "position": "K",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 28
+  },
+  {
+    "id": "offerdahl-mia",
+    "slug": "offerdahl-mia",
+    "tecmoName": "Offerdahl",
+    "realName": "John Offerdahl",
+    "position": "LB",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 22
+  },
+  {
+    "id": "roby-mia",
+    "slug": "roby-mia",
+    "tecmoName": "Roby",
+    "realName": "Reggie Roby",
+    "position": "P",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 29
+  },
+  {
+    "id": "marino-mia",
+    "slug": "marino-mia",
+    "tecmoName": "Marino",
+    "realName": "Dan Marino",
+    "position": "QB",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 0,
+    "bio": "Nicknames: Molasses"
+  },
+  {
+    "id": "logan-mia",
+    "slug": "logan-mia",
+    "tecmoName": "Logan",
+    "realName": "Marc Logan",
+    "position": "RB",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 4
+  },
+  {
+    "id": "paige-mia",
+    "slug": "paige-mia",
+    "tecmoName": "Paige",
+    "realName": "Tony Paige",
+    "position": "RB",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 3
+  },
+  {
+    "id": "sammie-mia",
+    "slug": "sammie-mia",
+    "tecmoName": "Sammie",
+    "realName": "Smith Sammie",
+    "position": "RB",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 2
+  },
+  {
+    "id": "smith-mia",
+    "slug": "smith-mia",
+    "tecmoName": "Smith",
+    "realName": "Sammy Smith",
+    "position": "RB",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 2
+  },
+  {
+    "id": "edmunds-mia",
+    "slug": "edmunds-mia",
+    "tecmoName": "Edmunds",
+    "realName": "Ferrell Edmunds",
+    "position": "TE",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 10,
+    "bio": "Nicknames: Undomesticated"
+  },
+  {
+    "id": "ferrell-mia",
+    "slug": "ferrell-mia",
+    "tecmoName": "Ferrell",
+    "realName": "Edmunds Ferrell",
+    "position": "TE",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 10
+  },
+  {
+    "id": "jensen-mia",
+    "slug": "jensen-mia",
+    "tecmoName": "Jensen",
+    "realName": "Jim Jensen",
+    "position": "TE",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 11
+  },
+  {
+    "id": "clayton-mia",
+    "slug": "clayton-mia",
+    "tecmoName": "Clayton",
+    "realName": "Mark Clayton",
+    "position": "WR",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 6
+  },
+  {
+    "id": "duper-mia",
+    "slug": "duper-mia",
+    "tecmoName": "Duper",
+    "realName": "Mark Duper",
+    "position": "WR",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 7,
+    "bio": "Nicknames: Super"
+  },
+  {
+    "id": "martin-mia",
+    "slug": "martin-mia",
+    "tecmoName": "Martin",
+    "realName": "Tony Martin",
+    "position": "WR",
+    "team": "MIA",
+    "teamSlug": "dolphins",
+    "spriteIndex": 9
+  },
+  {
+    "id": "agnew-ne",
+    "slug": "agnew-ne",
+    "tecmoName": "Agnew",
+    "realName": "Ray Agnew",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 19
+  },
+  {
+    "id": "hurst-ne",
+    "slug": "hurst-ne",
+    "tecmoName": "Hurst",
+    "realName": "Maurice Hurst",
+    "position": "CB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 24
+  },
+  {
+    "id": "lippett-ne",
+    "slug": "lippett-ne",
+    "tecmoName": "Lippett",
+    "realName": "Ronnie Lippett",
+    "position": "CB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 25
+  },
+  {
+    "id": "harvey-ne",
+    "slug": "harvey-ne",
+    "tecmoName": "Harvey",
+    "realName": "Richard Harvey",
+    "position": "LB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 22
+  },
+  {
+    "id": "reynolds-ne",
+    "slug": "reynolds-ne",
+    "tecmoName": "Reynolds",
+    "realName": "Ed Reynolds",
+    "position": "LB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 21
+  },
+  {
+    "id": "hansen-ne",
+    "slug": "hansen-ne",
+    "tecmoName": "Hansen",
+    "realName": "Brian Hansen",
+    "position": "P",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 29
+  },
+  {
+    "id": "grogan-ne",
+    "slug": "grogan-ne",
+    "tecmoName": "Grogan",
+    "realName": "Steve Grogan",
+    "position": "QB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 0
+  },
+  {
+    "id": "wilson-ne",
+    "slug": "wilson-ne",
+    "tecmoName": "Wilson",
+    "realName": "Marc Wilson",
+    "position": "QB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 1
+  },
+  {
+    "id": "stephens-ne",
+    "slug": "stephens-ne",
+    "tecmoName": "Stephens",
+    "realName": "John Stephens",
+    "position": "RB",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 3
+  },
+  {
+    "id": "marion-ne",
+    "slug": "marion-ne",
+    "tecmoName": "Marion",
+    "realName": "Fred Marion",
+    "position": "S",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 26
+  },
+  {
+    "id": "cook-ne",
+    "slug": "cook-ne",
+    "tecmoName": "Cook",
+    "realName": "Marv Cook",
+    "position": "TE",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 10
+  },
+  {
+    "id": "dykes-ne",
+    "slug": "dykes-ne",
+    "tecmoName": "Dykes",
+    "realName": "Hart Lee Dykes",
+    "position": "WR",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 7
+  },
+  {
+    "id": "fryar-ne",
+    "slug": "fryar-ne",
+    "tecmoName": "Fryar",
+    "realName": "Irving Fryar",
+    "position": "WR",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 6,
+    "bio": "Nicknames: French"
+  },
+  {
+    "id": "martin-ne",
+    "slug": "martin-ne",
+    "tecmoName": "Martin",
+    "realName": "Sammy Martin",
+    "position": "WR",
+    "team": "NE",
+    "teamSlug": "patriots",
+    "spriteIndex": 9
+  },
+  {
+    "id": "turnbull-no",
+    "slug": "turnbull-no",
+    "tecmoName": "Turnbull",
+    "realName": "Renaldo Turnbull",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 17
+  },
+  {
+    "id": "massey-no",
+    "slug": "massey-no",
+    "tecmoName": "Massey",
+    "realName": "Robert Massey",
+    "position": "CB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 25
+  },
+  {
+    "id": "johnson-no",
+    "slug": "johnson-no",
+    "tecmoName": "Johnson",
+    "realName": "Vaughn Johnson",
+    "position": "LB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 21
+  },
+  {
+    "id": "mills-no",
+    "slug": "mills-no",
+    "tecmoName": "Mills",
+    "realName": "Sam Mills",
+    "position": "LB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 22
+  },
+  {
+    "id": "barnhardt-no",
+    "slug": "barnhardt-no",
+    "tecmoName": "Barnhardt",
+    "realName": "Tommy Barnhardt",
+    "position": "P",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 29
+  },
+  {
+    "id": "fourcade-no",
+    "slug": "fourcade-no",
+    "tecmoName": "Fourcade",
+    "realName": "John Fourcade",
+    "position": "QB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 1
+  },
+  {
+    "id": "walsh-no",
+    "slug": "walsh-no",
+    "tecmoName": "Walsh",
+    "realName": "Steve Walsh",
+    "position": "QB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 0
+  },
+  {
+    "id": "fenerty-no",
+    "slug": "fenerty-no",
+    "tecmoName": "Fenerty",
+    "realName": "Gil Fenerty",
+    "position": "RB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 5
+  },
+  {
+    "id": "heyward-no",
+    "slug": "heyward-no",
+    "tecmoName": "Heyward",
+    "realName": "Craig Heyward",
+    "position": "RB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 2
+  },
+  {
+    "id": "hilliard-no",
+    "slug": "hilliard-no",
+    "tecmoName": "Hilliard",
+    "realName": "Dalton Hilliard",
+    "position": "RB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 3
+  },
+  {
+    "id": "mayes-no",
+    "slug": "mayes-no",
+    "tecmoName": "Mayes",
+    "realName": "Rueben Mayes",
+    "position": "RB",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 4
+  },
+  {
+    "id": "brenner-no",
+    "slug": "brenner-no",
+    "tecmoName": "Brenner",
+    "realName": "Hoby Brenner",
+    "position": "TE",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 10
+  },
+  {
+    "id": "martin-no",
+    "slug": "martin-no",
+    "tecmoName": "Martin",
+    "realName": "Eric Martin",
+    "position": "WR",
+    "team": "NO",
+    "teamSlug": "saints",
+    "spriteIndex": 6
+  },
+  {
+    "id": "white-phi",
+    "slug": "white-phi",
+    "tecmoName": "White",
+    "realName": "Reggie White",
+    "position": "DE",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 19
+  },
+  {
+    "id": "brown-phi",
+    "slug": "brown-phi",
+    "tecmoName": "Brown",
+    "realName": "Jerome Brown",
+    "position": "LB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 21
+  },
+  {
+    "id": "feagles-phi",
+    "slug": "feagles-phi",
+    "tecmoName": "Feagles",
+    "realName": "Jeff Feagles",
+    "position": "P",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 29
+  },
+  {
+    "id": "qb-eagles-phi",
+    "slug": "qb-eagles-phi",
+    "tecmoName": "QB",
+    "realName": "Randall Cunningham",
+    "position": "QB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 0
+  },
+  {
+    "id": "byars-phi",
+    "slug": "byars-phi",
+    "tecmoName": "Byars",
+    "realName": "Keith Byars",
+    "position": "RB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 2
+  },
+  {
+    "id": "sherman-phi",
+    "slug": "sherman-phi",
+    "tecmoName": "Sherman",
+    "realName": "Heath Sherman",
+    "position": "RB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 3
+  },
+  {
+    "id": "jackson-phi",
+    "slug": "jackson-phi",
+    "tecmoName": "Jackson",
+    "realName": "Keith Jackson",
+    "position": "TE",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 10
+  },
+  {
+    "id": "barnett-phi",
+    "slug": "barnett-phi",
+    "tecmoName": "Barnett",
+    "realName": "Fred Barnett",
+    "position": "WR",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 6
+  },
+  {
+    "id": "quick-phi",
+    "slug": "quick-phi",
+    "tecmoName": "Quick",
+    "realName": "Mike Quick",
+    "position": "WR",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 8
+  },
+  {
+    "id": "williams-phi",
+    "slug": "williams-phi",
+    "tecmoName": "Williams",
+    "realName": "Calvin Williams",
+    "position": "WR",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 7
+  },
+  {
+    "id": "camarillo-phx",
+    "slug": "camarillo-phx",
+    "tecmoName": "Camarillo",
+    "realName": "Rich Camarillo",
+    "position": "P",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 29
+  },
+  {
+    "id": "camrillo-phx",
+    "slug": "camrillo-phx",
+    "tecmoName": "Camrillo",
+    "realName": "Rich Camrillo",
+    "position": "P",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 29
+  },
+  {
+    "id": "rosenbach-phx",
+    "slug": "rosenbach-phx",
+    "tecmoName": "Rosenbach",
+    "realName": "Timm Rosenbach",
+    "position": "QB",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 0,
+    "bio": "Nicknames: Timmmmmmmmmmm"
+  },
+  {
+    "id": "tom-phx",
+    "slug": "tom-phx",
+    "tecmoName": "Tom",
+    "realName": "Tupa Tom",
+    "position": "QB",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 0
+  },
+  {
+    "id": "johnson-phx",
+    "slug": "johnson-phx",
+    "tecmoName": "Johnson",
+    "realName": "Johnny Johnson",
+    "position": "RB",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 2
+  },
+  {
+    "id": "sikahema-phx",
+    "slug": "sikahema-phx",
+    "tecmoName": "Sikahema",
+    "realName": "Vai Sikahema",
+    "position": "RB",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 4
+  },
+  {
+    "id": "mcdonald-phx",
+    "slug": "mcdonald-phx",
+    "tecmoName": "Mcdonald",
+    "realName": "Tim Mcdonald",
+    "position": "S",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 27
+  },
+  {
+    "id": "green-phx",
+    "slug": "green-phx",
+    "tecmoName": "Green",
+    "realName": "Roy Green",
+    "position": "WR",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 6
+  },
+  {
+    "id": "jones-phx",
+    "slug": "jones-phx",
+    "tecmoName": "Jones",
+    "realName": "Eric Jones",
+    "position": "WR",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 8
+  },
+  {
+    "id": "proehl-phx",
+    "slug": "proehl-phx",
+    "tecmoName": "Proehl",
+    "realName": "Ricky Proehl",
+    "position": "WR",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 7
+  },
+  {
+    "id": "sikahemi-phx",
+    "slug": "sikahemi-phx",
+    "tecmoName": "Sikahemi",
+    "realName": "Via Sikahemi",
+    "position": "WR",
+    "team": "PHX",
+    "teamSlug": "cardinals",
+    "spriteIndex": 6
+  },
+  {
+    "id": "woodson-pit",
+    "slug": "woodson-pit",
+    "tecmoName": "Woodson",
+    "realName": "Rod Woodson",
+    "position": "CB",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 24
+  },
+  {
+    "id": "anderson-pit",
+    "slug": "anderson-pit",
+    "tecmoName": "Anderson",
+    "realName": "Gary Anderson",
+    "position": "K",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 28
+  },
+  {
+    "id": "little-pit",
+    "slug": "little-pit",
+    "tecmoName": "Little",
+    "realName": "David Little",
+    "position": "LB",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 21
+  },
+  {
+    "id": "lloyd-pit",
+    "slug": "lloyd-pit",
+    "tecmoName": "Lloyd",
+    "realName": "Greg Lloyd",
+    "position": "LB",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 20
+  },
+  {
+    "id": "stryzinski-pit",
+    "slug": "stryzinski-pit",
+    "tecmoName": "Stryzinski",
+    "realName": "Dan Stryzinski",
+    "position": "P",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 29
+  },
+  {
+    "id": "brister-pit",
+    "slug": "brister-pit",
+    "tecmoName": "Brister",
+    "realName": "Bubby Brister",
+    "position": "QB",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 0
+  },
+  {
+    "id": "hoge-pit",
+    "slug": "hoge-pit",
+    "tecmoName": "Hoge",
+    "realName": "Merril Hoge",
+    "position": "RB",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 2
+  },
+  {
+    "id": "green-pit",
+    "slug": "green-pit",
+    "tecmoName": "Green",
+    "realName": "Eric Green",
+    "position": "TE",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 10
+  },
+  {
+    "id": "hill-pit",
+    "slug": "hill-pit",
+    "tecmoName": "Hill",
+    "realName": "Derek Hill",
+    "position": "WR",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 7
+  },
+  {
+    "id": "lipps-pit",
+    "slug": "lipps-pit",
+    "tecmoName": "Lipps",
+    "realName": "Louis Lipps",
+    "position": "WR",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 6
+  },
+  {
+    "id": "stone-pit",
+    "slug": "stone-pit",
+    "tecmoName": "Stone",
+    "realName": "Dwight Stone",
+    "position": "WR",
+    "team": "PIT",
+    "teamSlug": "steelers",
+    "spriteIndex": 9
+  },
+  {
+    "id": "long-rai",
+    "slug": "long-rai",
+    "tecmoName": "Long",
+    "realName": "Howie Long",
+    "position": "DE",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 19
+  },
+  {
+    "id": "jaeger-rai",
+    "slug": "jaeger-rai",
+    "tecmoName": "Jaeger",
+    "realName": "Jeff Jaeger",
+    "position": "K",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 28,
+    "bio": "Nicknames: Yeff Yaeger; Jaegerbombs"
+  },
+  {
+    "id": "gossett-rai",
+    "slug": "gossett-rai",
+    "tecmoName": "Gossett",
+    "realName": "Jeff Gossett",
+    "position": "P",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 29
+  },
+  {
+    "id": "schroeder-rai",
+    "slug": "schroeder-rai",
+    "tecmoName": "Schroeder",
+    "realName": "Jay Schroeder",
+    "position": "QB",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 0,
+    "bio": "Nicknames: Slingin with Jay; Schroedinger's Pass"
+  },
+  {
+    "id": "allen-rai",
+    "slug": "allen-rai",
+    "tecmoName": "Allen",
+    "realName": "Marcus Allen",
+    "position": "RB",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 3
+  },
+  {
+    "id": "bell-rai",
+    "slug": "bell-rai",
+    "tecmoName": "Bell",
+    "realName": "Greg Bell",
+    "position": "RB",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 5
+  },
+  {
+    "id": "jackson-rai",
+    "slug": "jackson-rai",
+    "tecmoName": "Jackson",
+    "realName": "Bo Jackson",
+    "position": "RB",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 2
+  },
+  {
+    "id": "horton-rai",
+    "slug": "horton-rai",
+    "tecmoName": "Horton",
+    "realName": "Ethan Horton",
+    "position": "TE",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 10
+  },
+  {
+    "id": "brown-rai",
+    "slug": "brown-rai",
+    "tecmoName": "Brown",
+    "realName": "Tim Brown",
+    "position": "WR",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 8
+  },
+  {
+    "id": "fernandez-rai",
+    "slug": "fernandez-rai",
+    "tecmoName": "Fernandez",
+    "realName": "Mervyn Fernandez",
+    "position": "WR",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 6,
+    "bio": "Nicknames: Swervin'"
+  },
+  {
+    "id": "gault-rai",
+    "slug": "gault-rai",
+    "tecmoName": "Gault",
+    "realName": "Willie Gault",
+    "position": "WR",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 7,
+    "bio": "Nicknames: Assault"
+  },
+  {
+    "id": "graddy-rai",
+    "slug": "graddy-rai",
+    "tecmoName": "Graddy",
+    "realName": "Sam Graddy",
+    "position": "WR",
+    "team": "RAI",
+    "teamSlug": "raiders",
+    "spriteIndex": 9
+  },
+  {
+    "id": "greene-ram",
+    "slug": "greene-ram",
+    "tecmoName": "Greene",
+    "realName": "Kevin Greene",
+    "position": "LB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 23
+  },
+  {
+    "id": "stams-ram",
+    "slug": "stams-ram",
+    "tecmoName": "Stams",
+    "realName": "Frank Stams",
+    "position": "LB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 22
+  },
+  {
+    "id": "english-ram",
+    "slug": "english-ram",
+    "tecmoName": "English",
+    "realName": "Keith English",
+    "position": "P",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 29
+  },
+  {
+    "id": "everett-ram",
+    "slug": "everett-ram",
+    "tecmoName": "Everett",
+    "realName": "Jim Everett",
+    "position": "QB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 0
+  },
+  {
+    "id": "gary-ram",
+    "slug": "gary-ram",
+    "tecmoName": "Gary",
+    "realName": "Cleveland Gary",
+    "position": "RB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 2
+  },
+  {
+    "id": "green-ram",
+    "slug": "green-ram",
+    "tecmoName": "Green",
+    "realName": "Gaston Green",
+    "position": "RB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 4
+  },
+  {
+    "id": "mcgee-ram",
+    "slug": "mcgee-ram",
+    "tecmoName": "McGee",
+    "realName": "Buford McGee",
+    "position": "RB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 5
+  },
+  {
+    "id": "warner-ram",
+    "slug": "warner-ram",
+    "tecmoName": "Warner",
+    "realName": "Curt Warner",
+    "position": "RB",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 3
+  },
+  {
+    "id": "holohan-ram",
+    "slug": "holohan-ram",
+    "tecmoName": "Holohan",
+    "realName": "Pete Holohan",
+    "position": "TE",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 10
+  },
+  {
+    "id": "anderson-ram",
+    "slug": "anderson-ram",
+    "tecmoName": "Anderson",
+    "realName": "Willie Anderson",
+    "position": "WR",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 7
+  },
+  {
+    "id": "ellard-ram",
+    "slug": "ellard-ram",
+    "tecmoName": "Ellard",
+    "realName": "Henry Ellard",
+    "position": "WR",
+    "team": "RAM",
+    "teamSlug": "rams",
+    "spriteIndex": 6
+  },
+  {
+    "id": "byrd-sd",
+    "slug": "byrd-sd",
+    "tecmoName": "Byrd",
+    "realName": "Gil Byrd",
+    "position": "CB",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 25
+  },
+  {
+    "id": "o-neal-sd",
+    "slug": "o-neal-sd",
+    "tecmoName": "O'Neal",
+    "realName": "Leslie O'Neal",
+    "position": "LB",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 20
+  },
+  {
+    "id": "plummer-sd",
+    "slug": "plummer-sd",
+    "tecmoName": "Plummer",
+    "realName": "Gary Plummer",
+    "position": "LB",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 22
+  },
+  {
+    "id": "kidd-sd",
+    "slug": "kidd-sd",
+    "tecmoName": "Kidd",
+    "realName": "John Kidd",
+    "position": "P",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 29
+  },
+  {
+    "id": "bj-sd",
+    "slug": "bj-sd",
+    "tecmoName": "BJ",
+    "realName": "Tolliver BJ",
+    "position": "QB",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 0
+  },
+  {
+    "id": "butts-sd",
+    "slug": "butts-sd",
+    "tecmoName": "Butts",
+    "realName": "Marion Butts",
+    "position": "RB",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 2,
+    "bio": "Nicknames: Butts Butts Early Butts"
+  },
+  {
+    "id": "lewis-sd",
+    "slug": "lewis-sd",
+    "tecmoName": "Lewis",
+    "realName": "Nate Lewis",
+    "position": "WR",
+    "team": "SD",
+    "teamSlug": "chargers",
+    "spriteIndex": 8
+  },
+  {
+    "id": "green-sea",
+    "slug": "green-sea",
+    "tecmoName": "Green",
+    "realName": "Jacob Green",
+    "position": "DE",
+    "team": "SEA",
+    "teamSlug": "seahawks",
+    "spriteIndex": 19
+  },
+  {
+    "id": "donnelly-sea",
+    "slug": "donnelly-sea",
+    "tecmoName": "Donnelly",
+    "realName": "Richard Donnelly",
+    "position": "P",
+    "team": "SEA",
+    "teamSlug": "seahawks",
+    "spriteIndex": 29
+  },
+  {
+    "id": "krieg-sea",
+    "slug": "krieg-sea",
+    "tecmoName": "Krieg",
+    "realName": "Dave Krieg",
+    "position": "QB",
+    "team": "SEA",
+    "teamSlug": "seahawks",
+    "spriteIndex": 0
+  },
+  {
+    "id": "fenner-sea",
+    "slug": "fenner-sea",
+    "tecmoName": "Fenner",
+    "realName": "Fred Fenner",
+    "position": "RB",
+    "team": "SEA",
+    "teamSlug": "seahawks",
+    "spriteIndex": 3
+  },
+  {
+    "id": "blades-sea",
+    "slug": "blades-sea",
+    "tecmoName": "Blades",
+    "realName": "Brian Blades",
+    "position": "WR",
+    "team": "SEA",
+    "teamSlug": "seahawks",
+    "spriteIndex": 6,
+    "bio": "Nicknames: Ruben Bládès"
+  },
+  {
+    "id": "warren-sea",
+    "slug": "warren-sea",
+    "tecmoName": "Warren",
+    "realName": "Chris Warren",
+    "position": "WR",
+    "team": "SEA",
+    "teamSlug": "seahawks",
+    "spriteIndex": 5
+  },
+  {
+    "id": "montana-sf",
+    "slug": "montana-sf",
+    "tecmoName": "Montana",
+    "realName": "Joe Montana",
+    "position": "QB",
+    "team": "SF",
+    "teamSlug": "49ers",
+    "spriteIndex": 0
+  },
+  {
+    "id": "waymer-sf",
+    "slug": "waymer-sf",
+    "tecmoName": "Waymer",
+    "realName": "Dave Waymer",
+    "position": "S",
+    "team": "SF",
+    "teamSlug": "49ers",
+    "spriteIndex": 27
+  },
+  {
+    "id": "jones-sf",
+    "slug": "jones-sf",
+    "tecmoName": "Jones",
+    "realName": "Brent Jones",
+    "position": "TE",
+    "team": "SF",
+    "teamSlug": "49ers",
+    "spriteIndex": 10
+  },
+  {
+    "id": "rice-sf",
+    "slug": "rice-sf",
+    "tecmoName": "Rice",
+    "realName": "Jerry Rice",
+    "position": "WR",
+    "team": "SF",
+    "teamSlug": "49ers",
+    "spriteIndex": 7
+  },
+  {
+    "id": "taylor-sf",
+    "slug": "taylor-sf",
+    "tecmoName": "Taylor",
+    "realName": "John Taylor",
+    "position": "WR",
+    "team": "SF",
+    "teamSlug": "49ers",
+    "spriteIndex": 6
+  },
+  {
+    "id": "haddix-tb",
+    "slug": "haddix-tb",
+    "tecmoName": "Haddix",
+    "realName": "Wayne Haddix",
+    "position": "CB",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 24
+  },
+  {
+    "id": "hamilton-tb",
+    "slug": "hamilton-tb",
+    "tecmoName": "Hamilton",
+    "realName": "Harry Hamilton",
+    "position": "CB",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 26
+  },
+  {
+    "id": "christie-tb",
+    "slug": "christie-tb",
+    "tecmoName": "Christie",
+    "realName": "Doug Christie",
+    "position": "K",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 28
+  },
+  {
+    "id": "royals-tb",
+    "slug": "royals-tb",
+    "tecmoName": "Royals",
+    "realName": "Mark Royals",
+    "position": "P",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 29
+  },
+  {
+    "id": "testaverde-tb",
+    "slug": "testaverde-tb",
+    "tecmoName": "Testaverde",
+    "realName": "Vinny Testaverde",
+    "position": "QB",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 0
+  },
+  {
+    "id": "anderson-tb",
+    "slug": "anderson-tb",
+    "tecmoName": "Anderson",
+    "realName": "Gary Anderson",
+    "position": "RB",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 2
+  },
+  {
+    "id": "cobb-tb",
+    "slug": "cobb-tb",
+    "tecmoName": "Cobb",
+    "realName": "Reggie Cobb",
+    "position": "RB",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 3
+  },
+  {
+    "id": "hall-tb",
+    "slug": "hall-tb",
+    "tecmoName": "Hall",
+    "realName": "Ron Hall",
+    "position": "TE",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 10
+  },
+  {
+    "id": "carrier-tb",
+    "slug": "carrier-tb",
+    "tecmoName": "Carrier",
+    "realName": "Mark Carrier",
+    "position": "WR",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 6
+  },
+  {
+    "id": "drewrey-tb",
+    "slug": "drewrey-tb",
+    "tecmoName": "Drewrey",
+    "realName": "Willie Drewrey",
+    "position": "WR",
+    "team": "TB",
+    "teamSlug": "buccaneers",
+    "spriteIndex": 9
+  },
+  {
+    "id": "mayhew-was",
+    "slug": "mayhew-was",
+    "tecmoName": "Mayhew",
+    "realName": "Martin Mayhew",
+    "position": "CB",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 25
+  },
+  {
+    "id": "goodburn-was",
+    "slug": "goodburn-was",
+    "tecmoName": "Goodburn",
+    "realName": "Kelly Goodburn",
+    "position": "P",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 29
+  },
+  {
+    "id": "rypien-was",
+    "slug": "rypien-was",
+    "tecmoName": "Rypien",
+    "realName": "Mark Rypien",
+    "position": "QB",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 0
+  },
+  {
+    "id": "byner-was",
+    "slug": "byner-was",
+    "tecmoName": "Byner",
+    "realName": "Earnest Byner",
+    "position": "RB",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 2
+  },
+  {
+    "id": "howard-was",
+    "slug": "howard-was",
+    "tecmoName": "Howard",
+    "realName": "Joe Howard",
+    "position": "WR",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 9
+  },
+  {
+    "id": "monk-was",
+    "slug": "monk-was",
+    "tecmoName": "Monk",
+    "realName": "Art Monk",
+    "position": "WR",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 7
+  },
+  {
+    "id": "sanders-was",
+    "slug": "sanders-was",
+    "tecmoName": "Sanders",
+    "realName": "Rickey Sanders",
+    "position": "WR",
+    "team": "WAS",
+    "teamSlug": "redskins",
+    "spriteIndex": 6
   }
 ]
