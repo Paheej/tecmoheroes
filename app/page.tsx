@@ -31,6 +31,25 @@ export default function HomePage() {
         </p>
       </section>
 
+      <section>
+        <h2 className="tecmo-headline text-2xl mb-4">Categories</h2>
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          {categories.map((c) => (
+            <li key={c.id}>
+              <Link
+                href={`/records/${c.id}`}
+                className="block border-2 border-[var(--color-tecmo-gold)] p-4 hover:bg-white/5"
+              >
+                <div className="font-bold uppercase text-[var(--color-tecmo-gold)]">
+                  {c.label}
+                </div>
+                <div className="text-xs opacity-80 mt-1">{c.blurb}</div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {latestSb?.superBowl && (
         <section>
           <h2 className="tecmo-headline text-2xl mb-3">
@@ -50,25 +69,6 @@ export default function HomePage() {
           Six records, freshly shuffled every visit.
         </p>
         <FeaturedRandomRecords pool={statRecords} count={6} />
-      </section>
-
-      <section>
-        <h2 className="tecmo-headline text-2xl mb-4">Categories</h2>
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {categories.map((c) => (
-            <li key={c.id}>
-              <Link
-                href={`/records/${c.id}`}
-                className="block border-2 border-[var(--color-tecmo-gold)] p-4 hover:bg-white/5"
-              >
-                <div className="font-bold uppercase text-[var(--color-tecmo-gold)]">
-                  {c.label}
-                </div>
-                <div className="text-xs opacity-80 mt-1">{c.blurb}</div>
-              </Link>
-            </li>
-          ))}
-        </ul>
       </section>
     </div>
   );

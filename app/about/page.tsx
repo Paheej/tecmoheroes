@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { STAT_MAX } from "@/lib/types";
 
 export const metadata = { title: "About — Tecmo Heroes" };
@@ -63,23 +64,17 @@ export default function AboutPage() {
         <h2 className="tecmo-headline text-2xl text-[var(--color-tecmo-gold)] mb-3">
           The Rules
         </h2>
-        <p className="text-sm opacity-80 mb-3">
-          Guidelines for a successful weekend of Tecmo. Resources to put you
-          into the right frame of mind.
+        <p className="text-sm opacity-90">
+          Guidelines for a successful weekend of Tecmo, draft methods, the
+          tier list, and play-tempo conventions all live on a dedicated page —{" "}
+          <Link
+            href="/rules"
+            className="underline text-[var(--color-tecmo-gold)]"
+          >
+            see The Rules
+          </Link>
+          .
         </p>
-        <ul className="space-y-2 text-sm">
-          {RULES.map((r, i) => (
-            <li
-              key={i}
-              className="border-l-2 border-[var(--color-tecmo-gold)] pl-3"
-            >
-              <span className="font-bold text-[var(--color-tecmo-gold)] uppercase text-xs">
-                {r.title}
-              </span>
-              <span className="opacity-90"> — {r.body}</span>
-            </li>
-          ))}
-        </ul>
       </section>
 
       <section>
@@ -153,70 +148,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-const RULES: { title: string; body: string }[] = [
-  {
-    title: "Book of Big Red",
-    body: "Organizer reads an excerpt before gameplay begins.",
-  },
-  {
-    title: "Scouting",
-    body: "Players review the Paul Schulzetenberg GAMEFAQ (2000) before team selection.",
-  },
-  {
-    title: "All Pick",
-    body: "Least experienced players select first from all teams (typically favoring 49ers, Bills, Raiders).",
-  },
-  {
-    title: "Equal Pick",
-    body: "Organizer selects a tier; all players randomly draw from that tier only.",
-  },
-  {
-    title: "Handicap Pick",
-    body: "Players placed in tiers by organizer based on skill; tier differences equal point advantages.",
-  },
-  {
-    title: "Random Pick",
-    body: "Blind draw of randomly assigned teams — uses physical tokens.",
-  },
-  {
-    title: "Division Pick",
-    body: "All players select from the same division for maximum matchup variety.",
-  },
-  {
-    title: "Playbook Time Limit",
-    body: "10 minutes for initial selection; 5 minutes for changes between weeks 8 and 9.",
-  },
-  {
-    title: "First-Time Players",
-    body: "Time limits waived; may change playbooks after weeks 4, 8, 12, 16.",
-  },
-  {
-    title: "Photo Documentation",
-    body: 'Players photograph the "game summary" screen after each game.',
-  },
-  {
-    title: "No Lurching",
-    body: "Players prohibited from selecting NT/DT and immediately diving on snap in man-vs-man matches.",
-  },
-  {
-    title: "WR Substitution",
-    body: "Cannot place wide receivers in the running back position unless all RBs are injured.",
-  },
-  {
-    title: "Other Substitutions",
-    body: "Backup QB and backup RB substitutions are permitted.",
-  },
-  {
-    title: "Continuous Gameplay",
-    body: "SLEEP IS FOR THE WEAK — minimal breaks between games.",
-  },
-  {
-    title: "Game Duration",
-    body: "Approximately 20 minutes per game. Plan accordingly: with more than four players you will be hard-pressed to finish in one weekend.",
-  },
-  {
-    title: "Meals",
-    body: "Designate who is cooking which meal (or what will be ordered) ahead of time.",
-  },
-];

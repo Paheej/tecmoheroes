@@ -15,9 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NavBar />
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
         <footer className="mx-auto max-w-6xl px-4 py-8 text-xs opacity-60 text-center">
-          Built in the spirit of <a className="underline" href="https://tecmogeek.com">tecmogeek.com</a> &middot;
-          records sourced from <a className="underline" href="https://tecmoheroes.com">tecmoheroes.com</a> &middot;
-          spread the book of Big Red.
+          rebuilt in the spirit of <a className="underline" href="https://tecmogeek.com">tecmogeek</a> &middot;
+          spread the book of big red
         </footer>
       </body>
     </html>

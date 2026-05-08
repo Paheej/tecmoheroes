@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { players, recordsForPlayer, isStatRecord } from "@/lib/data";
+import { players, recordsForPlayer, awardsForPlayer, isStatRecord } from "@/lib/data";
 import TecmoProfileCard from "@/components/TecmoProfileCard";
 
 export const metadata = { title: "Players — Tecmo Heroes" };
@@ -10,9 +10,15 @@ export default function PlayersIndex() {
     .map((p) => ({
       p,
       count: recordsForPlayer(p.id).filter(isStatRecord).length,
+      awards: awardsForPlayer(p.id).length,
     }))
-    .filter((x) => x.count > 0)
-    .sort((a, b) => b.count - a.count || a.p.tecmoName.localeCompare(b.p.tecmoName));
+    .filter((x) => x.count > 0 || x.awards > 0)
+    .sort(
+      (a, b) =>
+        b.count - a.count ||
+        b.awards - a.awards ||
+        a.p.tecmoName.localeCompare(b.p.tecmoName),
+    );
 
   return (
     <div className="space-y-6">
@@ -28,17 +34,22 @@ export default function PlayersIndex() {
       </header>
 
       <ul className="grid gap-6 md:grid-cols-3">
-        {heroes.map(({ p, count }) => (
+        {heroes.map(({ p, count, awards }) => (
           <li key={p.id} className="flex flex-col items-start gap-2">
             <Link href={`/players/${p.slug}`} className="hover:opacity-80">
               <TecmoProfileCard player={p} compact />
             </Link>
-            <div className="text-xs opacity-80">
+            <div className="text-xs opacity-80 flex flex-wrap gap-x-2">
               <span className="text-[var(--color-tecmo-gold)] font-bold">
                 {count} record{count === 1 ? "" : "s"}
               </span>
-              {p.realName && p.realName !== p.tecmoName && (
-                <span className="opacity-70"> · {p.realName}</span>
+              {awards > 0 && (
+                <>
+                  <span className="opacity-60">·</span>
+                  <span className="font-bold">
+                    {awards} Award{awards === 1 ? "" : "s"}
+                  </span>
+                </>
               )}
             </div>
           </li>

@@ -7,6 +7,7 @@ const links = [
   { href: "/players", label: "Players" },
   { href: "/heroes", label: "Heroes" },
   { href: "/seasons", label: "Seasons" },
+  { href: "/rules", label: "Rules" },
   { href: "/about", label: "About" },
 ];
 

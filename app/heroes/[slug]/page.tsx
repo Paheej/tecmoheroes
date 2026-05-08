@@ -15,9 +15,11 @@ import {
   teamByAbbr,
   bioForUser,
   seasonById,
+  personalBestsForUser,
 } from "@/lib/data";
 import RecordCard from "@/components/RecordCard";
 import { Helmet } from "@/components/Sprites";
+import { formatValue, scopeLabel } from "@/lib/format";
 
 export function generateStaticParams() {
   return users.map((u) => ({ slug: u.slug }));
@@ -48,15 +50,12 @@ export default async function PlayerPage({
   const mostTeam = mostPlayedTeamForUser(user.id);
   const seasons = teamSeasonsForUser(user.id);
 
-  const mostTeamLabel = mostTeam
-    ? `${teamByAbbr.get(mostTeam.team)?.displayName ?? mostTeam.team} (${mostTeam.seasons} season${mostTeam.seasons === 1 ? "" : "s"}, ${mostTeam.w}-${mostTeam.l}${mostTeam.t ? `-${mostTeam.t}` : ""})`
-    : undefined;
+  const personalBests = personalBestsForUser(user.id);
 
   const stats: [string, string | number | undefined][] = [
     ["Age", user.age],
     ["Height", user.height],
     ["Ethnicity", user.ethnicity],
-    ["Most-Played Team", mostTeamLabel ?? user.team],
     ["From", user.from],
     ["Currently", user.currentResidence],
     ["Seasons", seasons.length || user.seasonsPlayed],
@@ -94,6 +93,27 @@ export default async function PlayerPage({
             </div>
           ))}
       </div>
+
+      {mostTeam && (
+        <section className="border-2 border-[var(--color-tecmo-gold)] bg-black/60 p-4">
+          <h2 className="tecmo-headline text-xl mb-3">Most-Played Team</h2>
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm">
+            <Helmet abbr={mostTeam.team} size={28} withLabel />
+            <span className="opacity-80">
+              {teamByAbbr.get(mostTeam.team)?.fullName ?? mostTeam.team}
+            </span>
+            <span className="opacity-60 text-xs">·</span>
+            <span className="font-bold">
+              {mostTeam.seasons} season{mostTeam.seasons === 1 ? "" : "s"}
+            </span>
+            <span className="opacity-60 text-xs">·</span>
+            <span className="font-bold tecmo-headline text-[var(--color-tecmo-gold)]">
+              {mostTeam.w}-{mostTeam.l}
+              {mostTeam.t ? `-${mostTeam.t}` : ""}
+            </span>
+          </div>
+        </section>
+      )}
 
       {championships.length > 0 && (
         <section className="border-2 border-[var(--color-tecmo-gold)] bg-black/60 p-4">
@@ -228,6 +248,76 @@ export default async function PlayerPage({
           </div>
         )}
       </section>
+
+      {personalBests.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="tecmo-headline text-xl">
+            Personal best by category ({personalBests.length})
+          </h2>
+          <div className="overflow-x-auto border-2 border-[var(--color-tecmo-gold)] bg-black/60">
+            <table className="w-full text-left text-sm">
+              <thead>
+                <tr className="border-b-2 border-[var(--color-tecmo-gold)]">
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Category</th>
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Stat</th>
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Value</th>
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Player</th>
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Team</th>
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Season</th>
+                  <th className="py-2 px-2 text-[10px] uppercase opacity-70">Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                {personalBests.map((b, i) => {
+                  const p = playerById.get(b.playerId);
+                  return (
+                    <tr
+                      key={`${b.category}-${b.statName}-${i}`}
+                      className="border-b border-[var(--color-tecmo-gold)]/20 hover:bg-white/5"
+                    >
+                      <td className="py-2 px-2 text-[10px] uppercase opacity-70 align-top">
+                        {scopeLabel.season} · {b.category.replace(/-/g, " ")}
+                      </td>
+                      <td className="py-2 px-2 font-bold uppercase align-top">
+                        {b.statName}
+                      </td>
+                      <td className="py-2 px-2 text-[var(--color-tecmo-gold)] font-black tecmo-headline whitespace-nowrap align-top">
+                        {formatValue(b.value, b.unit)}
+                      </td>
+                      <td className="py-2 px-2 align-top">
+                        {p ? (
+                          <Link
+                            href={`/players/${p.slug}`}
+                            className="hover:text-[var(--color-tecmo-gold)]"
+                          >
+                            {p.realName ?? p.tecmoName}
+                          </Link>
+                        ) : (
+                          b.playerId
+                        )}
+                      </td>
+                      <td className="py-2 px-2 align-top">
+                        {b.team && <Helmet abbr={b.team} size={20} withLabel />}
+                      </td>
+                      <td className="py-2 px-2 align-top">
+                        <Link
+                          href={`/seasons/${b.seasonId}`}
+                          className="hover:text-[var(--color-tecmo-gold)]"
+                        >
+                          #{b.seasonId}
+                        </Link>
+                      </td>
+                      <td className="py-2 px-2 opacity-80 align-top">
+                        {b.year ?? seasonById.get(b.seasonId)?.year ?? "—"}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       {seasons.length > 0 && (
         <section className="border-2 border-[var(--color-tecmo-gold)] bg-black/60 p-4">

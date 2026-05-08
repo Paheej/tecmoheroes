@@ -243,6 +243,7 @@ interface CategoryPersonalBest {
   seasonId: number;
   year?: number | null;
   team?: string | null;
+  userId?: string | null;
 }
 
 const STAT_DEFS: Array<{
@@ -418,6 +419,53 @@ function sum(lines: PlayerSeasonStat[], key: keyof PlayerSeasonStat): number {
 
 export function personalBestsForPlayer(playerId: string): CategoryPersonalBest[] {
   const lines = playerStatsForPlayer(playerId);
+  return computePersonalBests(lines);
+}
+
+export interface UserCategoryPersonalBest extends CategoryPersonalBest {
+  playerId: string;
+}
+
+/**
+ * Personal best per category across every Tecmo player this hero has
+ * controlled. Each row carries the playerId behind the line so the UI can
+ * show which on-cartridge name set the mark.
+ */
+export function personalBestsForUser(userId: string): UserCategoryPersonalBest[] {
+  const lines = playerStats.filter((s) => s.userId === userId);
+  const out: UserCategoryPersonalBest[] = [];
+  for (const def of STAT_DEFS) {
+    let best: { row: PlayerSeasonStat; value: number } | null = null;
+    for (const row of lines) {
+      const raw = row[def.key];
+      if (typeof raw !== "number") continue;
+      if (def.minSampleKey && def.minSample != null) {
+        const sample = row[def.minSampleKey];
+        if (typeof sample !== "number" || sample < def.minSample) continue;
+      }
+      if (!best) {
+        best = { row, value: raw };
+      } else if (def.ascending ? raw < best.value : raw > best.value) {
+        best = { row, value: raw };
+      }
+    }
+    if (best) {
+      out.push({
+        category: def.category,
+        statName: def.statName,
+        value: best.value,
+        unit: def.unit,
+        seasonId: best.row.seasonId,
+        year: best.row.year,
+        team: best.row.team,
+        playerId: best.row.playerId,
+      });
+    }
+  }
+  return out;
+}
+
+function computePersonalBests(lines: PlayerSeasonStat[]): CategoryPersonalBest[] {
   const out: CategoryPersonalBest[] = [];
   for (const def of STAT_DEFS) {
     let best: { row: PlayerSeasonStat; value: number } | null = null;
@@ -443,6 +491,7 @@ export function personalBestsForPlayer(playerId: string): CategoryPersonalBest[]
         seasonId: best.row.seasonId,
         year: best.row.year,
         team: best.row.team,
+        userId: best.row.userId,
       });
     }
   }
