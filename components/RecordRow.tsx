@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Record } from "@/lib/types";
 import { playerById, userById, seasonById } from "@/lib/data";
 import { formatValue, scopeLabel } from "@/lib/format";
-import { Headshot, Helmet } from "./Sprites";
+import { Headshot, Helmet, HeroAvatar } from "./Sprites";
 
 interface Props {
   record: Record;
@@ -39,19 +39,26 @@ export default function RecordRow({ record, variant = "default" }: Props) {
       <td className="py-3 px-2 text-[var(--color-tecmo-gold)] font-black tecmo-headline whitespace-nowrap align-top">
         {formatValue(record.value, record.unit)}
       </td>
-      <td className="py-3 px-2 text-xs align-top whitespace-nowrap">
-        {users.map((u, i) => (
-          <span key={u.id}>
-            <Link
-              href={`/heroes/${u.slug}`}
-              className="hover:text-[var(--color-tecmo-gold)] underline-offset-4"
-              title={u.displayName}
-            >
-              {u.shortName ?? u.displayName}
-            </Link>
-            {i < users.length - 1 ? ", " : ""}
-          </span>
-        ))}
+      <td className="py-3 px-2 text-xs align-top">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+          {users.map((u, i) => (
+            <span key={u.id} className="inline-flex items-center gap-x-1">
+              <Link
+                href={`/heroes/${u.slug}`}
+                className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)] underline-offset-4"
+                title={u.displayName}
+              >
+                <HeroAvatar
+                  slug={u.slug}
+                  size={28}
+                  className="border border-black/40"
+                />
+                <span>{u.shortName ?? u.displayName}</span>
+              </Link>
+              {i < users.length - 1 ? <span>,</span> : null}
+            </span>
+          ))}
+        </div>
       </td>
       {variant !== "team" && (
         <td className="py-3 px-2 align-top">

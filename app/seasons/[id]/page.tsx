@@ -12,7 +12,7 @@ import {
 } from "@/lib/data";
 import RecordCard from "@/components/RecordCard";
 import SuperBowlPanel from "@/components/SuperBowlPanel";
-import { Helmet } from "@/components/Sprites";
+import { Helmet, HeroAvatar } from "@/components/Sprites";
 import type { Record } from "@/lib/types";
 
 export function generateStaticParams() {
@@ -120,9 +120,15 @@ function SeasonHeroesPanel({ seasonId }: { seasonId: number }) {
                     {u ? (
                       <Link
                         href={`/heroes/${u.slug}`}
-                        className="font-bold hover:text-[var(--color-tecmo-gold)]"
+                        className="inline-flex items-center gap-1.5 font-bold hover:text-[var(--color-tecmo-gold)]"
+                        title={u.displayName}
                       >
-                        {u.shortName ?? u.displayName}
+                        <HeroAvatar
+                          slug={u.slug}
+                          size={24}
+                          className="border border-black/40"
+                        />
+                        <span>{u.shortName ?? u.displayName}</span>
                       </Link>
                     ) : (
                       <span className="font-bold opacity-80">{r.userId}</span>
@@ -184,9 +190,15 @@ function AwardsPanel({ records }: { records: Record[] }) {
                     <span className="opacity-60 text-xs">· played by</span>
                     <Link
                       href={`/heroes/${user.slug}`}
-                      className="text-xs hover:text-[var(--color-tecmo-gold)]"
+                      className="inline-flex items-center gap-1.5 text-xs hover:text-[var(--color-tecmo-gold)]"
+                      title={user.displayName}
                     >
-                      {user.shortName ?? user.displayName}
+                      <HeroAvatar
+                        slug={user.slug}
+                        size={20}
+                        className="border border-black/40"
+                      />
+                      <span>{user.shortName ?? user.displayName}</span>
                     </Link>
                   </>
                 )}

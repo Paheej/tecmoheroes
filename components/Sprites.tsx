@@ -75,6 +75,42 @@ export function Helmet({
   );
 }
 
+interface HeroAvatarProps {
+  slug: string | null | undefined;
+  size?: number;
+  className?: string;
+  title?: string;
+}
+
+/**
+ * Square photo avatar for a hero, sourced from /avatars/{slug}.png.
+ * Background is sized 110% to crop the outer ~5% of the source — without
+ * it, the uniform sky/wall row at the very top of each photo becomes a
+ * single bright pixel-row when scaled small.
+ */
+export function HeroAvatar({
+  slug,
+  size = 32,
+  className = "",
+  title,
+}: HeroAvatarProps) {
+  if (!slug) return null;
+  return (
+    <span
+      aria-hidden="true"
+      title={title}
+      className={`inline-block bg-no-repeat align-middle shrink-0 ${className}`}
+      style={{
+        width: size,
+        height: size,
+        backgroundImage: `url(/avatars/${slug}.png)`,
+        backgroundSize: "110% 110%",
+        backgroundPosition: "center",
+      }}
+    />
+  );
+}
+
 interface HeadshotProps {
   teamSlug: string | null | undefined;
   spriteIndex: number | null | undefined;

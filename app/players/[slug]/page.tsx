@@ -15,7 +15,7 @@ import {
   seasonById,
 } from "@/lib/data";
 import TecmoProfileCard from "@/components/TecmoProfileCard";
-import { Helmet } from "@/components/Sprites";
+import { Helmet, HeroAvatar } from "@/components/Sprites";
 import RecordCard from "@/components/RecordCard";
 import { formatValue, scopeLabel } from "@/lib/format";
 
@@ -129,9 +129,15 @@ export default async function PlayerPage({
                         <span className="opacity-60 text-xs">· played by</span>
                         <Link
                           href={`/heroes/${user.slug}`}
-                          className="text-xs hover:text-[var(--color-tecmo-gold)]"
+                          className="inline-flex items-center gap-1.5 text-xs hover:text-[var(--color-tecmo-gold)]"
+                          title={user.displayName}
                         >
-                          {user.shortName ?? user.displayName}
+                          <HeroAvatar
+                            slug={user.slug}
+                            size={20}
+                            className="border border-black/40"
+                          />
+                          <span>{user.shortName ?? user.displayName}</span>
                         </Link>
                       </>
                     )}
@@ -212,9 +218,15 @@ export default async function PlayerPage({
                         {u ? (
                           <Link
                             href={`/heroes/${u.slug}`}
-                            className="hover:text-[var(--color-tecmo-gold)]"
+                            className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
+                            title={u.displayName}
                           >
-                            {u.shortName ?? u.displayName}
+                            <HeroAvatar
+                              slug={u.slug}
+                              size={20}
+                              className="border border-black/40"
+                            />
+                            <span>{u.shortName ?? u.displayName}</span>
                           </Link>
                         ) : (
                           row.userId
@@ -270,9 +282,15 @@ export default async function PlayerPage({
                         {u ? (
                           <Link
                             href={`/heroes/${u.slug}`}
-                            className="hover:text-[var(--color-tecmo-gold)]"
+                            className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
+                            title={u.displayName}
                           >
-                            {u.shortName ?? u.displayName}
+                            <HeroAvatar
+                              slug={u.slug}
+                              size={20}
+                              className="border border-black/40"
+                            />
+                            <span>{u.shortName ?? u.displayName}</span>
                           </Link>
                         ) : (
                           b.userId ?? "—"

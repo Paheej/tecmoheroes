@@ -9,7 +9,7 @@ import {
   mostPlayedTeamForUser,
   bioForUser,
 } from "@/lib/data";
-import { Helmet } from "@/components/Sprites";
+import { Helmet, HeroAvatar } from "@/components/Sprites";
 
 export const metadata = { title: "The Heroes — Tecmo Heroes" };
 
@@ -48,7 +48,13 @@ export default function HeroesIndex() {
                 className="block border-2 border-[var(--color-tecmo-gold)] p-3 hover:bg-white/5"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0">
+                  <HeroAvatar
+                    slug={u.slug}
+                    size={56}
+                    className="border border-black/40 shrink-0"
+                    title={u.displayName}
+                  />
+                  <div className="min-w-0 flex-1">
                     <div className="font-bold uppercase">
                       {u.shortName ? `${u.shortName} · ` : ""}
                       {u.displayName}
