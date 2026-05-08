@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Record } from "@/lib/types";
-import { playerById, userById, seasonById } from "@/lib/data";
+import { playerById, userById, seasonById, recordFocusIndexes } from "@/lib/data";
 import { scopeLabel, formatValue } from "@/lib/format";
 import { Headshot, Helmet } from "./Sprites";
 
@@ -8,17 +8,31 @@ interface Props {
   record: Record;
   /** Hide the player avatar/name (used when shown on the player's own page). */
   showFullProfile?: boolean;
+  /** On a player detail page, narrow tied-record details to this player's slice. */
+  focusPlayerId?: string;
+  /** On a hero detail page, narrow tied-record details to this hero's slice. */
+  focusUserId?: string;
 }
 
-export default function RecordCard({ record, showFullProfile = true }: Props) {
-  const players = record.tecmoPlayerIds
+export default function RecordCard({
+  record,
+  showFullProfile = true,
+  focusPlayerId,
+  focusUserId,
+}: Props) {
+  const idxs = recordFocusIndexes(record, {
+    playerId: focusPlayerId,
+    userId: focusUserId,
+  });
+  const players = uniq(idxs.map((i) => record.tecmoPlayerIds[i]).filter(Boolean))
     .map((id) => playerById.get(id))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
-  const users = record.userIds
+  const users = uniq(idxs.map((i) => record.userIds[i]).filter(Boolean))
     .map((id) => userById.get(id))
     .filter((u): u is NonNullable<typeof u> => Boolean(u));
+  const teamAbbrs = uniq(idxs.map((i) => record.teamAbbrs[i]).filter(Boolean));
 
-  const seasonPairs = seasonYearPairs(record);
+  const seasonPairs = seasonYearPairs(record, idxs);
 
   return (
     <article className="border-2 border-[var(--color-tecmo-gold)] bg-black/70 p-4">
@@ -83,10 +97,10 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
             ))}
           </span>
         )}
-        {record.teamAbbrs.length > 0 && (
+        {teamAbbrs.length > 0 && (
           <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span className="opacity-60 uppercase">Team:</span>
-            {record.teamAbbrs.map((abbr) => (
+            {teamAbbrs.map((abbr) => (
               <Helmet key={abbr} abbr={abbr} size={20} withLabel />
             ))}
           </span>
@@ -117,15 +131,20 @@ export default function RecordCard({ record, showFullProfile = true }: Props) {
   );
 }
 
-function seasonYearPairs(record: Record): { seasonId: number; year: number | null }[] {
-  // Prefer the explicit list when populated; fall back to the single seasonId.
-  const ids = record.seasonIds && record.seasonIds.length > 0
-    ? record.seasonIds
-    : record.seasonId != null
-      ? [record.seasonId]
-      : [];
-  return ids.map((id) => ({
-    seasonId: id,
-    year: seasonById.get(id)?.year ?? null,
-  }));
+function seasonYearPairs(
+  record: Record,
+  idxs: number[],
+): { seasonId: number; year: number | null }[] {
+  if (record.seasonIds && record.seasonIds.length > 0) {
+    return uniq(idxs.map((i) => record.seasonIds![i]).filter((v): v is number => v != null))
+      .map((id) => ({ seasonId: id, year: seasonById.get(id)?.year ?? null }));
+  }
+  if (record.seasonId != null) {
+    return [{ seasonId: record.seasonId, year: seasonById.get(record.seasonId)?.year ?? null }];
+  }
+  return [];
+}
+
+function uniq<T>(arr: T[]): T[] {
+  return [...new Set(arr)];
 }

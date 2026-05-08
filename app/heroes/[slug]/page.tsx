@@ -12,7 +12,6 @@ import {
   playerById,
   mostPlayedTeamForUser,
   teamSeasonsForUser,
-  teamByAbbr,
   bioForUser,
   seasonById,
   personalBestsForUser,
@@ -99,9 +98,6 @@ export default async function PlayerPage({
           <h2 className="tecmo-headline text-xl mb-3">Most-Played Team</h2>
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm">
             <Helmet abbr={mostTeam.team} size={28} withLabel />
-            <span className="opacity-80">
-              {teamByAbbr.get(mostTeam.team)?.fullName ?? mostTeam.team}
-            </span>
             <span className="opacity-60 text-xs">·</span>
             <span className="font-bold">
               {mostTeam.seasons} season{mostTeam.seasons === 1 ? "" : "s"}
@@ -243,7 +239,7 @@ export default async function PlayerPage({
         ) : (
           <div className="grid gap-4 md:grid-cols-2">
             {statRecs.map((r) => (
-              <RecordCard key={r.id} record={r} />
+              <RecordCard key={r.id} record={r} focusUserId={user.id} />
             ))}
           </div>
         )}

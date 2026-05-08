@@ -52,11 +52,6 @@ export default function AboutPage() {
             and MVPs. Hardware stayed Nintendo-based until the planned
             migration to AVS in 2023.
           </p>
-          <p className="italic opacity-75">
-            Really — are we copywriting stuff for a game made in 1991? Feel
-            free to use what you want from this site, man. Spread the book of
-            Big Red and the Tecmo gospel.
-          </p>
         </div>
       </section>
 

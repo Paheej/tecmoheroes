@@ -51,6 +51,35 @@ export const teamByAbbr = new Map(teams.map((t) => [t.abbr, t]));
 export const seasonById = new Map(seasons.map((s) => [s.id, s]));
 export const categoryById = new Map(categories.map((c) => [c.id, c]));
 
+/**
+ * Indexes into a record's parallel arrays (tecmoPlayerIds / userIds /
+ * teamAbbrs / seasonIds / years) that match the given focus. Used on
+ * player- and hero-detail pages to hide the *other* tied entries on
+ * tied records. Falls back to every index when no focus or no match.
+ */
+export function recordFocusIndexes(
+  r: Record,
+  focus: { playerId?: string; userId?: string },
+): number[] {
+  const len = Math.max(
+    r.tecmoPlayerIds.length,
+    r.userIds.length,
+    r.teamAbbrs.length,
+    r.seasonIds?.length ?? 0,
+    r.years?.length ?? 0,
+  );
+  const all = Array.from({ length: len }, (_, i) => i);
+  if (focus.playerId) {
+    const m = all.filter((i) => r.tecmoPlayerIds[i] === focus.playerId);
+    if (m.length > 0) return m;
+  }
+  if (focus.userId) {
+    const m = all.filter((i) => r.userIds[i] === focus.userId);
+    if (m.length > 0) return m;
+  }
+  return all;
+}
+
 export function recordsByCategory(id: CategoryId): Record[] {
   return records.filter((r) => r.category === id);
 }

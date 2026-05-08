@@ -155,7 +155,12 @@ export default async function PlayerPage({
         ) : (
           <div className="grid gap-4 md:grid-cols-2">
             {statRecs.map((r) => (
-              <RecordCard key={r.id} record={r} showFullProfile={false} />
+              <RecordCard
+                key={r.id}
+                record={r}
+                showFullProfile={false}
+                focusPlayerId={player.id}
+              />
             ))}
           </div>
         )}
