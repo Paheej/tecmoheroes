@@ -17,7 +17,7 @@ import {
   personalBestsForUser,
 } from "@/lib/data";
 import RecordCard from "@/components/RecordCard";
-import { Helmet } from "@/components/Sprites";
+import { Headshot, Helmet } from "@/components/Sprites";
 import { formatValue, scopeLabel } from "@/lib/format";
 
 export function generateStaticParams() {
@@ -284,9 +284,16 @@ export default async function PlayerPage({
                         {p ? (
                           <Link
                             href={`/players/${p.slug}`}
-                            className="hover:text-[var(--color-tecmo-gold)]"
+                            className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
+                            title={p.realName ?? p.tecmoName}
                           >
-                            {p.realName ?? p.tecmoName}
+                            <Headshot
+                              teamSlug={p.teamSlug}
+                              spriteIndex={p.spriteIndex}
+                              size={28}
+                              className="border border-black/40"
+                            />
+                            <span>{p.realName ?? p.tecmoName}</span>
                           </Link>
                         ) : (
                           b.playerId
