@@ -50,7 +50,7 @@ export default function RecordRow({ record, variant = "default" }: Props) {
               >
                 <HeroAvatar
                   slug={u.slug}
-                  size={20}
+                  size={28}
                   className="border border-black/40"
                 />
                 <span>{u.shortName ?? u.displayName}</span>
