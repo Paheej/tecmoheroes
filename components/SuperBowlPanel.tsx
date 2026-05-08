@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { SuperBowlGame } from "@/lib/types";
 import { teamByAbbr, userById } from "@/lib/data";
-import { Helmet } from "./Sprites";
+import { Helmet, HeroAvatar } from "./Sprites";
 
 interface Props {
   game: SuperBowlGame;
@@ -44,9 +44,15 @@ export default function SuperBowlPanel({
             {champUser && (
               <Link
                 href={`/heroes/${champUser.slug}`}
-                className="text-xs opacity-80 hover:text-[var(--color-tecmo-gold)]"
+                className="inline-flex items-center gap-1.5 text-xs opacity-80 hover:text-[var(--color-tecmo-gold)] hover:opacity-100"
+                title={champUser.displayName}
               >
-                {champUser.displayName}
+                <span>{champUser.displayName}</span>
+                <HeroAvatar
+                  slug={champUser.slug}
+                  size={20}
+                  className="border border-black/40"
+                />
               </Link>
             )}
           </div>
@@ -67,9 +73,15 @@ export default function SuperBowlPanel({
             {ruUser && (
               <Link
                 href={`/heroes/${ruUser.slug}`}
-                className="text-xs opacity-80 hover:text-[var(--color-tecmo-gold)]"
+                className="inline-flex items-center gap-1.5 text-xs opacity-80 hover:text-[var(--color-tecmo-gold)] hover:opacity-100"
+                title={ruUser.displayName}
               >
-                {ruUser.displayName}
+                <HeroAvatar
+                  slug={ruUser.slug}
+                  size={20}
+                  className="border border-black/40"
+                />
+                <span>{ruUser.displayName}</span>
               </Link>
             )}
           </div>

@@ -17,7 +17,7 @@ import {
   personalBestsForUser,
 } from "@/lib/data";
 import RecordCard from "@/components/RecordCard";
-import { Headshot, Helmet } from "@/components/Sprites";
+import { Headshot, Helmet, HeroAvatar } from "@/components/Sprites";
 import { formatValue, scopeLabel } from "@/lib/format";
 
 export function generateStaticParams() {
@@ -66,20 +66,28 @@ export default async function PlayerPage({
 
   return (
     <div className="space-y-8">
-      <header>
-        <div className="text-xs uppercase opacity-60">Hero</div>
-        <h1 className="tecmo-headline text-4xl text-[var(--color-tecmo-gold)]">
-          {user.displayName}
-          {user.shortName && user.shortName !== user.displayName && (
-            <span className="opacity-60 text-2xl ml-3">({user.shortName})</span>
-          )}
-        </h1>
-        {(() => {
-          const blurb = bioForUser(user.id);
-          return blurb ? (
-            <p className="opacity-80 mt-2 max-w-prose">{blurb}</p>
-          ) : null;
-        })()}
+      <header className="flex items-start gap-4">
+        <HeroAvatar
+          slug={user.slug}
+          size={112}
+          className="border-2 border-[var(--color-tecmo-gold)] shrink-0"
+          title={user.displayName}
+        />
+        <div className="min-w-0 flex-1">
+          <div className="text-xs uppercase opacity-60">Hero</div>
+          <h1 className="tecmo-headline text-4xl text-[var(--color-tecmo-gold)]">
+            {user.displayName}
+            {user.shortName && user.shortName !== user.displayName && (
+              <span className="opacity-60 text-2xl ml-3">({user.shortName})</span>
+            )}
+          </h1>
+          {(() => {
+            const blurb = bioForUser(user.id);
+            return blurb ? (
+              <p className="opacity-80 mt-2 max-w-prose">{blurb}</p>
+            ) : null;
+          })()}
+        </div>
       </header>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-1 text-sm border-2 border-[var(--color-tecmo-gold)] p-4 bg-black/60">

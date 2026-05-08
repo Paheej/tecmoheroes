@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Record } from "@/lib/types";
 import { playerById, userById, seasonById, recordFocusIndexes } from "@/lib/data";
 import { scopeLabel, formatValue } from "@/lib/format";
-import { Headshot, Helmet } from "./Sprites";
+import { Headshot, Helmet, HeroAvatar } from "./Sprites";
 
 interface Props {
   record: Record;
@@ -81,18 +81,23 @@ export default function RecordCard({
 
       <footer className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
         {users.length > 0 && (
-          <span>
-            <span className="opacity-60 uppercase">Hero:</span>{" "}
+          <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span className="opacity-60 uppercase">Hero:</span>
             {users.map((u, i) => (
-              <span key={u.id}>
+              <span key={u.id} className="flex items-center gap-x-1.5">
                 <Link
                   href={`/heroes/${u.slug}`}
-                  className="font-bold hover:text-[var(--color-tecmo-gold)] underline-offset-4"
+                  className="inline-flex items-center gap-1.5 font-bold hover:text-[var(--color-tecmo-gold)] underline-offset-4"
                   title={u.displayName}
                 >
-                  {u.shortName ?? u.displayName}
+                  <HeroAvatar
+                    slug={u.slug}
+                    size={20}
+                    className="border border-black/40"
+                  />
+                  <span>{u.shortName ?? u.displayName}</span>
                 </Link>
-                {i < users.length - 1 ? ", " : ""}
+                {i < users.length - 1 ? <span>,</span> : null}
               </span>
             ))}
           </span>

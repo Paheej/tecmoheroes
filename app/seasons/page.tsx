@@ -4,7 +4,7 @@ import {
   statRecordsForSeason,
   userById,
 } from "@/lib/data";
-import { Helmet } from "@/components/Sprites";
+import { Helmet, HeroAvatar } from "@/components/Sprites";
 
 export const metadata = { title: "Seasons — Tecmo Heroes" };
 
@@ -60,9 +60,15 @@ export default function SeasonsIndex() {
                     {champUser ? (
                       <Link
                         href={`/heroes/${champUser.slug}`}
-                        className="hover:text-[var(--color-tecmo-gold)]"
+                        className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
+                        title={champUser.displayName}
                       >
-                        {champUser.shortName ?? champUser.displayName}
+                        <HeroAvatar
+                          slug={champUser.slug}
+                          size={20}
+                          className="border border-black/40"
+                        />
+                        <span>{champUser.shortName ?? champUser.displayName}</span>
                       </Link>
                     ) : (
                       "—"
@@ -89,9 +95,15 @@ export default function SeasonsIndex() {
                     {ruUser ? (
                       <Link
                         href={`/heroes/${ruUser.slug}`}
-                        className="hover:text-[var(--color-tecmo-gold)]"
+                        className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
+                        title={ruUser.displayName}
                       >
-                        {ruUser.shortName ?? ruUser.displayName}
+                        <HeroAvatar
+                          slug={ruUser.slug}
+                          size={20}
+                          className="border border-black/40"
+                        />
+                        <span>{ruUser.shortName ?? ruUser.displayName}</span>
                       </Link>
                     ) : (
                       "—"
