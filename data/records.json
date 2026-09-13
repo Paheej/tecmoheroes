@@ -453,28 +453,28 @@
     "dateAchieved": "2010"
   },
   {
-    "id": "special-teams-highest-punt-return-avg-meggett-gia-15-6",
+    "id": "special-teams-highest-punt-return-avg-winder-den-19-3",
     "category": "special-teams",
     "scope": "season",
     "statName": "Highest Punt Return Avg",
-    "value": 15.6,
+    "value": 19.3,
     "tecmoPlayerIds": [
-      "meggett-gia"
+      "winder-den"
     ],
     "userIds": [
       "PJ"
     ],
     "teamAbbrs": [
-      "GIA"
+      "DEN"
     ],
-    "seasonId": 5,
+    "seasonId": 21,
     "seasonIds": [
-      5
+      21
     ],
     "years": [
-      2010
+      2026
     ],
-    "dateAchieved": "2010"
+    "dateAchieved": "2026"
   },
   {
     "id": "special-teams-most-punt-return-tds-meggett-gia-1",
@@ -511,28 +511,28 @@
     "dateAchieved": "2010"
   },
   {
-    "id": "special-teams-most-kick-returns-smith-buf-62",
+    "id": "special-teams-most-kick-returns-kenny-jackson-phi-64",
     "category": "special-teams",
     "scope": "season",
     "statName": "Most Kick Returns",
-    "value": 62,
+    "value": 64,
     "tecmoPlayerIds": [
-      "smith-buf"
+      "kenny-jackson-phi"
     ],
     "userIds": [
-      "MAE"
+      "AD"
     ],
     "teamAbbrs": [
-      "BUF"
+      "PHI"
     ],
-    "seasonId": 19,
+    "seasonId": 21,
     "seasonIds": [
-      19
+      21
     ],
     "years": [
-      2025
+      2026
     ],
-    "dateAchieved": "2025"
+    "dateAchieved": "2026"
   },
   {
     "id": "special-teams-most-kick-return-yards-meggett-gia-1226",
@@ -1262,6 +1262,22 @@
     "dateAchieved": "2025"
   },
   {
+    "id": "sb-21-den",
+    "category": "team",
+    "scope": "super-bowl",
+    "statName": "Super Bowl 21 Champion",
+    "value": "DEN",
+    "tecmoPlayerIds": [],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "DEN"
+    ],
+    "seasonId": 21,
+    "dateAchieved": "2026"
+  },
+  {
     "id": "award-mvp-1-smith-dal",
     "category": "team",
     "scope": "season",
@@ -1678,5 +1694,62 @@
     "seasonId": 20,
     "dateAchieved": "2025",
     "notes": "64 sacks leading the number 1 defense (total 3406 yards allowed) and only 211 points."
+  },
+  {
+    "id": "award-mvp-21-qb-eagles-phi",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 21 MVP",
+    "value": "Randall Cunningham",
+    "tecmoPlayerIds": [
+      "qb-eagles-phi"
+    ],
+    "userIds": [
+      "AD"
+    ],
+    "teamAbbrs": [
+      "PHI"
+    ],
+    "seasonId": 21,
+    "dateAchieved": "2026",
+    "notes": "Accounting for 45 touchdowns with almost 3k passing yards and over 650 rushing yards."
+  },
+  {
+    "id": "award-opoy-21-humphrey-den",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 21 OPOY",
+    "value": "Bobby Humphrey",
+    "tecmoPlayerIds": [
+      "humphrey-den"
+    ],
+    "userIds": [
+      "PJ"
+    ],
+    "teamAbbrs": [
+      "DEN"
+    ],
+    "seasonId": 21,
+    "dateAchieved": "2026",
+    "notes": "Put up over 2300 yards from scrimmage with 51 total touchdowns and over 2k yards rushing."
+  },
+  {
+    "id": "award-dpoy-21-waymer-sf",
+    "category": "team",
+    "scope": "season",
+    "statName": "Season 21 DPOY",
+    "value": "Dave Waymer",
+    "tecmoPlayerIds": [
+      "waymer-sf"
+    ],
+    "userIds": [
+      "COMP"
+    ],
+    "teamAbbrs": [
+      "SF"
+    ],
+    "seasonId": 21,
+    "dateAchieved": "2026",
+    "notes": "16 interceptions, with 165 yards (10.3 yds per interception) and returned an interception for a touchdown."
   }
 ]

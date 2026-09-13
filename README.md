@@ -45,6 +45,24 @@ node --version
 python3 -c "import openpyxl; print(openpyxl.__version__)"
 ```
 
+### Roster data (required before every conversion)
+
+`scripts/convert-xlsx.py` reads the NES rosters from `/tmp/tecmogeek/data` to resolve each
+player's real NFL name and headshot sprite slot. That path is `/tmp`, so **it disappears on
+reboot**. Restore it before running the converter:
+
+```bash
+git clone --depth 1 https://github.com/ubuwaits/tecmogeek.git /tmp/tecmogeek-repo
+mkdir -p /tmp/tecmogeek && cp -R /tmp/tecmogeek-repo/data /tmp/tecmogeek/
+
+# verify (should print 41)
+ls /tmp/tecmogeek/data | wc -l
+```
+
+The script does **not** fail without it — it silently falls back to generic per-position sprite
+slots, which quietly assigns the wrong headshot to most players. Always confirm the roster
+directory exists first.
+
 ---
 
 ## 2. First-time deployment, end to end
@@ -314,6 +332,14 @@ Record {
 
 A single record can reference multiple players (ties), multiple users, multiple teams. Each id is a foreign key into the respective JSON file. See `lib/types.ts` for the full set of shapes (`User`, `TecmoPlayer`, `Team`, `Season`, `TeamSeason`, `PlayerSeasonStat`).
 
+### How player ids are built
+
+A player's id (and therefore their `/players/<slug>` URL) is **surname + team** — `moon-hou`, `winder-den`. The spreadsheet spells names inconsistently (`Dave`/`David Meggett`, `Merril`/`Merrill Hoge`), so keying on the surname is what keeps those rows pointing at one person.
+
+When the **team's roster has two players sharing a surname**, the first name is added as a qualifier: `keith-jackson-phi` and `kenny-jackson-phi`, `bruce-smith-buf` / `don-smith-buf` / `leonard-smith-buf`. Nine players currently qualify this way.
+
+The trigger is the *roster*, not collisions actually present in the workbook — so a slug never changes retroactively just because a later season introduced the teammate. If you add a season and a player's URL changes unexpectedly, that is a bug worth investigating.
+
 ---
 
 ## 7. Stat maximums
@@ -366,6 +392,18 @@ If/when this grows beyond a single archivist, swap `lib/data.ts` to read from Po
 
 **`python3 scripts/convert-xlsx.py` errors with `ModuleNotFoundError: openpyxl`**
 Run `python3 -m pip install --user openpyxl` (or `pip3 install openpyxl`).
+
+**Headshots are wrong / `spriteIndex` changed for players you did not touch**
+`/tmp/tecmogeek/data` was missing when you ran the converter. Restore it (see
+[Roster data](#roster-data-required-before-every-conversion)), re-run the script, and the
+sprite indexes will come back. A good habit: after any conversion, `git diff data/players.json`
+should only touch players from the season you just added.
+
+**Never edit the workbook with openpyxl**
+`openpyxl.load_workbook(path)` drops every cached formula value on save. Much of this workbook
+is formulas, so saving through openpyxl silently guts the data (seasons and records collapse to
+a fraction of their real count). Edit the spreadsheet in Excel/Numbers, or patch the underlying
+sheet XML inside the `.xlsx` zip directly.
 
 **`npm install` warns about peer deps**
 Safe to ignore for React 19 / Next 15 — the project pins exact versions in `package.json`.

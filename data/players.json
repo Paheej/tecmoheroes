@@ -100,6 +100,16 @@
     "spriteIndex": 24
   },
   {
+    "id": "bruce-smith-buf",
+    "slug": "bruce-smith-buf",
+    "tecmoName": "Smith",
+    "realName": "Bruce Smith",
+    "position": "DE",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 17
+  },
+  {
     "id": "norwood-buf",
     "slug": "norwood-buf",
     "tecmoName": "Norwood",
@@ -150,8 +160,8 @@
     "spriteIndex": 0
   },
   {
-    "id": "smith-buf",
-    "slug": "smith-buf",
+    "id": "don-smith-buf",
+    "slug": "don-smith-buf",
     "tecmoName": "Smith",
     "realName": "Don Smith",
     "position": "RB",
@@ -178,6 +188,16 @@
     "team": "BUF",
     "teamSlug": "bills",
     "spriteIndex": 2
+  },
+  {
+    "id": "leonard-smith-buf",
+    "slug": "leonard-smith-buf",
+    "tecmoName": "Smith",
+    "realName": "Leonard Smith",
+    "position": "S",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 27
   },
   {
     "id": "mckellar-buf",
@@ -416,7 +436,7 @@
     "id": "jennings-cin",
     "slug": "jennings-cin",
     "tecmoName": "Jennings",
-    "realName": "S. Jennings",
+    "realName": "S Jennings",
     "position": "WR",
     "team": "CIN",
     "teamSlug": "bengals",
@@ -593,6 +613,47 @@
     "spriteIndex": 10
   },
   {
+    "id": "braxton-den",
+    "slug": "braxton-den",
+    "tecmoName": "Braxton",
+    "realName": "Tyone Braxton",
+    "position": "CB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 25
+  },
+  {
+    "id": "treadwell-den",
+    "slug": "treadwell-den",
+    "tecmoName": "Treadwell",
+    "realName": "David Treadwell",
+    "position": "K",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 28
+  },
+  {
+    "id": "brooks-den",
+    "slug": "brooks-den",
+    "tecmoName": "Brooks",
+    "realName": "Michael Brooks",
+    "position": "LB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 21
+  },
+  {
+    "id": "mecklenburg-den",
+    "slug": "mecklenburg-den",
+    "tecmoName": "Mecklenburg",
+    "realName": "Karl Mecklenburg",
+    "position": "LB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 20,
+    "bio": "Nicknames: Albino Rhino"
+  },
+  {
     "id": "munford-den",
     "slug": "munford-den",
     "tecmoName": "Munford",
@@ -634,6 +695,26 @@
     "bio": "Nicknames: Bebbe Hemphre"
   },
   {
+    "id": "sewell-den",
+    "slug": "sewell-den",
+    "tecmoName": "Sewell",
+    "realName": "Steve Sewell",
+    "position": "RB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 3
+  },
+  {
+    "id": "winder-den",
+    "slug": "winder-den",
+    "tecmoName": "Winder",
+    "realName": "Sammy Winder",
+    "position": "RB",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 4
+  },
+  {
     "id": "smith-den",
     "slug": "smith-den",
     "tecmoName": "Smith",
@@ -672,6 +753,16 @@
     "team": "DEN",
     "teamSlug": "broncos",
     "spriteIndex": 6
+  },
+  {
+    "id": "young-den",
+    "slug": "young-den",
+    "tecmoName": "Young",
+    "realName": "Michael Young",
+    "position": "WR",
+    "team": "DEN",
+    "teamSlug": "broncos",
+    "spriteIndex": 9
   },
   {
     "id": "crockett-det",
@@ -1227,6 +1318,16 @@
     "spriteIndex": 28
   },
   {
+    "id": "derrick-thomas-kc",
+    "slug": "derrick-thomas-kc",
+    "tecmoName": "Thomas",
+    "realName": "Derrick Thomas",
+    "position": "LB",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 20
+  },
+  {
     "id": "barker-kc",
     "slug": "barker-kc",
     "tecmoName": "Barker",
@@ -1268,8 +1369,8 @@
     "bio": "Nicknames: Bird is the Word"
   },
   {
-    "id": "thomas-kc",
-    "slug": "thomas-kc",
+    "id": "robb-thomas-kc",
+    "slug": "robb-thomas-kc",
     "tecmoName": "Thomas",
     "realName": "Robb Thomas",
     "position": "TE",
@@ -1700,14 +1801,33 @@
     "spriteIndex": 10
   },
   {
-    "id": "martin-no",
-    "slug": "martin-no",
+    "id": "eric-martin-no",
+    "slug": "eric-martin-no",
     "tecmoName": "Martin",
     "realName": "Eric Martin",
     "position": "WR",
     "team": "NO",
     "teamSlug": "saints",
     "spriteIndex": 6
+  },
+  {
+    "id": "simmons-phi",
+    "slug": "simmons-phi",
+    "tecmoName": "Simmons",
+    "realName": "Clyde Simmons",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 17
+  },
+  {
+    "id": "smith-phi",
+    "slug": "smith-phi",
+    "tecmoName": "Smith",
+    "realName": "Ben Smith",
+    "position": "CB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 25
   },
   {
     "id": "white-phi",
@@ -1720,6 +1840,16 @@
     "spriteIndex": 19
   },
   {
+    "id": "golic-phi",
+    "slug": "golic-phi",
+    "tecmoName": "Golic",
+    "realName": "Mike Golic",
+    "position": "DT",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 18
+  },
+  {
     "id": "brown-phi",
     "slug": "brown-phi",
     "tecmoName": "Brown",
@@ -1728,6 +1858,36 @@
     "team": "PHI",
     "teamSlug": "eagles",
     "spriteIndex": 21
+  },
+  {
+    "id": "evans-phi",
+    "slug": "evans-phi",
+    "tecmoName": "Evans",
+    "realName": "Byron Evans",
+    "position": "LB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 22
+  },
+  {
+    "id": "joyner-phi",
+    "slug": "joyner-phi",
+    "tecmoName": "Joyner",
+    "realName": "Seth Joyner",
+    "position": "LB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 23
+  },
+  {
+    "id": "small-phi",
+    "slug": "small-phi",
+    "tecmoName": "Small",
+    "realName": "Jessie Small",
+    "position": "LB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 20
   },
   {
     "id": "feagles-phi",
@@ -1770,8 +1930,28 @@
     "spriteIndex": 3
   },
   {
-    "id": "jackson-phi",
-    "slug": "jackson-phi",
+    "id": "toney-phi",
+    "slug": "toney-phi",
+    "tecmoName": "Toney",
+    "realName": "Anthony Toney",
+    "position": "RB",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 4
+  },
+  {
+    "id": "hopkins-phi",
+    "slug": "hopkins-phi",
+    "tecmoName": "Hopkins",
+    "realName": "Wes Hopkins",
+    "position": "S",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 26
+  },
+  {
+    "id": "keith-jackson-phi",
+    "slug": "keith-jackson-phi",
     "tecmoName": "Jackson",
     "realName": "Keith Jackson",
     "position": "TE",
@@ -1788,6 +1968,16 @@
     "team": "PHI",
     "teamSlug": "eagles",
     "spriteIndex": 6
+  },
+  {
+    "id": "kenny-jackson-phi",
+    "slug": "kenny-jackson-phi",
+    "tecmoName": "Jackson",
+    "realName": "Kenny Jackson",
+    "position": "WR",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 9
   },
   {
     "id": "quick-phi",
@@ -2497,8 +2687,8 @@
     "spriteIndex": 0
   },
   {
-    "id": "anderson-tb",
-    "slug": "anderson-tb",
+    "id": "gary-anderson-tb",
+    "slug": "gary-anderson-tb",
     "tecmoName": "Anderson",
     "realName": "Gary Anderson",
     "position": "RB",

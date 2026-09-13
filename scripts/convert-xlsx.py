@@ -121,6 +121,7 @@ USER_PROFILES = {
         "team": "DA BEARS", "from": "Clemmons, NC",
         "currentResidence": "Bennettsville, SC",
         "seasonsPlayed": 10, "sbChampionships": 1, "recordsCount": 10,
+        "bio": "Fierce competitor and unrepentant record chaser — if there's a number on the board, he's circling the date he plans to take it. Forever associated with the infamous \"Stomp,\" the kind of incident the league still won't fully describe out loud.",
     },
     "CR":    {
         "displayName": "Chris Rice", "shortName": "CR",
@@ -128,6 +129,7 @@ USER_PROFILES = {
         "team": "Buffalo Bills", "from": "Pennsylvania",
         "currentResidence": "Greensboro, NC",
         "seasonsPlayed": 8, "sbChampionships": 1,
+        "bio": "The all-American American — elite gamer across genres, from cartridge-era sports sims to whatever the kids are playing this week. Side hustle: rumored to cure arthritis on contact.",
     },
     "MAE":   {
         "displayName": "Mae Andersen", "shortName": "MAE",
@@ -135,6 +137,7 @@ USER_PROFILES = {
         "team": "Buffalo Bills",
         "currentResidence": "Winston-Salem, NC",
         "seasonsPlayed": 3, "sbAppearances": 1,
+        "bio": "Andre Reed superfan and second-generation Tecmo player. Quotes Bills history like scripture — give her a year and a Buffalo roster spot and she will tell you who lined up there, what they ran, and how it ended.",
     },
     "TD":    {
         "displayName": "Tyler Davis", "shortName": "TD",
@@ -142,6 +145,7 @@ USER_PROFILES = {
         "from": "North Carolina",
         "currentResidence": "North Wilkesboro, NC",
         "seasonsPlayed": 1,
+        "bio": "Best known for a semi-professional Halo career, and for taking sole responsibility for re-populating Western North Carolina. Brings sniper-grade reflexes to the cartridge and has the demographics to back the claim.",
     },
     "BF":    {
         "displayName": "Brian Foster", "shortName": "BF",
@@ -149,12 +153,14 @@ USER_PROFILES = {
         "team": "NY Giants",
         "from": "Winston-Salem, NC", "currentResidence": "Greensboro, NC",
         "seasonsPlayed": 1,
+        "bio": "Circus, tattoos, aircraft, and a pet corgi — the league's most improbable Venn diagram. Shows up looking like he just stepped out of a sideshow, then quietly runs Phil Simms back to the huddle for one more bootleg.",
     },
     "AD":    {
         "displayName": "Andrew Denson", "shortName": "AD",
         "age": 40, "ethnicity": "Whitey",
         "team": "San Francisco 49ers", "from": "Guam",
         "seasonsPlayed": 1,
+        "bio": "Picture Jesus in a flannel — turns water into IPA instead of wine. Reverent at the cartridge, irreverent everywhere else, and the only league member whose pre-game ritual doubles as a homebrew tasting.",
     },
     "COMP":  {
         "displayName": "Computer", "shortName": "COMP",
@@ -238,15 +244,68 @@ def canonical_last(last: Any) -> str:
     return LAST_NAME_ALIASES.get(s.upper(), s)
 
 
+def normalize_name(n: str) -> str:
+    return n.lower().replace("'", "").replace(".", "").replace("-", " ").strip()
+
+
+def roster_same_last(team_abbr: str | None, last: str) -> list[dict[str, Any]]:
+    """Roster entries on this team whose surname matches `last`."""
+    target = normalize_name(last or "")
+    if not target:
+        return []
+    out: list[dict[str, Any]] = []
+    for entry in tg_roster(team_abbr or ""):
+        name = entry.get("name") or ""
+        if name and normalize_name(name.split()[-1]) == target:
+            out.append(entry)
+    return out
+
+
+def pick_roster_entry(entries: list[dict[str, Any]], first: Any) -> dict[str, Any] | None:
+    """Pick which same-surname teammate a row refers to, using the first name."""
+    target = normalize_name(first if isinstance(first, str) else "")
+    if not target:
+        return None
+    for entry in entries:
+        parts = (entry.get("name") or "").split()
+        if parts and normalize_name(parts[0]) == target:
+            return entry
+    # tolerate spelling drift the way the rest of the script does (Sammie/Sammy)
+    for entry in entries:
+        parts = (entry.get("name") or "").split()
+        if not parts:
+            continue
+        cand = normalize_name(parts[0])
+        if cand.startswith(target[:4]) or target.startswith(cand[:4]):
+            return entry
+    return None
+
+
 def player_key(last: Any, first: Any, team: str | None) -> str | None:
-    """Stable dedup key: last-name (canonical) + team. First name disambiguates ties."""
+    """Stable dedup key: surname + team.
+
+    Surname alone is ambiguous when a roster carries two players with the same
+    one — PHI had both Keith Jackson (TE) and Kenny Jackson (WR), BUF had Bruce,
+    Don and Leonard Smith. Qualify those with the first name so they stay
+    separate people. Keyed off the roster rather than off collisions actually
+    seen in the workbook, so a slug never changes later just because a new
+    season introduced the teammate.
+    """
     last = canonical_last(last)
     first = (first or "").strip() if isinstance(first, str) else ""
     if not last and not first:
         return None
     if first == "QB" and last:
         return slugify("qb", last, team)
-    return slugify(last, team) if last else slugify(first, team)
+    if not last:
+        return slugify(first, team)
+    same_last = roster_same_last(team, last)
+    if len(same_last) > 1:
+        entry = pick_roster_entry(same_last, first)
+        qualifier = (entry["name"].split()[0] if entry else first)
+        if qualifier:
+            return slugify(qualifier, last, team)
+    return slugify(last, team)
 
 
 _TG_ROSTER_CACHE: dict[str, list[dict[str, Any]]] = {}
@@ -277,12 +336,6 @@ def find_sprite_slot(team_abbr: str | None, last: str, first: str, pos: str | No
         return (None, None, None)
     roster = tg_roster(team_abbr or "")
 
-    last_n = (last or "").strip().lower()
-    first_n = (first or "").strip().lower()
-
-    def normalize_name(n: str) -> str:
-        return n.lower().replace("'", "").replace(".", "").replace("-", " ").strip()
-
     # Try exact match by full real name then last-only
     for entry in roster:
         full = normalize_name(entry.get("name", ""))
@@ -291,11 +344,12 @@ def find_sprite_slot(team_abbr: str | None, last: str, first: str, pos: str | No
             ep = entry.get("position", "")
             if ep in HEADSHOT_POSITIONS:
                 return (slug, HEADSHOT_POSITIONS.index(ep), entry.get("name"))
-    # last-name match
-    for entry in roster:
-        full = entry.get("name", "")
-        ln = normalize_name(full.split()[-1] if full else "")
-        if ln and ln == normalize_name(last_n):
+    # Surname match. Where teammates share a surname, the first name decides which
+    # headshot to use — otherwise both Jacksons would get the same one.
+    same_last = roster_same_last(team_abbr, last)
+    if same_last:
+        entry = pick_roster_entry(same_last, first) if len(same_last) > 1 else same_last[0]
+        if entry:
             ep = entry.get("position", "")
             if ep in HEADSHOT_POSITIONS:
                 return (slug, HEADSHOT_POSITIONS.index(ep), entry.get("name"))

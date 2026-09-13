@@ -1328,5 +1328,43 @@
     "passDef": 1813,
     "rushDef": 2696,
     "wonSuperBowl": false
+  },
+  {
+    "seasonId": 21,
+    "year": 2026,
+    "team": "DEN",
+    "userId": "PJ",
+    "w": 16,
+    "l": 0,
+    "t": 0,
+    "pf": 644,
+    "pa": 198,
+    "diff": 446,
+    "totalOff": 5036,
+    "passOff": 2674,
+    "rushOff": 2362,
+    "totalDef": 3451,
+    "passDef": 1651,
+    "rushDef": 1800,
+    "wonSuperBowl": true
+  },
+  {
+    "seasonId": 21,
+    "year": 2026,
+    "team": "PHI",
+    "userId": "AD",
+    "w": 11,
+    "l": 5,
+    "t": 0,
+    "pf": 413,
+    "pa": 325,
+    "diff": 88,
+    "totalOff": 4131,
+    "passOff": 2997,
+    "rushOff": 1134,
+    "totalDef": 3593,
+    "passDef": 1506,
+    "rushDef": 2087,
+    "wonSuperBowl": false
   }
 ]
