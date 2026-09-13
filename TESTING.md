@@ -6,6 +6,12 @@ Replace `<PREVIEW>` with the preview URL. Should take about five minutes.
 Everything below was verified locally against `npm run build`; this sheet is to
 confirm the same thing survived the deploy.
 
+> **Always use the trailing slash** — `/heroes/ad/`, not `/heroes/ad.txt`.
+> Next.js writes two files per page in a static export: `index.html` (the page) and
+> `index.txt` (the React Server Components payload the client router fetches on link
+> clicks). Opening the `.txt` shows a wall of `1:"$Sreact.fragment"…` serialized
+> component data. That is normal output present on every page, not an error.
+
 ---
 
 ## 1. Home — `<PREVIEW>/`
