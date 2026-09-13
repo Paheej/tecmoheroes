@@ -155,11 +155,11 @@ Replaced by — each should show its **own** position, headshot and stats:
 > Only these five surnames are affected. Every other player URL is unchanged —
 > worth confirming a couple of untouched ones still resolve (section 8 covers that).
 
-## 10. Known cosmetic issue (expected — do not file)
+## 10. Super Bowl 21 note
 
-- [ ] Super Bowl 21 note reads *"SF (COMP) **Elimanted** PHI (AD) 24-21 in the NFCCG."*
-      Typo is in the spreadsheet, carried through verbatim. Fix it in the workbook and
-      re-run `python3 scripts/convert-xlsx.py` if you want it corrected.
+- [ ] The note under the Super Bowl 21 panel reads
+      *"SF (COMP) **Eliminated** PHI (AD) 24-21 in the NFCCG."* — spelled correctly,
+      no "Elimanted"
 
 ---
 
