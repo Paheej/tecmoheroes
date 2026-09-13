@@ -45,6 +45,24 @@ node --version
 python3 -c "import openpyxl; print(openpyxl.__version__)"
 ```
 
+### Roster data (required before every conversion)
+
+`scripts/convert-xlsx.py` reads the NES rosters from `/tmp/tecmogeek/data` to resolve each
+player's real NFL name and headshot sprite slot. That path is `/tmp`, so **it disappears on
+reboot**. Restore it before running the converter:
+
+```bash
+git clone --depth 1 https://github.com/ubuwaits/tecmogeek.git /tmp/tecmogeek-repo
+mkdir -p /tmp/tecmogeek && cp -R /tmp/tecmogeek-repo/data /tmp/tecmogeek/
+
+# verify (should print 41)
+ls /tmp/tecmogeek/data | wc -l
+```
+
+The script does **not** fail without it — it silently falls back to generic per-position sprite
+slots, which quietly assigns the wrong headshot to most players. Always confirm the roster
+directory exists first.
+
 ---
 
 ## 2. First-time deployment, end to end
@@ -366,6 +384,18 @@ If/when this grows beyond a single archivist, swap `lib/data.ts` to read from Po
 
 **`python3 scripts/convert-xlsx.py` errors with `ModuleNotFoundError: openpyxl`**
 Run `python3 -m pip install --user openpyxl` (or `pip3 install openpyxl`).
+
+**Headshots are wrong / `spriteIndex` changed for players you did not touch**
+`/tmp/tecmogeek/data` was missing when you ran the converter. Restore it (see
+[Roster data](#roster-data-required-before-every-conversion)), re-run the script, and the
+sprite indexes will come back. A good habit: after any conversion, `git diff data/players.json`
+should only touch players from the season you just added.
+
+**Never edit the workbook with openpyxl**
+`openpyxl.load_workbook(path)` drops every cached formula value on save. Much of this workbook
+is formulas, so saving through openpyxl silently guts the data (seasons and records collapse to
+a fraction of their real count). Edit the spreadsheet in Excel/Numbers, or patch the underlying
+sheet XML inside the `.xlsx` zip directly.
 
 **`npm install` warns about peer deps**
 Safe to ignore for React 19 / Next 15 — the project pins exact versions in `package.json`.

@@ -121,6 +121,7 @@ USER_PROFILES = {
         "team": "DA BEARS", "from": "Clemmons, NC",
         "currentResidence": "Bennettsville, SC",
         "seasonsPlayed": 10, "sbChampionships": 1, "recordsCount": 10,
+        "bio": "Fierce competitor and unrepentant record chaser — if there's a number on the board, he's circling the date he plans to take it. Forever associated with the infamous \"Stomp,\" the kind of incident the league still won't fully describe out loud.",
     },
     "CR":    {
         "displayName": "Chris Rice", "shortName": "CR",
@@ -128,6 +129,7 @@ USER_PROFILES = {
         "team": "Buffalo Bills", "from": "Pennsylvania",
         "currentResidence": "Greensboro, NC",
         "seasonsPlayed": 8, "sbChampionships": 1,
+        "bio": "The all-American American — elite gamer across genres, from cartridge-era sports sims to whatever the kids are playing this week. Side hustle: rumored to cure arthritis on contact.",
     },
     "MAE":   {
         "displayName": "Mae Andersen", "shortName": "MAE",
@@ -135,6 +137,7 @@ USER_PROFILES = {
         "team": "Buffalo Bills",
         "currentResidence": "Winston-Salem, NC",
         "seasonsPlayed": 3, "sbAppearances": 1,
+        "bio": "Andre Reed superfan and second-generation Tecmo player. Quotes Bills history like scripture — give her a year and a Buffalo roster spot and she will tell you who lined up there, what they ran, and how it ended.",
     },
     "TD":    {
         "displayName": "Tyler Davis", "shortName": "TD",
@@ -142,6 +145,7 @@ USER_PROFILES = {
         "from": "North Carolina",
         "currentResidence": "North Wilkesboro, NC",
         "seasonsPlayed": 1,
+        "bio": "Best known for a semi-professional Halo career, and for taking sole responsibility for re-populating Western North Carolina. Brings sniper-grade reflexes to the cartridge and has the demographics to back the claim.",
     },
     "BF":    {
         "displayName": "Brian Foster", "shortName": "BF",
@@ -149,12 +153,14 @@ USER_PROFILES = {
         "team": "NY Giants",
         "from": "Winston-Salem, NC", "currentResidence": "Greensboro, NC",
         "seasonsPlayed": 1,
+        "bio": "Circus, tattoos, aircraft, and a pet corgi — the league's most improbable Venn diagram. Shows up looking like he just stepped out of a sideshow, then quietly runs Phil Simms back to the huddle for one more bootleg.",
     },
     "AD":    {
         "displayName": "Andrew Denson", "shortName": "AD",
         "age": 40, "ethnicity": "Whitey",
         "team": "San Francisco 49ers", "from": "Guam",
         "seasonsPlayed": 1,
+        "bio": "Picture Jesus in a flannel — turns water into IPA instead of wine. Reverent at the cartridge, irreverent everywhere else, and the only league member whose pre-game ritual doubles as a homebrew tasting.",
     },
     "COMP":  {
         "displayName": "Computer", "shortName": "COMP",

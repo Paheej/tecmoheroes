@@ -418,5 +418,26 @@
       "location": "PJ's Basement",
       "notes": "DET (PJ) defeats NO (AD) 28-14 in NFCCG; NO (AD) defeats SF (COMP) in Divisional Round on kick return as time expires 27-24 (Rueben Mayes had 3 KRTD)."
     }
+  },
+  {
+    "id": 21,
+    "year": 2026,
+    "championTeam": "DEN",
+    "superBowl": {
+      "champion": "DEN",
+      "championUser": "PJ",
+      "championScore": 20,
+      "runnerUp": "SF",
+      "runnerUpUser": "COMP",
+      "runnerUpScore": 10,
+      "afc": "DEN",
+      "nfc": "SF",
+      "afcUser": "PJ",
+      "nfcUser": "COMP",
+      "afcScore": 20,
+      "nfcScore": 10,
+      "location": "PJ's Basement",
+      "notes": "SF (COMP) Elimanted PHI (AD) 24-21 in the NFCCG."
+    }
   }
 ]
