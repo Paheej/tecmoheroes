@@ -25,7 +25,7 @@ This is the main new page.
 - [ ] Super Bowl panel: **DEN 20 — SF 10**, AFC `DEN`, NFC `SF`
 - [ ] **Single-season records (2)**:
   - [ ] *Highest Punt Return Avg* — **19.3** — Winder (Sammy Winder), Hero **PJ**, Team **DEN**
-  - [ ] *Most Kick Returns* — **64** — Jackson, Hero **AD**, Team **PHI**
+  - [ ] *Most Kick Returns* — **64** — Jackson, shown as **Kenny Jackson** (*not* Keith), Hero **AD**, Team **PHI**
 - [ ] **Awards** — all three present:
   - [ ] MVP **Randall Cunningham** (PHI · AD)
   - [ ] OPOY **Bobby Humphrey** (DEN · PJ)
@@ -100,7 +100,7 @@ New Philadelphia pages:
 ### `<PREVIEW>/records/defense-special-teams/`
 - [ ] *Highest Punt Return Avg* leader is **Winder 19.3** (DEN, PJ, season 21)
 - [ ] Meggett's **15.6** is no longer the leader
-- [ ] *Most Kick Returns* leader is **Jackson 64** (PHI, AD, season 21)
+- [ ] *Most Kick Returns* leader is **Kenny Jackson 64** (PHI, AD, season 21)
 - [ ] Smith/BUF **62** is no longer the leader
 
 ### `<PREVIEW>/records/team/`
@@ -123,11 +123,40 @@ on players **not** touched by this PR:
 If these look wrong, the roster data was missing at build time — see the
 "Roster data" section in `README.md`.
 
-## 9. Known cosmetic issues (expected — do not file)
+## 9. Same-surname player split
 
-- [ ] Season 21 *Most Kick Returns* shows **"Keith Jackson"**; the spreadsheet says
-      **Kenny Jackson**. Pre-existing: the converter keys players by last name + team,
-      so both Jacksons on PHI share `jackson-phi`. Tracked in the PR description.
+Players used to be keyed by surname + team, so teammates who shared a surname were
+merged into one page. This PR splits them. **Five old URLs are now 404** — that is
+expected, and nothing in the site links to them any more.
+
+Gone (should 404):
+
+- [ ] `<PREVIEW>/players/jackson-phi/`
+- [ ] `<PREVIEW>/players/smith-buf/`
+- [ ] `<PREVIEW>/players/thomas-kc/`
+- [ ] `<PREVIEW>/players/martin-no/`
+- [ ] `<PREVIEW>/players/anderson-tb/`
+
+Replaced by — each should show its **own** position, headshot and stats:
+
+- [ ] `<PREVIEW>/players/keith-jackson-phi/` — **TE**, receiving (68 rec / 1,150 yds in S4)
+- [ ] `<PREVIEW>/players/kenny-jackson-phi/` — **WR**, kick returns (64 returns in S21)
+- [ ] `<PREVIEW>/players/bruce-smith-buf/` — **DE**, "76 sacks, 2 INTs across 5 seasons"
+- [ ] `<PREVIEW>/players/don-smith-buf/` — **RB**, 4 seasons
+- [ ] `<PREVIEW>/players/leonard-smith-buf/` — **S**, "6 INTs across 1 season"
+- [ ] `<PREVIEW>/players/derrick-thomas-kc/` — **LB**, "63 sacks, 5 INTs across 3 seasons"
+- [ ] `<PREVIEW>/players/robb-thomas-kc/` — **WR/TE**, receiving
+- [ ] `<PREVIEW>/players/eric-martin-no/` — **WR**
+- [ ] `<PREVIEW>/players/gary-anderson-tb/` — **RB**
+
+- [ ] The two Jacksons show **different** headshots (Kenny = WR slot, Keith = TE slot)
+- [ ] Bruce Smith's page does **not** list Leonard's or Don's stats
+
+> Only these five surnames are affected. Every other player URL is unchanged —
+> worth confirming a couple of untouched ones still resolve (section 8 covers that).
+
+## 10. Known cosmetic issue (expected — do not file)
+
 - [ ] Super Bowl 21 note reads *"SF (COMP) **Elimanted** PHI (AD) 24-21 in the NFCCG."*
       Typo is in the spreadsheet, carried through verbatim. Fix it in the workbook and
       re-run `python3 scripts/convert-xlsx.py` if you want it corrected.
@@ -140,7 +169,7 @@ If these look wrong, the roster data was missing at build time — see the
 # roster data must exist first — it lives in /tmp and vanishes on reboot
 ls /tmp/tecmogeek/data | wc -l    # expect 41
 
-python3 scripts/convert-xlsx.py    # expect: 21 seasons, 275 players, 84 records,
+python3 scripts/convert-xlsx.py    # expect: 21 seasons, 279 players, 84 records,
                                    #         72 team-seasons, 639 statlines
 npm run typecheck
 npm run build

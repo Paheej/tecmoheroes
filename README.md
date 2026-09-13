@@ -332,6 +332,14 @@ Record {
 
 A single record can reference multiple players (ties), multiple users, multiple teams. Each id is a foreign key into the respective JSON file. See `lib/types.ts` for the full set of shapes (`User`, `TecmoPlayer`, `Team`, `Season`, `TeamSeason`, `PlayerSeasonStat`).
 
+### How player ids are built
+
+A player's id (and therefore their `/players/<slug>` URL) is **surname + team** — `moon-hou`, `winder-den`. The spreadsheet spells names inconsistently (`Dave`/`David Meggett`, `Merril`/`Merrill Hoge`), so keying on the surname is what keeps those rows pointing at one person.
+
+When the **team's roster has two players sharing a surname**, the first name is added as a qualifier: `keith-jackson-phi` and `kenny-jackson-phi`, `bruce-smith-buf` / `don-smith-buf` / `leonard-smith-buf`. Nine players currently qualify this way.
+
+The trigger is the *roster*, not collisions actually present in the workbook — so a slug never changes retroactively just because a later season introduced the teammate. If you add a season and a player's URL changes unexpectedly, that is a bug worth investigating.
+
 ---
 
 ## 7. Stat maximums

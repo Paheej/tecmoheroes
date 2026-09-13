@@ -100,6 +100,16 @@
     "spriteIndex": 24
   },
   {
+    "id": "bruce-smith-buf",
+    "slug": "bruce-smith-buf",
+    "tecmoName": "Smith",
+    "realName": "Bruce Smith",
+    "position": "DE",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 17
+  },
+  {
     "id": "norwood-buf",
     "slug": "norwood-buf",
     "tecmoName": "Norwood",
@@ -150,8 +160,8 @@
     "spriteIndex": 0
   },
   {
-    "id": "smith-buf",
-    "slug": "smith-buf",
+    "id": "don-smith-buf",
+    "slug": "don-smith-buf",
     "tecmoName": "Smith",
     "realName": "Don Smith",
     "position": "RB",
@@ -178,6 +188,16 @@
     "team": "BUF",
     "teamSlug": "bills",
     "spriteIndex": 2
+  },
+  {
+    "id": "leonard-smith-buf",
+    "slug": "leonard-smith-buf",
+    "tecmoName": "Smith",
+    "realName": "Leonard Smith",
+    "position": "S",
+    "team": "BUF",
+    "teamSlug": "bills",
+    "spriteIndex": 27
   },
   {
     "id": "mckellar-buf",
@@ -1298,6 +1318,16 @@
     "spriteIndex": 28
   },
   {
+    "id": "derrick-thomas-kc",
+    "slug": "derrick-thomas-kc",
+    "tecmoName": "Thomas",
+    "realName": "Derrick Thomas",
+    "position": "LB",
+    "team": "KC",
+    "teamSlug": "chiefs",
+    "spriteIndex": 20
+  },
+  {
     "id": "barker-kc",
     "slug": "barker-kc",
     "tecmoName": "Barker",
@@ -1339,8 +1369,8 @@
     "bio": "Nicknames: Bird is the Word"
   },
   {
-    "id": "thomas-kc",
-    "slug": "thomas-kc",
+    "id": "robb-thomas-kc",
+    "slug": "robb-thomas-kc",
     "tecmoName": "Thomas",
     "realName": "Robb Thomas",
     "position": "TE",
@@ -1771,8 +1801,8 @@
     "spriteIndex": 10
   },
   {
-    "id": "martin-no",
-    "slug": "martin-no",
+    "id": "eric-martin-no",
+    "slug": "eric-martin-no",
     "tecmoName": "Martin",
     "realName": "Eric Martin",
     "position": "WR",
@@ -1920,8 +1950,8 @@
     "spriteIndex": 26
   },
   {
-    "id": "jackson-phi",
-    "slug": "jackson-phi",
+    "id": "keith-jackson-phi",
+    "slug": "keith-jackson-phi",
     "tecmoName": "Jackson",
     "realName": "Keith Jackson",
     "position": "TE",
@@ -1938,6 +1968,16 @@
     "team": "PHI",
     "teamSlug": "eagles",
     "spriteIndex": 6
+  },
+  {
+    "id": "kenny-jackson-phi",
+    "slug": "kenny-jackson-phi",
+    "tecmoName": "Jackson",
+    "realName": "Kenny Jackson",
+    "position": "WR",
+    "team": "PHI",
+    "teamSlug": "eagles",
+    "spriteIndex": 9
   },
   {
     "id": "quick-phi",
@@ -2647,8 +2687,8 @@
     "spriteIndex": 0
   },
   {
-    "id": "anderson-tb",
-    "slug": "anderson-tb",
+    "id": "gary-anderson-tb",
+    "slug": "gary-anderson-tb",
     "tecmoName": "Anderson",
     "realName": "Gary Anderson",
     "position": "RB",

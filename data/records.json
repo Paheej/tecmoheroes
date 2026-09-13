@@ -511,13 +511,13 @@
     "dateAchieved": "2010"
   },
   {
-    "id": "special-teams-most-kick-returns-jackson-phi-64",
+    "id": "special-teams-most-kick-returns-kenny-jackson-phi-64",
     "category": "special-teams",
     "scope": "season",
     "statName": "Most Kick Returns",
     "value": 64,
     "tecmoPlayerIds": [
-      "jackson-phi"
+      "kenny-jackson-phi"
     ],
     "userIds": [
       "AD"
