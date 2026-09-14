@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   users,
   recordsForUser,
@@ -43,8 +42,8 @@ export default function HeroesIndex() {
           const mostTeam = mostPlayedTeamForUser(u.id);
           return (
             <li key={u.id}>
-              <Link
-                href={`/heroes/${u.slug}`}
+              <a
+                href={`/heroes/${u.slug}/`}
                 className="block border-2 border-[var(--color-tecmo-gold)] p-3 hover:bg-white/5"
               >
                 <div className="flex items-start justify-between gap-3">
@@ -96,7 +95,7 @@ export default function HeroesIndex() {
                     <p className="text-xs opacity-80 mt-2">{blurb}</p>
                   ) : null;
                 })()}
-              </Link>
+              </a>
             </li>
           );
         })}

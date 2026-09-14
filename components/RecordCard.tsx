@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Record } from "@/lib/types";
 import { playerById, userById, seasonById, recordFocusIndexes } from "@/lib/data";
 import { scopeLabel, formatValue } from "@/lib/format";
@@ -57,9 +56,9 @@ export default function RecordCard({
       {showFullProfile && players.length > 0 && (
         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-3">
           {players.map((p) => (
-            <Link
+            <a
               key={p.id}
-              href={`/players/${p.slug}`}
+              href={`/players/${p.slug}/`}
               className="flex items-center gap-2 hover:text-[var(--color-tecmo-gold)]"
             >
               <Headshot
@@ -74,7 +73,7 @@ export default function RecordCard({
                   <div className="text-[10px] opacity-70">{p.realName}</div>
                 )}
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       )}
@@ -85,8 +84,8 @@ export default function RecordCard({
             <span className="opacity-60 uppercase">Hero:</span>
             {users.map((u, i) => (
               <span key={u.id} className="flex items-center gap-x-1.5">
-                <Link
-                  href={`/heroes/${u.slug}`}
+                <a
+                  href={`/heroes/${u.slug}/`}
                   className="inline-flex items-center gap-1.5 font-bold hover:text-[var(--color-tecmo-gold)] underline-offset-4"
                   title={u.displayName}
                 >
@@ -96,7 +95,7 @@ export default function RecordCard({
                     className="border border-black/40"
                   />
                   <span>{u.shortName ?? u.displayName}</span>
-                </Link>
+                </a>
                 {i < users.length - 1 ? <span>,</span> : null}
               </span>
             ))}
@@ -115,12 +114,12 @@ export default function RecordCard({
             <span className="opacity-60 uppercase">Season:</span>
             {seasonPairs.map(({ seasonId, year }, i) => (
               <span key={`${seasonId}-${i}`}>
-                <Link
-                  href={`/seasons/${seasonId}`}
+                <a
+                  href={`/seasons/${seasonId}/`}
                   className="hover:text-[var(--color-tecmo-gold)] font-bold"
                 >
                   #{seasonId}
-                </Link>
+                </a>
                 {year != null && <span className="opacity-70"> ({year})</span>}
                 {i < seasonPairs.length - 1 ? "," : ""}
               </span>

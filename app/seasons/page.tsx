@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   seasons,
   statRecordsForSeason,
@@ -48,18 +47,18 @@ export default function SeasonsIndex() {
                   className="border-b border-[var(--color-tecmo-gold)]/20 hover:bg-white/5"
                 >
                   <td className="py-2 px-2 font-bold">
-                    <Link
-                      href={`/seasons/${s.id}`}
+                    <a
+                      href={`/seasons/${s.id}/`}
                       className="hover:text-[var(--color-tecmo-gold)]"
                     >
                       #{s.id}
-                    </Link>
+                    </a>
                   </td>
                   <td className="py-2 px-2">{s.year}</td>
                   <td className="py-2 px-2 text-xs">
                     {champUser ? (
-                      <Link
-                        href={`/heroes/${champUser.slug}`}
+                      <a
+                        href={`/heroes/${champUser.slug}/`}
                         className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
                         title={champUser.displayName}
                       >
@@ -69,7 +68,7 @@ export default function SeasonsIndex() {
                           className="border border-black/40"
                         />
                         <span>{champUser.shortName ?? champUser.displayName}</span>
-                      </Link>
+                      </a>
                     ) : (
                       "—"
                     )}
@@ -93,8 +92,8 @@ export default function SeasonsIndex() {
                   </td>
                   <td className="py-2 px-2 text-xs">
                     {ruUser ? (
-                      <Link
-                        href={`/heroes/${ruUser.slug}`}
+                      <a
+                        href={`/heroes/${ruUser.slug}/`}
                         className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
                         title={ruUser.displayName}
                       >
@@ -104,7 +103,7 @@ export default function SeasonsIndex() {
                           className="border border-black/40"
                         />
                         <span>{ruUser.shortName ?? ruUser.displayName}</span>
-                      </Link>
+                      </a>
                     ) : (
                       "—"
                     )}

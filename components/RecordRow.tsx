@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Record } from "@/lib/types";
 import { playerById, userById, seasonById } from "@/lib/data";
 import { formatValue, scopeLabel } from "@/lib/format";
@@ -43,8 +42,8 @@ export default function RecordRow({ record, variant = "default" }: Props) {
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           {users.map((u, i) => (
             <span key={u.id} className="inline-flex items-center gap-x-1">
-              <Link
-                href={`/heroes/${u.slug}`}
+              <a
+                href={`/heroes/${u.slug}/`}
                 className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)] underline-offset-4"
                 title={u.displayName}
               >
@@ -54,7 +53,7 @@ export default function RecordRow({ record, variant = "default" }: Props) {
                   className="border border-black/40"
                 />
                 <span>{u.shortName ?? u.displayName}</span>
-              </Link>
+              </a>
               {i < users.length - 1 ? <span>,</span> : null}
             </span>
           ))}
@@ -64,9 +63,9 @@ export default function RecordRow({ record, variant = "default" }: Props) {
         <td className="py-3 px-2 align-top">
           <div className="flex items-center gap-2 flex-wrap">
             {players.map((p) => (
-              <Link
+              <a
                 key={p.id}
-                href={`/players/${p.slug}`}
+                href={`/players/${p.slug}/`}
                 className="flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
                 title={p.realName ?? p.tecmoName}
               >
@@ -77,7 +76,7 @@ export default function RecordRow({ record, variant = "default" }: Props) {
                   className="border border-black/40"
                 />
                 <span className="text-xs">{p.tecmoName}</span>
-              </Link>
+              </a>
             ))}
           </div>
         </td>
@@ -93,13 +92,13 @@ export default function RecordRow({ record, variant = "default" }: Props) {
         {seasonIds.length > 0 ? (
           <div className="flex flex-wrap gap-x-2 gap-y-0.5">
             {seasonIds.map((id) => (
-              <Link
+              <a
                 key={id}
-                href={`/seasons/${id}`}
+                href={`/seasons/${id}/`}
                 className="hover:text-[var(--color-tecmo-gold)] whitespace-nowrap"
               >
                 #{id}
-              </Link>
+              </a>
             ))}
           </div>
         ) : (
