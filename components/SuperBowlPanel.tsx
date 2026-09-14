@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { SuperBowlGame } from "@/lib/types";
 import { teamByAbbr, userById } from "@/lib/data";
 import { Helmet, HeroAvatar } from "./Sprites";
@@ -24,12 +23,12 @@ export default function SuperBowlPanel({
     <section className="border-2 border-[var(--color-tecmo-gold)] bg-black/70 p-5">
       <div className="text-[10px] uppercase tracking-widest opacity-70">
         {linkToSeason ? (
-          <Link
-            href={`/seasons/${seasonId}`}
+          <a
+            href={`/seasons/${seasonId}/`}
             className="hover:text-[var(--color-tecmo-gold)]"
           >
             Super Bowl {seasonId}
-          </Link>
+          </a>
         ) : (
           <>Super Bowl {seasonId}</>
         )}
@@ -42,8 +41,8 @@ export default function SuperBowlPanel({
               {champTeam?.displayName ?? game.champion}
             </div>
             {champUser && (
-              <Link
-                href={`/heroes/${champUser.slug}`}
+              <a
+                href={`/heroes/${champUser.slug}/`}
                 className="inline-flex items-center gap-1.5 text-xs opacity-80 hover:text-[var(--color-tecmo-gold)] hover:opacity-100"
                 title={champUser.displayName}
               >
@@ -53,7 +52,7 @@ export default function SuperBowlPanel({
                   size={20}
                   className="border border-black/40"
                 />
-              </Link>
+              </a>
             )}
           </div>
           <Helmet abbr={game.champion} size={48} />
@@ -71,8 +70,8 @@ export default function SuperBowlPanel({
               {ruTeam?.displayName ?? game.runnerUp}
             </div>
             {ruUser && (
-              <Link
-                href={`/heroes/${ruUser.slug}`}
+              <a
+                href={`/heroes/${ruUser.slug}/`}
                 className="inline-flex items-center gap-1.5 text-xs opacity-80 hover:text-[var(--color-tecmo-gold)] hover:opacity-100"
                 title={ruUser.displayName}
               >
@@ -82,7 +81,7 @@ export default function SuperBowlPanel({
                   className="border border-black/40"
                 />
                 <span>{ruUser.displayName}</span>
-              </Link>
+              </a>
             )}
           </div>
         </div>

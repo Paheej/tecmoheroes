@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   seasons,
@@ -118,8 +117,8 @@ function SeasonHeroesPanel({ seasonId }: { seasonId: number }) {
                 >
                   <td className="py-2 px-2">
                     {u ? (
-                      <Link
-                        href={`/heroes/${u.slug}`}
+                      <a
+                        href={`/heroes/${u.slug}/`}
                         className="inline-flex items-center gap-1.5 font-bold hover:text-[var(--color-tecmo-gold)]"
                         title={u.displayName}
                       >
@@ -129,7 +128,7 @@ function SeasonHeroesPanel({ seasonId }: { seasonId: number }) {
                           className="border border-black/40"
                         />
                         <span>{u.shortName ?? u.displayName}</span>
-                      </Link>
+                      </a>
                     ) : (
                       <span className="font-bold opacity-80">{r.userId}</span>
                     )}
@@ -173,12 +172,12 @@ function AwardsPanel({ records }: { records: Record[] }) {
               </span>
               <span className="flex flex-wrap items-baseline gap-x-2">
                 {player ? (
-                  <Link
-                    href={`/players/${player.slug}`}
+                  <a
+                    href={`/players/${player.slug}/`}
                     className="font-bold hover:text-[var(--color-tecmo-gold)]"
                   >
                     {player.realName ?? player.tecmoName}
-                  </Link>
+                  </a>
                 ) : (
                   String(r.value)
                 )}
@@ -188,8 +187,8 @@ function AwardsPanel({ records }: { records: Record[] }) {
                 {user && (
                   <>
                     <span className="opacity-60 text-xs">· played by</span>
-                    <Link
-                      href={`/heroes/${user.slug}`}
+                    <a
+                      href={`/heroes/${user.slug}/`}
                       className="inline-flex items-center gap-1.5 text-xs hover:text-[var(--color-tecmo-gold)]"
                       title={user.displayName}
                     >
@@ -199,7 +198,7 @@ function AwardsPanel({ records }: { records: Record[] }) {
                         className="border border-black/40"
                       />
                       <span>{user.shortName ?? user.displayName}</span>
-                    </Link>
+                    </a>
                   </>
                 )}
               </span>

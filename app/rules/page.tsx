@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Helmet } from "@/components/Sprites";
 
 export const metadata = { title: "The Rules — Tecmo Heroes" };
@@ -330,12 +329,12 @@ export default function RulesPage() {
         <p className="text-sm opacity-90">
           Every game ends with a photograph of the in-game summary screen.
           Those photos are the source of truth for the record book —{" "}
-          <Link
-            href="/about"
+          <a
+            href="/about/"
             className="underline hover:text-[var(--color-tecmo-gold)]"
           >
             see the stats methodology
-          </Link>{" "}
+          </a>{" "}
           for how we work around Tecmo&apos;s in-game maximums.
         </p>
       </section>

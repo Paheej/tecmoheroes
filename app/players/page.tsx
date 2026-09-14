@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { players, recordsForPlayer, awardsForPlayer, isStatRecord } from "@/lib/data";
 import TecmoProfileCard from "@/components/TecmoProfileCard";
 
@@ -36,9 +35,9 @@ export default function PlayersIndex() {
       <ul className="grid gap-6 md:grid-cols-3">
         {heroes.map(({ p, count, awards }) => (
           <li key={p.id} className="flex flex-col items-start gap-2">
-            <Link href={`/players/${p.slug}`} className="hover:opacity-80">
+            <a href={`/players/${p.slug}/`} className="hover:opacity-80">
               <TecmoProfileCard player={p} compact />
-            </Link>
+            </a>
             <div className="text-xs opacity-80 flex flex-wrap gap-x-2">
               <span className="text-[var(--color-tecmo-gold)] font-bold">
                 {count} record{count === 1 ? "" : "s"}

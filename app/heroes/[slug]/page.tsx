@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   users,
@@ -130,12 +129,12 @@ export default async function PlayerPage({
                 key={`champ-${c.seasonId}`}
                 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-[var(--color-tecmo-gold)]/20 pb-1"
               >
-                <Link
-                  href={`/seasons/${c.seasonId}`}
+                <a
+                  href={`/seasons/${c.seasonId}/`}
                   className="text-[var(--color-tecmo-gold)] font-bold tecmo-headline w-24 hover:opacity-80"
                 >
                   Season {c.seasonId}
-                </Link>
+                </a>
                 <span className="opacity-60 text-xs">{c.year}</span>
                 <Helmet abbr={c.team} size={18} withLabel />
                 <span className="opacity-60 text-xs">def.</span>
@@ -160,12 +159,12 @@ export default async function PlayerPage({
                 key={`sb-${a.seasonId}-${a.team}`}
                 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-[var(--color-tecmo-gold)]/20 pb-1"
               >
-                <Link
-                  href={`/seasons/${a.seasonId}`}
+                <a
+                  href={`/seasons/${a.seasonId}/`}
                   className="text-[var(--color-tecmo-gold)] font-bold tecmo-headline w-24 hover:opacity-80"
                 >
                   Season {a.seasonId}
-                </Link>
+                </a>
                 <span className="opacity-60 text-xs">{a.year}</span>
                 <Helmet abbr={a.team} size={18} withLabel />
                 <span className="opacity-60 text-xs">vs.</span>
@@ -206,20 +205,20 @@ export default async function PlayerPage({
                     {kind}
                   </span>
                   {a.seasonId != null && (
-                    <Link
-                      href={`/seasons/${a.seasonId}`}
+                    <a
+                      href={`/seasons/${a.seasonId}/`}
                       className="hover:text-[var(--color-tecmo-gold)]"
                     >
                       Season {a.seasonId}
-                    </Link>
+                    </a>
                   )}
                   {player ? (
-                    <Link
-                      href={`/players/${player.slug}`}
+                    <a
+                      href={`/players/${player.slug}/`}
                       className="font-bold hover:text-[var(--color-tecmo-gold)]"
                     >
                       {player.realName ?? player.tecmoName}
-                    </Link>
+                    </a>
                   ) : (
                     <span className="font-bold">{String(a.value)}</span>
                   )}
@@ -290,8 +289,8 @@ export default async function PlayerPage({
                       </td>
                       <td className="py-2 px-2 align-top">
                         {p ? (
-                          <Link
-                            href={`/players/${p.slug}`}
+                          <a
+                            href={`/players/${p.slug}/`}
                             className="inline-flex items-center gap-1.5 hover:text-[var(--color-tecmo-gold)]"
                             title={p.realName ?? p.tecmoName}
                           >
@@ -302,7 +301,7 @@ export default async function PlayerPage({
                               className="border border-black/40"
                             />
                             <span>{p.realName ?? p.tecmoName}</span>
-                          </Link>
+                          </a>
                         ) : (
                           b.playerId
                         )}
@@ -311,12 +310,12 @@ export default async function PlayerPage({
                         {b.team && <Helmet abbr={b.team} size={20} withLabel />}
                       </td>
                       <td className="py-2 px-2 align-top">
-                        <Link
-                          href={`/seasons/${b.seasonId}`}
+                        <a
+                          href={`/seasons/${b.seasonId}/`}
                           className="hover:text-[var(--color-tecmo-gold)]"
                         >
                           #{b.seasonId}
-                        </Link>
+                        </a>
                       </td>
                       <td className="py-2 px-2 opacity-80 align-top">
                         {b.year ?? seasonById.get(b.seasonId)?.year ?? "—"}
@@ -361,12 +360,12 @@ export default async function PlayerPage({
                         className="border-b border-[var(--color-tecmo-gold)]/20 hover:bg-white/5"
                       >
                         <td className="py-2 px-2">
-                          <Link
-                            href={`/seasons/${s.seasonId}`}
+                          <a
+                            href={`/seasons/${s.seasonId}/`}
                             className="font-bold hover:text-[var(--color-tecmo-gold)]"
                           >
                             #{s.seasonId}
-                          </Link>
+                          </a>
                         </td>
                         <td className="py-2 px-2 opacity-80">{yr ?? "—"}</td>
                         <td className="py-2 px-2">

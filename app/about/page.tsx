@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { STAT_MAX } from "@/lib/types";
 
 export const metadata = { title: "About — Tecmo Heroes" };
@@ -62,12 +61,12 @@ export default function AboutPage() {
         <p className="text-sm opacity-90">
           Guidelines for a successful weekend of Tecmo, draft methods, the
           tier list, and play-tempo conventions all live on a dedicated page —{" "}
-          <Link
-            href="/rules"
+          <a
+            href="/rules/"
             className="underline text-[var(--color-tecmo-gold)]"
           >
             see The Rules
-          </Link>
+          </a>
           .
         </p>
       </section>
