@@ -14,6 +14,7 @@ import {
   bioForUser,
   seasonById,
   personalBestsForUser,
+  seasonsPlayedForUser,
 } from "@/lib/data";
 import RecordCard from "@/components/RecordCard";
 import { Headshot, Helmet, HeroAvatar } from "@/components/Sprites";
@@ -56,7 +57,7 @@ export default async function PlayerPage({
     ["Ethnicity", user.ethnicity],
     ["From", user.from],
     ["Currently", user.currentResidence],
-    ["Seasons", seasons.length || user.seasonsPlayed],
+    ["Seasons", seasonsPlayedForUser(user.id)],
     ["SB Appearances", appearances.length || user.sbAppearances],
     ["Championships", championships.length || user.sbChampionships],
     ["Awards", awards.length || undefined],

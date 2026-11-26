@@ -222,6 +222,22 @@ export function teamSeasonsForUser(userId: string): TeamSeason[] {
   return teamSeasons.filter((ts) => ts.userId === userId);
 }
 
+/**
+ * Seasons this hero has played, derived from team-season and player-stat
+ * rows (distinct season ids). Falls back to the hand-entered
+ * `user.seasonsPlayed` only when it is a non-numeric label (e.g. the CPU's
+ * "Every Single One Ever") or when no season rows exist.
+ */
+export function seasonsPlayedForUser(userId: string): number | string | undefined {
+  const user = userById.get(userId);
+  const manual = user?.seasonsPlayed;
+  if (typeof manual === "string" && Number.isNaN(Number(manual))) return manual;
+  const ids = new Set<number>();
+  for (const ts of teamSeasons) if (ts.userId === userId) ids.add(ts.seasonId);
+  for (const ps of playerStats) if (ps.userId === userId) ids.add(ps.seasonId);
+  return ids.size > 0 ? ids.size : manual;
+}
+
 export function teamSeasonsForSeason(seasonId: number): TeamSeason[] {
   return teamSeasons.filter((ts) => ts.seasonId === seasonId);
 }

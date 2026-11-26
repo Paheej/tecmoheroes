@@ -7,6 +7,7 @@ import {
   sbAppearancesForUser,
   mostPlayedTeamForUser,
   bioForUser,
+  seasonsPlayedForUser,
 } from "@/lib/data";
 import { Helmet, HeroAvatar } from "@/components/Sprites";
 
@@ -40,6 +41,7 @@ export default function HeroesIndex() {
           const sbApps = sbAppearancesForUser(u.id).length;
           const awards = awardsForUser(u.id).length;
           const mostTeam = mostPlayedTeamForUser(u.id);
+          const seasonsPlayed = seasonsPlayedForUser(u.id);
           return (
             <li key={u.id}>
               <a
@@ -69,8 +71,13 @@ export default function HeroesIndex() {
                       ) : (
                         u.team && <span>Team: {u.team}</span>
                       )}
-                      {u.seasonsPlayed !== undefined && (
-                        <span>{u.seasonsPlayed} seasons</span>
+                      {seasonsPlayed !== undefined && (
+                        <span>
+                          {seasonsPlayed}
+                          {typeof seasonsPlayed === "number"
+                            ? ` season${seasonsPlayed === 1 ? "" : "s"}`
+                            : ""}
+                        </span>
                       )}
                     </div>
                   </div>
